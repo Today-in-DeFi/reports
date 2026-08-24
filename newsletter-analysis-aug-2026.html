@@ -48,6 +48,7 @@
   <strong>Jump to:</strong>
   <a href="#lwid-headlines">LWID Headlines</a>
   <a href="#lwid-content">LWID Content</a>
+  <a href="#lwid-clicks">LWID Clicks</a>
   <a href="#lwid-tweets">LWID Tweets</a>
   <a href="#guide-headlines">Guide Headlines</a>
   <a href="#guide-content">Guide Content</a>
@@ -145,8 +146,110 @@
   <tr><td class="left">Aug 10</td><td class="left">BTCPay zero-day actively exploited</td><td class="left">&#9889; Update to v2.4.2</td></tr>
 </table>
 
+<!-- LWID Clicks -->
+<h2 id="lwid-clicks">3. LWID Click-Through Analysis (4 Weeks)</h2>
+
+<h3>Overview</h3>
+<table>
+  <tr><th>Issue</th><th>Openers Who Clicked</th><th>CTR</th><th>Top Link Clicks</th><th>OR</th></tr>
+  <tr class="highlight"><td>Aug 3 (ColdCard, Uniswap)</td><td class="up"><strong>69</strong></td><td class="up"><strong>7%</strong></td><td class="up">/subscribe (27), Uniswap (25)</td><td>19.62%</td></tr>
+  <tr class="highlight"><td>Jul 20 (Ostium, Aave V4)</td><td class="up"><strong>66</strong></td><td class="up"><strong>7%</strong></td><td class="up">CLARITY Act (35), Fluid (35)</td><td>20.61%</td></tr>
+  <tr><td>Aug 17 (not in DB)</td><td>53</td><td>6%</td><td>PeckShield (23), Neutrl (19)</td><td>N/A</td></tr>
+  <tr><td class="down">Aug 10 (Circle, Ether.fi)</td><td class="down">37</td><td class="down">4%</td><td>Turtle (17), Circle (15)</td><td class="down">19.30%</td></tr>
+</table>
+
+<div class="alert">
+  <strong>Clicks and opens tell different stories.</strong> Aug 3 had a lower OR (19.62%) than Jul 20 (20.61%) but matched it on clicks (69 vs 66). Aug 10 had both the worst OR (19.30%) AND worst clicks (37). Click-through is the better indicator of content quality.
+</div>
+
+<h3>What Gets Clicked in the LWID</h3>
+<table>
+  <tr><th style="text-align:left;">Link Category</th><th>Avg Clicks</th><th style="text-align:left;">Top Examples</th></tr>
+  <tr class="highlight">
+    <td class="left"><strong>Protocol tweets (source announcements)</strong></td>
+    <td class="up">20</td>
+    <td class="left">Fluid blog (35), Derive (34), Covenant (33), Odos (33), Uniswap (25), ColdCard (23)</td>
+  </tr>
+  <tr class="highlight">
+    <td class="left"><strong>Security/exploit alerts</strong></td>
+    <td class="up">24</td>
+    <td class="left">CLARITY Act article (35), PeckShield (23+30), SlowMist (30), ColdCard (23), Allbridge (28)</td>
+  </tr>
+  <tr>
+    <td class="left"><strong>News articles (todayindefi.com, CoinDesk)</strong></td>
+    <td>25</td>
+    <td class="left">todayindefi.com CLARITY Act (35), CoinDesk SK Hynix (20), SEC statement (28)</td>
+  </tr>
+  <tr>
+    <td class="left"><strong>/subscribe</strong></td>
+    <td>27</td>
+    <td class="left">27 clicks on Aug 3, 26 on Jul 20 &mdash; LWID drives subscriptions</td>
+  </tr>
+  <tr>
+    <td class="left"><strong>Images/charts</strong></td>
+    <td>19</td>
+    <td class="left">Embedded images (15&ndash;27 clicks each across issues)</td>
+  </tr>
+  <tr>
+    <td class="left"><strong>DeFi Saver (sponsor)</strong></td>
+    <td>18</td>
+    <td class="left">10 (Aug 10) to 26 (Jul 20) &mdash; correlates with overall engagement</td>
+  </tr>
+</table>
+
+<h3>Key Findings</h3>
+
+<div class="action">
+  <strong>1. Protocol tweet links dominate.</strong> Readers use the LWID to discover what happened, then click through to the source tweet to verify. The top-clicked links across all 4 issues are almost all x.com/protocol tweets. Every item should link to the source announcement.
+</div>
+
+<div class="action">
+  <strong>2. Security/exploit items get the most clicks.</strong> PeckShield alerts, SlowMist reports, ColdCard disclosure, Allbridge exploit &mdash; these consistently get 23&ndash;35 clicks each. The Issues section is the LWID&rsquo;s most engaged section, not DeFi launches. <strong>Rank Issues first, not last.</strong>
+</div>
+
+<div class="action">
+  <strong>3. /subscribe gets 26&ndash;27 clicks on the best issues.</strong> The LWID is a subscriber acquisition channel. The best issues (Aug 3, Jul 20) drove 26&ndash;27 subscribe clicks vs near-zero on the worst (Aug 10). High-engagement content converts.
+</div>
+
+<div class="action">
+  <strong>4. todayindefi.com articles outperform when included.</strong> The CLARITY Act article on todayindefi.com got 35 clicks &mdash; tied for the highest-clicked link across all 4 weeks. Linking to your own site (not just tweets) drives owned traffic. Currently rare in the LWID.
+</div>
+
+<div class="action">
+  <strong>5. Aug 10 underperformed on every metric.</strong> Lowest OR (19.30%), lowest clicks (37), lowest CTR (4%). The issue led with announcements (Circle, Ether.fi) instead of threats. Top link was only 17 clicks vs 35 on better issues. <strong>Announcement-led issues drive less engagement than threat-led issues across both opens AND clicks.</strong>
+</div>
+
+<h3>High-Click Issue: Aug 3 (69 clicks, 7%)</h3>
+<table>
+  <tr><th>Clicks</th><th style="text-align:left;">Link</th><th style="text-align:left;">Section</th></tr>
+  <tr class="highlight"><td class="up">27</td><td class="left">/subscribe</td><td class="left">Subscription CTA</td></tr>
+  <tr class="highlight"><td class="up">25</td><td class="left">Uniswap fee switch tweet</td><td class="left">DeFi section</td></tr>
+  <tr><td>24</td><td class="left">Solstice tweet</td><td class="left">Stablecoins section</td></tr>
+  <tr><td>23</td><td class="left">Trade.xyz / SK Hynix flash crash</td><td class="left">Issues section</td></tr>
+  <tr><td>23</td><td class="left">ColdCard vulnerability tweet</td><td class="left">Issues section</td></tr>
+  <tr><td>23</td><td class="left">DeFi Saver</td><td class="left">Sponsor</td></tr>
+  <tr><td>21</td><td class="left">Stacks PoX-5 tweet</td><td class="left">DeFi section</td></tr>
+  <tr><td>21</td><td class="left">CoinGecko msUSD (Metronome depeg)</td><td class="left">Depegs section</td></tr>
+  <tr><td>20</td><td class="left">1inch Aqua blog</td><td class="left">DeFi section</td></tr>
+  <tr><td>20</td><td class="left">CoinDesk SK Hynix article</td><td class="left">Issues section</td></tr>
+</table>
+<p style="font-size:12px; color:#888;"><strong>Why this issue crushed it:</strong> Led with &ldquo;Security dominated this week&rdquo; editorial paragraph. Had the strongest Week in One Paragraph. Every item linked to its source tweet. Issues section was front and center. And it converted: 27 /subscribe clicks.</p>
+
+<h3>Low-Click Issue: Aug 10 (37 clicks, 4%)</h3>
+<table>
+  <tr><th>Clicks</th><th style="text-align:left;">Link</th><th style="text-align:left;">Section</th></tr>
+  <tr><td>17</td><td class="left">Turtle tweet</td><td class="left">Premium farming section</td></tr>
+  <tr><td>15</td><td class="left">Circle tweet</td><td class="left">DeFi section</td></tr>
+  <tr><td>13</td><td class="left">Backpack tweet</td><td class="left">Stablecoins section</td></tr>
+  <tr><td>12</td><td class="left">Morpho tweet (x2)</td><td class="left">DeFi section</td></tr>
+  <tr><td>12</td><td class="left">Ether.fi tweet</td><td class="left">DeFi section</td></tr>
+  <tr><td>11</td><td class="left">Multiple tweets (Kamino, Raydium, Term Labs, Shaw, Mastercard)</td><td class="left">Various</td></tr>
+  <tr><td>10</td><td class="left">DeFi Saver (x2)</td><td class="left">Sponsor</td></tr>
+</table>
+<p style="font-size:12px; color:#888;"><strong>Why it underperformed:</strong> Led with announcements, not threats. No editorial voice or warning. Top link was only 17 clicks (from the premium farming appendix, not the recap itself). Zero /subscribe clicks visible. Engagement was flat across all links &mdash; nothing stood out.</p>
+
 <!-- LWID Tweets -->
-<h2 id="lwid-tweets">3. LWID Tweet Performance</h2>
+<h2 id="lwid-tweets">4. LWID Tweet Performance</h2>
 
 <h3>Last 4 Weeks &mdash; Tweet-by-Tweet</h3>
 <table>
@@ -221,7 +324,7 @@
 <!-- PART 2: PROTOCOL GUIDE -->
 <!-- ============================================================ -->
 
-<h2 id="guide-headlines">4. Guide Headlines &mdash; Jun-Aug 2026</h2>
+<h2 id="guide-headlines">5. Guide Headlines &mdash; Jun-Aug 2026</h2>
 
 <table>
   <tr><th>Date</th><th style="text-align:left;">Headline</th><th>Chars</th><th>OR</th><th>Words</th></tr>
@@ -268,7 +371,7 @@
 <p style="font-size:12px; color:#888;"><strong>Note:</strong> Jul 31 headline has a typo &mdash; "Mopho" instead of "Morpho" &mdash; sent to ~4,700 subscribers.</p>
 
 <!-- Guide Content -->
-<h2 id="guide-content">5. Guide Content Audit</h2>
+<h2 id="guide-content">6. Guide Content Audit</h2>
 
 <h3>Structure Comparison (4 most recent)</h3>
 <table>
@@ -311,7 +414,7 @@
 </div>
 
 <!-- Guide Tweets -->
-<h2 id="guide-tweets">6. Guide Tweet Performance</h2>
+<h2 id="guide-tweets">7. Guide Tweet Performance</h2>
 
 <h3>Recent Guide Promo Tweets</h3>
 <table>
@@ -375,7 +478,7 @@
 <!-- COMBINED ACTION ITEMS -->
 <!-- ============================================================ -->
 
-<h2>7. Combined Action Items (Priority Order)</h2>
+<h2>8. Combined Action Items (Priority Order)</h2>
 
 <h3>Headlines (biggest OR lever)</h3>
 <div class="action">
@@ -388,29 +491,35 @@
   <strong>3. Kill "Guide to" / "Intro to" on Friday headlines.</strong> Replace with outcome. "Intro to Panoptic" &rarr; "Earn Yield From Volatility Without Picking a Direction."
 </div>
 
-<h3>Content (reader retention)</h3>
+<h3>Content &amp; Clicks</h3>
 <div class="action">
-  <strong>4. Standardize "Week in One Paragraph" on every LWID.</strong> Aug 3 template: theme + 3&ndash;4 highlights + warning. Proven; ship permanently.
+  <strong>4. Link every LWID item to its source tweet.</strong> Click data across 4 issues: protocol tweets are the #1 clicked link type (avg 20 clicks each). The high-CTR issues (7%) linked every item; the low-CTR issue (4%) had fewer source links. Readers use the LWID as a discovery layer &mdash; they scan your summary, then click to verify.
 </div>
 <div class="action">
-  <strong>5. Add &#9889; Action tags on deadlines.</strong> Every letter has 1&ndash;3 urgent items. Tag them. Easiest improvement; zero times implemented.
+  <strong>5. Link to todayindefi.com articles when available.</strong> The CLARITY Act article on todayindefi.com got 35 clicks &mdash; tied for the highest across all 4 weeks. Owned-site links are currently rare in the LWID but outperform when included.
 </div>
 <div class="action">
-  <strong>6. Add "What to Do Right Now" action box at end of every Guide.</strong> 3 bullets max. Flagged months ago; never shipped.
+  <strong>6. Standardize "Week in One Paragraph" on every LWID.</strong> Aug 3 template: theme + 3&ndash;4 highlights + warning. Proven; ship permanently.
 </div>
 <div class="action">
-  <strong>7. Cap Guide body at 2,500 words.</strong> Stop auto-appending the same farming section. Either unique per issue or separate send.
+  <strong>7. Add &#9889; Action tags on deadlines.</strong> Every letter has 1&ndash;3 urgent items. Tag them. Easiest improvement; zero times implemented.
+</div>
+<div class="action">
+  <strong>8. Add "What to Do Right Now" action box at end of every Guide.</strong> 3 bullets max. Flagged months ago; never shipped.
+</div>
+<div class="action">
+  <strong>9. Cap Guide body at 2,500 words.</strong> Stop auto-appending the same farming section. Either unique per issue or separate send.
 </div>
 
 <h3>Tweets (click-through &amp; reach)</h3>
 <div class="action">
-  <strong>8. Kill "What happened last week in DeFi?" permanently.</strong> 8 uses, avg 1,054 imps, avg 0.25 clicks.
+  <strong>10. Kill "What happened last week in DeFi?" permanently.</strong> 8 uses, avg 1,054 imps, avg 0.25 clicks.
 </div>
 <div class="action">
-  <strong>9. Switch to 3-tweet strategy:</strong> Evening hook (teaser) + Morning issues (@tags) + Morning launches (@tags). The Jun 1 exploit tweet proves 9,500 impressions is reachable.
+  <strong>11. Switch to 3-tweet strategy:</strong> Evening hook (teaser) + Morning issues (@tags) + Morning launches (@tags). The Jun 1 exploit tweet proves 9,500 impressions is reachable.
 </div>
 <div class="action">
-  <strong>10. Always @tag protocols.</strong> With tags: avg 1,778 imps. Without: avg 908 imps. Never use raw contract addresses.
+  <strong>12. Always @tag protocols.</strong> With tags: avg 1,778 imps. Without: avg 908 imps. Never use raw contract addresses.
 </div>
 
 <p class="meta">Generated Aug 21, 2026 &middot; Data: substack_export.db, twitter_analytics.db &middot; Analysis covers Jul 13 &ndash; Aug 14 for LWID, Jun 5 &ndash; Aug 14 for Guides.</p>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Farming Alpha Analysis — Aug 2026</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; max-width: 780px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; line-height: 1.55; }
+  h1 { font-size: 22px; border-bottom: 2px solid #1da1f2; padding-bottom: 8px; }
+  h2 { font-size: 17px; margin-top: 36px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 4px; }
+  h3 { font-size: 14px; margin-top: 24px; color: #555; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+  th, td { border: 1px solid #ddd; padding: 7px 10px; text-align: left; }
+  th { background: #f5f8fa; font-weight: 600; }
+  td:not(:first-child) { text-align: right; }
+  td.left { text-align: left; }
+  .down { color: #e0245e; }
+  .up { color: #17bf63; }
+  .highlight { background: #fffde7; }
+  .takeaway { background: #f5f8fa; border-left: 3px solid #1da1f2; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .alert { background: #fef3f2; border-left: 3px solid #e0245e; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .action { background: #f0faf0; border-left: 3px solid #17bf63; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .meta { color: #888; font-size: 12px; margin-top: 40px; border-top: 1px solid #eee; padding-top: 10px; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+  .kpi { background: #f5f8fa; border-radius: 6px; padding: 12px; text-align: center; }
+  .kpi-value { font-size: 22px; font-weight: 700; color: #1da1f2; }
+  .kpi-label { font-size: 11px; color: #666; margin-top: 2px; }
+  .kpi-change { font-size: 11px; margin-top: 2px; }
+  .section-nav { background: #f5f8fa; border-radius: 6px; padding: 14px 18px; margin: 16px 0; font-size: 13px; }
+  .section-nav a { color: #1da1f2; text-decoration: none; margin-right: 16px; }
+  .section-nav a:hover { text-decoration: underline; }
+  blockquote { border-left: 3px solid #ccc; margin: 12px 0; padding: 8px 14px; background: #fafafa; font-size: 13px; }
+  .tweet-draft { background: #f5f8fa; border: 1px solid #ddd; border-radius: 8px; padding: 14px; margin: 10px 0; font-size: 13px; }
+  .tweet-draft .handle { color: #1da1f2; font-weight: 600; font-size: 12px; }
+  .tweet-draft .time { color: #888; font-size: 11px; float: right; }
+</style>
+</head>
+<body>
+
+<h1>Farming Alpha &mdash; Content &amp; Tweet Analysis</h1>
+<p style="color:#666; font-size:14px;">Today in DeFi &middot; Wednesday letter (paid) &middot; Aug 2026</p>
+
+<div class="section-nav">
+  <strong>Jump to:</strong>
+  <a href="#headlines">Headlines</a>
+  <a href="#content">Content</a>
+  <a href="#tweets">Tweet Performance</a>
+  <a href="#tweet-strategy">Tweet Strategy</a>
+  <a href="#actions">Action Items</a>
+</div>
+
+<!-- ============================================================ -->
+<!-- HEADLINES -->
+<!-- ============================================================ -->
+
+<h2 id="headlines">1. Headline Audit &mdash; Last 12 Issues (Jun&ndash;Aug 2026)</h2>
+
+<table>
+  <tr><th>Date</th><th style="text-align:left;">Headline</th><th>OR</th><th>vs 2026 Avg</th></tr>
+  <tr class="highlight"><td>Aug 13</td><td class="left">Base Rates Are Under 5% &mdash; 2 Farms Still Pay 11&ndash;19%</td><td class="up">20.51%</td><td class="down">-1.32pp</td></tr>
+  <tr class="highlight"><td>Jul 23</td><td class="left">Farming Alpha: Earn &gt;10% LP APR on Risk-Adjusted Stablecoins</td><td class="up">20.48%</td><td class="down">-1.35pp</td></tr>
+  <tr><td>Jun 18</td><td class="left">Farming Alpha: Earn &gt;11% on USD Stablecoins &amp; &gt;6% on ETH LPs</td><td class="up">20.95%</td><td class="down">-0.88pp</td></tr>
+  <tr><td>Jun 4</td><td class="left">Farming Alpha: Earn up to 15% on Stablecoin LPs &amp; 5% on ETH</td><td class="up">20.54%</td><td class="down">-1.29pp</td></tr>
+  <tr><td>Jun 11</td><td class="left">Farming Alpha: Earn up to 11% on Stablecoin LPs &amp; 6% on ETH</td><td class="up">20.53%</td><td class="down">-1.30pp</td></tr>
+  <tr><td>Jul 9</td><td class="left">Earn 10% APR on Risk-Adjusted Stablecoin Farms, Maple Proposes Buybacks - Farming Alpha</td><td>20.35%</td><td class="down">-1.48pp</td></tr>
+  <tr><td>Jun 25</td><td class="left">Farming Alpha: Earn &gt;22% APR on Risk-Adjusted Stablecoin Farms</td><td>19.94%</td><td class="down">-1.89pp</td></tr>
+  <tr><td>Jul 16</td><td class="left">Earn 10% Fixed APR on Risk-Adjusted Stablecoin, Ostium Exploited for $24M - Farming Alpha</td><td>19.91%</td><td class="down">-1.92pp</td></tr>
+  <tr><td>Jul 2</td><td class="left">Farming Alpha: Earn &gt;10% APR on Risk-Adjusted Stablecoin Farms</td><td>19.78%</td><td class="down">-2.05pp</td></tr>
+  <tr><td>Aug 6</td><td class="left">Farm 15% on Stables via StakeDAO, 11% on Aerodrome, 5.74%+Points on ETH - Farming Alpha</td><td>18.82%</td><td class="down">-3.01pp</td></tr>
+  <tr><td>Jul 30</td><td class="left">Farms of The Week: 11% Fixed on Pendle &amp; 12% APR on Boosted LPs</td><td>18.63%</td><td class="down">-3.20pp</td></tr>
+  <tr><td class="down">Aug 20</td><td class="left">10% on Loopscale, ~11% on Balancer &mdash; This Week's Farms</td><td class="down">18.18%</td><td class="down">-3.65pp</td></tr>
+</table>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value">21.83%</div><div class="kpi-label">2026 Full-Year Avg OR</div></div>
+  <div class="kpi"><div class="kpi-value down">19.84%</div><div class="kpi-label">Last 12 Issues Avg</div></div>
+  <div class="kpi"><div class="kpi-value down">18.18%</div><div class="kpi-label">Worst (Aug 20)</div></div>
+  <div class="kpi"><div class="kpi-value">20.95%</div><div class="kpi-label">Best (Jun 18)</div></div>
+</div>
+
+<div class="alert">
+  <strong>Farming Alpha has dropped ~3pp from the 2026 average (21.83% &rarr; ~18-19%).</strong> The decline accelerated in late July and August. Three of the last four issues are below 19%. The letter that was once the second-best opener in the stack is now the weakest. The cause is headline repetition: 7 of 12 issues use some variation of "Farming Alpha: Earn X% on Risk-Adjusted Stablecoin Farms."
+</div>
+
+<h3>Headline Pattern Analysis</h3>
+<table>
+  <tr><th style="text-align:left;">Pattern</th><th>Count</th><th>Avg OR</th><th style="text-align:left;">Verdict</th></tr>
+  <tr><td class="left">"Farming Alpha: Earn X% on [Stablecoin]..."</td><td>7</td><td>20.22%</td><td class="left">Declining &mdash; was 20.5%+ early, now 19.78%</td></tr>
+  <tr class="highlight"><td class="left">Context + contrast (baseline vs. yield)</td><td>1</td><td class="up">20.51%</td><td class="left">Best recent performer</td></tr>
+  <tr><td class="left">Protocol names in headline</td><td>3</td><td class="down">18.54%</td><td class="left">Niche names kill opens</td></tr>
+  <tr><td class="left">Generic "Farms of the Week"</td><td>1</td><td class="down">18.63%</td><td class="left">No yield number, no hook</td></tr>
+</table>
+
+<h3>What Readers Actually See (truncated at ~55 chars)</h3>
+<table>
+  <tr><th>Date</th><th style="text-align:left;">Visible in Inbox</th><th style="text-align:left;">Hidden</th></tr>
+  <tr><td class="down">Aug 20</td><td class="left">10% on Loopscale, ~11% on Balancer &mdash; This We...</td><td class="left">ek's Farms</td></tr>
+  <tr><td class="down">Aug 6</td><td class="left">Farm 15% on Stables via StakeDAO, 11% on Aero...</td><td class="left">drome, 5.74%+Points on ETH - Farming Alpha</td></tr>
+  <tr><td class="down">Jul 16</td><td class="left">Earn 10% Fixed APR on Risk-Adjusted Stablecoi...</td><td class="left">n, Ostium Exploited for $24M - Farming Alpha</td></tr>
+  <tr><td class="down">Jul 9</td><td class="left">Earn 10% APR on Risk-Adjusted Stablecoin Farm...</td><td class="left">s, Maple Proposes Buybacks - Farming Alpha</td></tr>
+</table>
+<p style="font-size:12px; color:#888;">Aug 6, Jul 16, and Jul 9 pack two unrelated hooks into one headline. The second hook is always cut off. Readers see a truncated yield pitch, not the news item (Ostium exploit, Maple buybacks) that would actually differentiate the issue.</p>
+
+<h3>What Worked</h3>
+
+<div class="takeaway">
+  <strong>Aug 13 (20.51%): "Base Rates Are Under 5% &mdash; 2 Farms Still Pay 11&ndash;19%"</strong><br>
+  This headline works because it sets a <strong>context</strong> (base rates are low) and then delivers a <strong>contrast</strong> (but these farms pay much more). It tells the reader <em>why they should care</em>, not just <em>what the yield is</em>. It also drops the "Farming Alpha" prefix, saving 16 characters.
+</div>
+
+<div class="takeaway">
+  <strong>Jun 18 (20.95%): "Farming Alpha: Earn &gt;11% on USD Stablecoins &amp; &gt;6% on ETH LPs"</strong><br>
+  Specific yield numbers for two distinct asset classes. Readers can self-select: stablecoin farmers vs ETH farmers. Still uses the prefix but the dual-asset framing adds value.
+</div>
+
+<h3>What Failed</h3>
+
+<div class="alert">
+  <strong>Aug 20 (18.18%): "10% on Loopscale, ~11% on Balancer &mdash; This Week's Farms"</strong><br>
+  Two niche protocol names (Loopscale, Balancer) that most readers don't recognize. No "Farming Alpha" brand. No context for why these yields matter. The "~11%" approximation weakens the claim. Worst performer in the dataset.
+</div>
+
+<div class="alert">
+  <strong>Jul 30 (18.63%): "Farms of The Week: 11% Fixed on Pendle &amp; 12% APR on Boosted LPs"</strong><br>
+  "Farms of The Week" is generic &mdash; no brand recognition, no yield context. "Boosted LPs" is jargon without a protocol name or chain. Pendle is reasonably known but "Fixed" alone isn't compelling without the contrast of what variable rates are.
+</div>
+
+<h3>Suggested Rewrites</h3>
+<table>
+  <tr><th style="text-align:left;">Original (OR)</th><th style="text-align:left;">Rewrite</th><th>Chars</th></tr>
+  <tr><td class="left down">Aug 20 (18.18%)</td><td class="left">Lending Pays 3%. These 3 Farms Pay 10&ndash;11%.</td><td>45</td></tr>
+  <tr><td class="left down">Jul 30 (18.63%)</td><td class="left">Lock 11% Fixed While Variable Rates Drop Below 5%</td><td>50</td></tr>
+  <tr><td class="left">Aug 6 (18.82%)</td><td class="left">3 Stablecoin Farms Paying 11&ndash;15% This Week</td><td>45</td></tr>
+  <tr><td class="left">Jul 16 (19.91%)</td><td class="left">Ostium Lost $24M &mdash; 3 Safer Farms Paying 10%+</td><td>47</td></tr>
+  <tr><td class="left">Jun 25 (19.94%)</td><td class="left">One Stablecoin Farm Is Paying 22% &mdash; Here's the Risk</td><td>51</td></tr>
+</table>
+
+<h3>Headline Rules for Farming Alpha</h3>
+<div class="action">
+  <ol style="margin:6px 0; padding-left:18px;">
+    <li><strong>Lead with context, not yield.</strong> "Base rates are 3%" sets up why 11% matters. Raw yield numbers without context are losing impact through repetition.</li>
+    <li><strong>Drop niche protocol names.</strong> "Loopscale" and "Balancer" mean nothing to 80% of the list. Use asset type (stablecoins, ETH) or chain name (Ethereum, Arbitrum) instead.</li>
+    <li><strong>One hook, under 55 chars.</strong> Stop packing two ideas into one headline. The second is always truncated.</li>
+    <li><strong>Vary the template every week.</strong> The "Earn X% on Risk-Adjusted Stablecoins" formula has been used 7 times in 12 weeks. Even at 20% OR, it's declining.</li>
+    <li><strong>Drop the "Farming Alpha" / "- Farming Alpha" suffix.</strong> Readers know which letter this is from the sender name and schedule. Save 16&ndash;18 characters.</li>
+  </ol>
+</div>
+
+<!-- ============================================================ -->
+<!-- CONTENT -->
+<!-- ============================================================ -->
+
+<h2 id="content">2. Content Audit</h2>
+
+<h3>Structure Comparison (Aug 20 vs Aug 13)</h3>
+<table>
+  <tr><th style="text-align:left;">Element</th><th>Aug 20 (2,206 words)</th><th>Aug 13 (1,032 words)</th></tr>
+  <tr><td class="left">Subscribe CTA</td><td class="up">Yes</td><td class="up">Yes</td></tr>
+  <tr><td class="left">Sponsor placement</td><td>After CTA</td><td>After CTA</td></tr>
+  <tr><td class="left">Farming Benchmarks</td><td class="up">Yes &mdash; after sponsor</td><td class="up">Yes &mdash; after news</td></tr>
+  <tr><td class="left">Farm cards (with risk ratings)</td><td class="up">3 farms</td><td class="up">3 farms</td></tr>
+  <tr><td class="left">Risk ratings per farm</td><td class="up">Yes (Lower/Medium/High)</td><td class="up">Yes</td></tr>
+  <tr><td class="left">Yield source breakdown</td><td class="up">Yes (per farm)</td><td class="up">Yes (per farm)</td></tr>
+  <tr><td class="left">This Week's Farming News</td><td class="up">Yes</td><td class="up">Yes</td></tr>
+  <tr><td class="left">News Headlines block</td><td class="up">Yes</td><td class="up">Yes</td></tr>
+  <tr><td class="left">Premium section (leveraged loop)</td><td class="down">Yes &mdash; unrelated</td><td class="down">Yes &mdash; unrelated</td></tr>
+  <tr><td class="left">Cross-links to other letters</td><td class="down">No</td><td class="down">No</td></tr>
+  <tr><td class="left">Section order consistent</td><td class="down">No &mdash; benchmarks moved</td><td class="down">No &mdash; news first</td></tr>
+</table>
+
+<h3>Word Count Trend</h3>
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value up">1,032</div><div class="kpi-label">Shortest (Aug 13)</div><div class="kpi-change up">20.51% OR</div></div>
+  <div class="kpi"><div class="kpi-value">1,175</div><div class="kpi-label">Median (12 issues)</div><div class="kpi-change">~20% OR</div></div>
+  <div class="kpi"><div class="kpi-value down">2,462</div><div class="kpi-label">Longest (Jul 16)</div><div class="kpi-change">19.91% OR</div></div>
+  <div class="kpi"><div class="kpi-value down">2,206</div><div class="kpi-label">Aug 20</div><div class="kpi-change down">18.18% OR</div></div>
+</div>
+<p style="font-size:12px; color:#888;">The two longest issues (Jul 16: 2,462 words; Aug 20: 2,206 words) are also among the worst performers. The two best openers (Aug 13: 1,032 words; Jun 18: 1,197 words) are the shortest. Correlation is not causation &mdash; headlines drive opens, not word count &mdash; but the pattern reinforces that Farming Alpha works best as a tight, focused letter.</p>
+
+<div class="takeaway">
+  <strong>What's Working:</strong>
+  <ul style="margin:6px 0;">
+    <li><strong>Farm cards with risk ratings are a genuine differentiator.</strong> Each farm gets a protocol name, APR/APY, chain, strategy type, yield source breakdown, and a risk rating (Lower/Medium/High) with specific warnings. No other DeFi newsletter does this.</li>
+    <li><strong>"Farming Benchmarks" section is excellent.</strong> Setting the baseline (3&ndash;5% unincentivized lending) gives readers context for why a 10%+ farm is noteworthy. This is the same pattern that made the Aug 13 headline work.</li>
+    <li><strong>3 farms per issue is the right number.</strong> Enough variety without overwhelming. Each farm gets adequate analysis depth.</li>
+    <li><strong>Yield source breakdowns build trust.</strong> Readers can see exactly where the APR comes from (lending rate + incentives + boost) instead of a single number.</li>
+    <li><strong>Risk warnings are specific and useful.</strong> Not generic disclaimers &mdash; actual protocol-specific risks (smart contract, impermanent loss, depeg scenarios).</li>
+  </ul>
+</div>
+
+<div class="alert">
+  <strong>What Needs Improvement:</strong>
+  <ul style="margin:6px 0;">
+    <li><strong>Section order is inconsistent.</strong> Aug 20: Benchmarks &rarr; Farms &rarr; News. Aug 13: News &rarr; Benchmarks &rarr; Farms. Pick one order and stick with it. Readers build muscle memory &mdash; shuffling sections breaks scanning habits.</li>
+    <li><strong>Premium section is bolted-on and unrelated.</strong> Both Aug 20 and Aug 13 append a "leveraged loop guide" as the premium section. This is the same Guide/LWID bundling problem &mdash; a 500-word strategy guide doesn't belong at the bottom of a farm-card letter. It should be a standalone Guide post or part of a farming-specific premium tier.</li>
+    <li><strong>Word count doubles when news is added.</strong> Aug 20 (2,206 words) vs Aug 13 (1,032 words). The difference is the "This Week's Farming News" section expanding and extra news headlines. The farm cards themselves are consistently ~800&ndash;1,000 words. Everything else is filler.</li>
+    <li><strong>No cross-links.</strong> When a farm card features a protocol also covered in the Outlook (Pendle, Aave), there's no link to the deeper analysis. The Outlook covers the macro thesis; Farming Alpha covers the execution. Link them.</li>
+    <li><strong>No "week-over-week" yield tracking.</strong> Readers can't see if a farm's APR went up or down from last week. Adding a simple directional arrow or prior-week comparison would add recurring value.</li>
+  </ul>
+</div>
+
+<h3>Recommended Template</h3>
+<table>
+  <tr><th>#</th><th style="text-align:left;">Section</th><th>Budget</th><th style="text-align:left;">What &amp; Why</th></tr>
+  <tr><td>1</td><td class="left">Subscribe CTA</td><td>30</td><td class="left">One-liner. Keep as-is.</td></tr>
+  <tr><td>2</td><td class="left">Sponsor</td><td>50</td><td class="left">Keep as-is.</td></tr>
+  <tr><td>3</td><td class="left"><strong>Farming Benchmarks</strong></td><td>100</td><td class="left">Always first after sponsor. Baseline rates for stablecoin lending, ETH staking, and LP yields. Sets the context for everything below.</td></tr>
+  <tr class="highlight"><td>4</td><td class="left"><strong>Farm Cards (x3)</strong></td><td>750</td><td class="left">The core product. 3 farms, ~250 words each. Protocol, chain, APR, yield sources, risk rating, specific warnings. Add week-over-week yield change.</td></tr>
+  <tr><td>5</td><td class="left">Farming News (if noteworthy)</td><td>150</td><td class="left">Only include if there's a genuine farming-specific development (exploit, rate change, new incentive program). Skip if it's just general DeFi news.</td></tr>
+  <tr><td>6</td><td class="left">Premium: Advanced Strategy</td><td>300</td><td class="left">Farming-related premium content only: leveraged loops, multi-step strategies, risk management. Must relate to the farms above.</td></tr>
+  <tr><td></td><td class="left"><strong>Total</strong></td><td><strong>~1,200</strong></td><td class="left"></td></tr>
+</table>
+
+<div class="action">
+  <strong>Key change: standardize the order and cap at ~1,200 words.</strong> The Aug 13 issue (1,032 words, 20.51% OR) is the model. Benchmarks &rarr; Farm Cards &rarr; optional News. Drop the generic news headlines block &mdash; readers get those from the LWID. The premium section should be farming-specific (a strategy that uses one of the featured farms), not a standalone guide bolted on.
+</div>
+
+<!-- ============================================================ -->
+<!-- TWEETS -->
+<!-- ============================================================ -->
+
+<h2 id="tweets">3. Tweet Performance</h2>
+
+<h3>Farming-Related Tweets (Jun&ndash;Aug 2026)</h3>
+<table>
+  <tr><th>Date</th><th style="text-align:left;">Tweet (truncated)</th><th>Imps</th><th>Clicks</th><th>ER</th></tr>
+  <tr class="highlight">
+    <td>Aug 7</td><td class="left">"2 stablecoin farms worth knowing: 1) @StakeDAOHQ 15.74% 2) @AerodromeFi 11%..."</td>
+    <td class="up">1,199</td><td>1</td><td>2.75%</td>
+  </tr>
+  <tr class="highlight">
+    <td>Jul 17</td><td class="left">"2 stablecoin farms worth knowing: 1) reUSD PT 10.7% 2) Robinhood Earn ~7%..."</td>
+    <td class="up">1,115</td><td>1</td><td class="up">4.13%</td>
+  </tr>
+  <tr>
+    <td>Jul 31</td><td class="left">"Two 11%+ stablecoin farms on Ethereum: 1) PT reUSD 11% Fixed 2) StakeDAO..."</td>
+    <td>938</td><td>1</td><td class="up">4.16%</td>
+  </tr>
+  <tr>
+    <td>Aug 6</td><td class="left">"A @llamalend crvUSD market paying 15.74% through @StakeDAOHQ boost..."</td>
+    <td>933</td><td>5</td><td>2.04%</td>
+  </tr>
+  <tr>
+    <td>Aug 14</td><td class="left">"Most high-APR pools are token emissions..."</td>
+    <td>861</td><td>2</td><td>0.81%</td>
+  </tr>
+  <tr>
+    <td>Aug 13</td><td class="left">"Unincentivized lending is stuck at 3-5%. We found 3 farms paying up to 19%..."</td>
+    <td>848</td><td>5</td><td>2.59%</td>
+  </tr>
+  <tr>
+    <td>Jul 23</td><td class="left">"A low-risk vault paying 10.68% Lending APR..."</td>
+    <td>770</td><td class="up">6</td><td>1.95%</td>
+  </tr>
+  <tr>
+    <td>Aug 4</td><td class="left">"A low-risk lending venue on Monad offering 6% APR..."</td>
+    <td>738</td><td>4</td><td>1.22%</td>
+  </tr>
+  <tr>
+    <td>Aug 13</td><td class="left">"Not every stablecoin farm is worth the risk..."</td>
+    <td class="down">730</td><td class="down">1</td><td class="down">0.68%</td>
+  </tr>
+  <tr>
+    <td>Jul 30</td><td class="left">"Lock 11% fixed APR on this Pendle position..."</td>
+    <td class="down">672</td><td>5</td><td>2.23%</td>
+  </tr>
+  <tr>
+    <td>Jul 24</td><td class="left">"2 stablecoin farms worth knowing: 1) StakeDAO 12.11% 2) Euler 10.68%..."</td>
+    <td class="down">668</td><td class="down">0</td><td>1.35%</td>
+  </tr>
+</table>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value">862</div><div class="kpi-label">Avg Impressions</div></div>
+  <div class="kpi"><div class="kpi-value down">2.8</div><div class="kpi-label">Avg Clicks/Tweet</div></div>
+  <div class="kpi"><div class="kpi-value">2.08%</div><div class="kpi-label">Avg Eng. Rate</div></div>
+  <div class="kpi"><div class="kpi-value">1,199</div><div class="kpi-label">Best Impressions</div></div>
+</div>
+
+<h3>Pattern Analysis</h3>
+<table>
+  <tr><th style="text-align:left;">Pattern</th><th>Avg Imps</th><th>Avg ER</th><th style="text-align:left;">Examples</th></tr>
+  <tr class="highlight">
+    <td class="left"><strong>"2 farms worth knowing" + @tags + yields</strong></td>
+    <td class="up">994</td><td class="up">2.74%</td>
+    <td class="left">Aug 7 (1,199), Jul 17 (1,115), Jul 24 (668)</td>
+  </tr>
+  <tr class="highlight">
+    <td class="left"><strong>Context + contrast (baseline vs. yield)</strong></td>
+    <td>848</td><td>2.59%</td>
+    <td class="left">"Unincentivized lending stuck at 3-5%. We found 3 farms paying 19%"</td>
+  </tr>
+  <tr>
+    <td class="left"><strong>Single farm deep-dive + @protocol</strong></td>
+    <td>852</td><td>2.14%</td>
+    <td class="left">"@llamalend crvUSD 15.74%", "lock 11% fixed on Pendle"</td>
+  </tr>
+  <tr>
+    <td class="left"><strong>"Two 11%+ farms on [Chain]"</strong></td>
+    <td>938</td><td class="up">4.16%</td>
+    <td class="left">Jul 31 &mdash; chain-specific framing</td>
+  </tr>
+  <tr>
+    <td class="left"><strong>Vague/abstract ("not every farm is worth...")</strong></td>
+    <td class="down">730</td><td class="down">0.68%</td>
+    <td class="left">Generic wisdom with no specific yield or protocol</td>
+  </tr>
+  <tr>
+    <td class="left"><strong>"A low-risk [venue/vault]..." (unnamed)</strong></td>
+    <td class="down">754</td><td>1.59%</td>
+    <td class="left">"A low-risk vault paying 10.68%", "A low-risk lending venue on Monad"</td>
+  </tr>
+</table>
+
+<h3>Key Findings</h3>
+
+<div class="takeaway">
+  <strong>1. The "2 farms worth knowing" format is the winner.</strong> Three uses, 994 avg impressions, 2.74% avg ER. It works because: numbered list creates scannable structure, @tags get protocol engagement, specific yields give the reader actionable info upfront. The Aug 7 version hit 1,199 impressions. The Jul 24 version (668) underperformed &mdash; likely because StakeDAO and Euler are less followed than AerodromeFi.
+</div>
+
+<div class="takeaway">
+  <strong>2. Named brands + specific rates outperform unnamed descriptions.</strong> "Robinhood Earn ~7%" (Jul 17, 1,115 imps) vs "A low-risk lending venue on Monad offering 6%" (Aug 4, 738 imps). Same idea, but naming the brand adds 51% more impressions. Protocol @tags also help the tweet reach the protocol's followers.
+</div>
+
+<div class="takeaway">
+  <strong>3. Vague/philosophical tweets fail.</strong> "Most high-APR pools are token emissions" (861 imps, 0.81% ER) and "Not every stablecoin farm is worth the risk" (730 imps, 0.68% ER) are the worst performers. Farming readers want actionable yield info, not commentary.
+</div>
+
+<div class="takeaway">
+  <strong>4. Chain-specific framing gets the highest engagement rate.</strong> "Two 11%+ stablecoin farms on Ethereum" (Jul 31, 4.16% ER) is the top ER in the dataset. Naming the chain creates a target audience filter &mdash; Ethereum farmers immediately self-select.
+</div>
+
+<div class="alert">
+  <strong>Click-through is weak across all formats.</strong> Average 2.8 clicks per tweet. Even the best tweets (1,199 imps) only got 1 click. The "2 farms worth knowing" format gives away enough information that readers may not need to click. Consider withholding one detail (the third farm, the risk rating, the chain) to create a click incentive.
+</div>
+
+<!-- ============================================================ -->
+<!-- TWEET STRATEGY -->
+<!-- ============================================================ -->
+
+<h2 id="tweet-strategy">4. Recommended Tweet Strategy</h2>
+
+<p style="font-size:13px;">Farming Alpha tweets should be <strong>the most actionable content on the TID Twitter account</strong>. The audience is yield-seeking and impatient. Lead with numbers, name protocols, and @tag everything. Currently averaging 2 tweets per issue &mdash; increase to 3 with distinct angles.</p>
+
+<h3>3-Tweet Framework for Each Farming Alpha</h3>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Wednesday evening UTC+8 &mdash; Farm List</span>
+  <p>The "2 farms worth knowing" format. Numbered list, @protocol tags, specific APR, chain name. This is the proven winner (994 avg imps).</p>
+  <p><strong>Format:</strong> <code>2 stablecoin farms worth knowing this week:
+
+1) @Protocol — X% APR on [Chain]
+2) @Protocol — Y% APR on [Chain]
+
+Risk ratings + full breakdown: [link]</code></p>
+  <p><strong>Key change:</strong> Withhold the third farm and the risk ratings to incentivize the click. Current tweets give away all the info upfront (avg 2.8 clicks).</p>
+</div>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Wednesday evening UTC+8 &mdash; Context Hook</span>
+  <p>The "base rates are X%, but we found Y%" format. Sets context, then delivers the contrast. Models the Aug 13 headline that hit 20.51% OR.</p>
+  <p><strong>Format:</strong> <code>[Baseline context]. [Contrast with this week's farms]. [Link]</code></p>
+  <p><strong>Example:</strong> "Unincentivized stablecoin lending is paying 3&ndash;4%. This week's Farming Alpha found 3 positions paying 10&ndash;15% with risk ratings for each: [link]"</p>
+</div>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Thursday morning UTC+8 &mdash; Single Farm Deep-Dive</span>
+  <p>One farm, explained in 2&ndash;3 lines. Name the protocol, the chain, the yield source breakdown. @tag the protocol. End with a risk hint that makes the reader click.</p>
+  <p><strong>Format:</strong> <code>@Protocol is paying X% APR on [asset] via [chain].
+
+Here's where the yield comes from:
+— A% from [source 1]
+— B% from [source 2]
+
+The risk? [One-line tease]: [link]</code></p>
+  <p><strong>Why this works:</strong> The yield breakdown adds credibility, but withholding the full risk assessment drives the click. This format also gets protocol retweets.</p>
+</div>
+
+<h3>Performance Targets</h3>
+<table>
+  <tr><th style="text-align:left;">Metric</th><th>Current Avg</th><th>Target</th></tr>
+  <tr><td class="left">Tweets per Farming Alpha</td><td>2</td><td>3</td></tr>
+  <tr><td class="left">Avg impressions (farm list tweet)</td><td>994</td><td>1,500+</td></tr>
+  <tr><td class="left">Avg clicks per tweet</td><td class="down">2.8</td><td>8+</td></tr>
+  <tr><td class="left">Avg engagement rate</td><td>2.08%</td><td>3.0%+</td></tr>
+</table>
+
+<h3>Tactical Rules</h3>
+<div class="action">
+  <ol style="margin:6px 0; padding-left:18px;">
+    <li><strong>Always @tag protocols.</strong> Tweets with @tags average 994 imps vs 754 without. The protocols retweet and their followers discover TID.</li>
+    <li><strong>Always include specific yield numbers.</strong> "15.74% via StakeDAO" beats "a high-yield farm." Every time.</li>
+    <li><strong>Name the chain.</strong> "on Ethereum" or "on Arbitrum" creates audience self-selection and boosts ER (Jul 31: 4.16% ER with "on Ethereum").</li>
+    <li><strong>Withhold one detail to drive clicks.</strong> Give the yield and protocol, but withhold the risk rating or the third farm. Current tweets give everything away.</li>
+    <li><strong>Never tweet vague farming commentary.</strong> "Most high-APR pools are token emissions" (0.81% ER) and "Not every farm is worth the risk" (0.68% ER) are the worst performers. The audience wants alpha, not wisdom.</li>
+  </ol>
+</div>
+
+<!-- ============================================================ -->
+<!-- ACTIONS -->
+<!-- ============================================================ -->
+
+<h2 id="actions">5. Action Items (Priority Order)</h2>
+
+<h3>Headlines (Highest Impact)</h3>
+<div class="action">
+  <strong>1. Stop repeating "Farming Alpha: Earn X% on Risk-Adjusted Stablecoin Farms."</strong> Used 7 times in 12 weeks. OR dropped from 20.5% to 19.78% as readers habituated. The Aug 13 issue proved that a different frame ("Base Rates Are Under 5%") recovers opens immediately. Rotate between at least 3 headline templates.
+</div>
+<div class="action">
+  <strong>2. Lead with context, not yield.</strong> "Lending pays 3%" is more compelling than "Earn 10%+" because it sets up <em>why</em> the yield is noteworthy. The Farming Benchmarks section already provides this context &mdash; use it in the headline.
+</div>
+<div class="action">
+  <strong>3. Drop niche protocol names from headlines.</strong> "Loopscale" and "Balancer" in the headline cost ~2pp of OR vs the average. Use asset type (stablecoins, ETH) or chain name instead. Save protocol names for the farm cards inside.
+</div>
+<div class="action">
+  <strong>4. Cut headlines to under 55 characters.</strong> Drop the "Farming Alpha:" prefix (16 chars) and the "- Farming Alpha" suffix (17 chars). One hook only. The reader knows which letter this is.
+</div>
+
+<h3>Content</h3>
+<div class="action">
+  <strong>5. Standardize section order: Benchmarks &rarr; Farm Cards &rarr; News.</strong> Aug 20 and Aug 13 use different orders. The Benchmarks section sets context for the farms &mdash; it should always come first. News is optional and should come after the core product.
+</div>
+<div class="action">
+  <strong>6. Cap at ~1,200 words.</strong> The best-performing issue (Aug 13, 20.51% OR) was 1,032 words. The worst (Aug 20, 18.18% OR) was 2,206 words. The extra 1,174 words were news headlines and farming news &mdash; content the LWID already covers. Keep the letter focused on the 3 farm cards.
+</div>
+<div class="action">
+  <strong>7. Decouple the premium section from the main letter.</strong> Appending an unrelated leveraged-loop guide to a farm-card letter creates the same Guide/LWID bundling problem. Premium content should be a farming-specific deep-dive (advanced strategy for one of the featured farms), not a standalone tutorial.
+</div>
+<div class="action">
+  <strong>8. Add week-over-week yield tracking.</strong> Show whether each farm's APR went up or down from the prior issue. A simple arrow or prior-week comparison adds recurring value and gives readers a reason to open every week.
+</div>
+<div class="action">
+  <strong>9. Cross-link to the Outlook and Guides.</strong> When a farm card features a protocol covered in Tuesday's Outlook (Pendle, Aave), link to the analysis. When a farm involves a strategy explained in a Friday Guide, link to that Guide. The Farming Alpha should be the "what to do" layer; other letters provide the "why."
+</div>
+
+<h3>Tweets</h3>
+<div class="action">
+  <strong>10. Increase to 3 tweets per issue.</strong> Currently averaging 2. Use the three-tweet framework: farm list + context hook + single farm deep-dive. Three distinct angles, three distinct audiences.
+</div>
+<div class="action">
+  <strong>11. Withhold one detail per tweet to drive clicks.</strong> Current farming tweets give away all the info (protocol, yield, chain) upfront &mdash; resulting in just 2.8 avg clicks despite 862 avg impressions. Withhold the risk rating or the third farm to create a click incentive.
+</div>
+<div class="action">
+  <strong>12. Always @tag protocols and name the chain.</strong> Tweets with @tags average 994 impressions vs 754 without. Chain-specific framing ("on Ethereum") gets the highest engagement rate (4.16%). Both are free improvements.
+</div>
+
+<p class="meta">Generated Aug 21, 2026 &middot; Data: 12 Farming Alpha issues (Jun 4 &ndash; Aug 20, 2026), 11 farming-related tweets (Jul&ndash;Aug 2026), 2026 full-year Farming OR average (33 issues). Sources: Substack dashboard, Twitter analytics export.</p>
+
+</body>
+</html>

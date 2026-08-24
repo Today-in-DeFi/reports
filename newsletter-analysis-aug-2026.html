@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Newsletter &amp; Tweet Analysis — Aug 2026</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; max-width: 780px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; line-height: 1.55; }
+  h1 { font-size: 22px; border-bottom: 2px solid #1da1f2; padding-bottom: 8px; }
+  h2 { font-size: 17px; margin-top: 36px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 4px; }
+  h3 { font-size: 14px; margin-top: 24px; color: #555; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+  th, td { border: 1px solid #ddd; padding: 7px 10px; text-align: left; }
+  th { background: #f5f8fa; font-weight: 600; }
+  td:not(:first-child) { text-align: right; }
+  td.left { text-align: left; }
+  .down { color: #e0245e; }
+  .up { color: #17bf63; }
+  .highlight { background: #fffde7; }
+  .takeaway { background: #f5f8fa; border-left: 3px solid #1da1f2; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .alert { background: #fef3f2; border-left: 3px solid #e0245e; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .action { background: #f0faf0; border-left: 3px solid #17bf63; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .meta { color: #888; font-size: 12px; margin-top: 40px; border-top: 1px solid #eee; padding-top: 10px; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+  .kpi { background: #f5f8fa; border-radius: 6px; padding: 12px; text-align: center; }
+  .kpi-value { font-size: 22px; font-weight: 700; color: #1da1f2; }
+  .kpi-label { font-size: 11px; color: #666; margin-top: 2px; }
+  .kpi-change { font-size: 11px; margin-top: 2px; }
+  .section-nav { background: #f5f8fa; border-radius: 6px; padding: 14px 18px; margin: 16px 0; font-size: 13px; }
+  .section-nav a { color: #1da1f2; text-decoration: none; margin-right: 16px; }
+  .section-nav a:hover { text-decoration: underline; }
+  .tag { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 3px; font-weight: 600; }
+  .tag-red { background: #fef3f2; color: #e0245e; }
+  .tag-green { background: #f0faf0; color: #17bf63; }
+  .tag-blue { background: #e8f4fd; color: #1da1f2; }
+  .tag-yellow { background: #fffde7; color: #b38600; }
+  blockquote { border-left: 3px solid #ccc; margin: 12px 0; padding: 8px 14px; background: #fafafa; font-size: 13px; }
+  .tweet-draft { background: #f5f8fa; border: 1px solid #ddd; border-radius: 8px; padding: 14px; margin: 10px 0; font-size: 13px; }
+  .tweet-draft .handle { color: #1da1f2; font-weight: 600; font-size: 12px; }
+  .tweet-draft .time { color: #888; font-size: 11px; float: right; }
+</style>
+</head>
+<body>
+
+<h1>Newsletter &amp; Tweet Analysis</h1>
+<p style="color:#666; font-size:14px;">Today in DeFi &mdash; August 2026 &middot; LWID Weekly Recap + Protocol Guide</p>
+
+<div class="section-nav">
+  <strong>Jump to:</strong>
+  <a href="#lwid-headlines">LWID Headlines</a>
+  <a href="#lwid-content">LWID Content</a>
+  <a href="#lwid-tweets">LWID Tweets</a>
+  <a href="#guide-headlines">Guide Headlines</a>
+  <a href="#guide-content">Guide Content</a>
+  <a href="#guide-tweets">Guide Tweets</a>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART 1: LWID WEEKLY RECAP -->
+<!-- ============================================================ -->
+
+<h2 id="lwid-headlines">1. LWID Headlines &mdash; Last 4 Weeks</h2>
+
+<table>
+  <tr><th>Date</th><th>Headline</th><th>Chars</th><th>OR</th><th>vs Avg</th></tr>
+  <tr class="highlight"><td>Aug 10</td><td class="left">Circle's Arc Goes Live Sept 16, Ether.fi Splits weETH - Weekly Recap</td><td>70</td><td class="down">19.30%</td><td class="down">-1.63pp</td></tr>
+  <tr><td>Aug 3</td><td class="left">ColdCard Hacked For &gt;$89M, Uniswap Activated Fee Switch - Weekly Recap</td><td>72</td><td class="down">19.62%</td><td class="down">-1.31pp</td></tr>
+  <tr><td>Jul 20</td><td class="left">Ostium Exploited For $24M, Aave V4 Live on Avalanche With Incentives - Weekly Recap</td><td>84</td><td>20.61%</td><td>-0.32pp</td></tr>
+  <tr><td>Jul 13</td><td class="left">Jito Launching JTX Perps, Maple Proposing Buybacks - Weekly Recap</td><td>63</td><td>20.60%</td><td>-0.33pp</td></tr>
+</table>
+<p style="font-size:12px; color:#888;">2026 LWID average OR: 20.93%. All-letter Jul/Aug average: 19.83%.</p>
+
+<div class="alert">
+  <strong>Trend: Clear decline.</strong> From 20.6% in mid-July to 19.3% in August. All 4 are below the 2026 LWID average. Every headline uses the identical <code>[Thing A], [Thing B] - Weekly Recap</code> formula.
+</div>
+
+<h3>Problems</h3>
+<table>
+  <tr><th style="text-align:left;">Issue</th><th style="text-align:left;">Evidence</th></tr>
+  <tr><td class="left"><strong>"- Weekly Recap" suffix</strong></td><td class="left">14 wasted chars on every headline. Reader already knows it's a recap.</td></tr>
+  <tr><td class="left"><strong>All 4 are over 63 chars</strong></td><td class="left">Email clients truncate at ~55. Second hook is invisible in inbox.</td></tr>
+  <tr><td class="left"><strong>Announcement-first underperforms</strong></td><td class="left">Threat-first (Jul 20, Aug 3) outperform announcement-first (Jul 13, Aug 10) by ~1pp.</td></tr>
+  <tr><td class="left"><strong>No question/intrigue format</strong></td><td class="left">Best-ever newsletter headline was a question at 21.23% &mdash; never tried on LWID.</td></tr>
+</table>
+
+<h3>What Readers Actually See (truncated at ~55 chars)</h3>
+<table>
+  <tr><th>Date</th><th style="text-align:left;">Visible in Inbox</th><th style="text-align:left;">Hidden</th></tr>
+  <tr><td>Aug 10</td><td class="left">Circle's Arc Goes Live Sept 16, Ether.fi Spl...</td><td class="left">its weETH - Weekly Recap</td></tr>
+  <tr><td>Aug 3</td><td class="left">ColdCard Hacked For &gt;$89M, Uniswap Activated...</td><td class="left">Fee Switch - Weekly Recap</td></tr>
+  <tr><td>Jul 20</td><td class="left">Ostium Exploited For $24M, Aave V4 Live on Av...</td><td class="left">alanche With Incentives - Weekly Recap</td></tr>
+  <tr><td>Jul 13</td><td class="left">Jito Launching JTX Perps, Maple Proposing Buy...</td><td class="left">backs - Weekly Recap</td></tr>
+</table>
+
+<h3>Suggested Rewrites</h3>
+<table>
+  <tr><th>Original (OR)</th><th style="text-align:left;">Rewrite</th><th>Chars</th></tr>
+  <tr><td class="down">Aug 10 (19.30%)</td><td class="left">$114M ColdCard Breach Widens &mdash; Circle Onboards BlackRock</td><td>57</td></tr>
+  <tr><td class="down">Aug 3 (19.62%)</td><td class="left">$89M Drained From ColdCard Wallets, Uniswap Turns On Fee Switch</td><td>63</td></tr>
+  <tr><td>Jul 20 (20.61%)</td><td class="left">Ostium Drained for $24M &mdash; 5 More Exploits This Week</td><td>50</td></tr>
+  <tr><td>Jul 13 (20.60%)</td><td class="left">Jito Launches JTX With 80% Revenue to Buybacks</td><td>47</td></tr>
+</table>
+
+<!-- LWID Content -->
+<h2 id="lwid-content">2. LWID Content Audit</h2>
+
+<h3>Structure Comparison</h3>
+<table>
+  <tr><th style="text-align:left;">Element</th><th>Jul 13</th><th>Jul 20</th><th>Aug 3</th><th>Aug 10</th></tr>
+  <tr><td class="left">Week in One Paragraph</td><td class="down">No</td><td class="down">No</td><td class="up">Yes</td><td class="up">Yes</td></tr>
+  <tr><td class="left">Items ranked by impact</td><td class="down">No</td><td class="down">No</td><td>Partial</td><td>Partial</td></tr>
+  <tr><td class="left">Action tags (&#9889;)</td><td class="down">0</td><td class="down">0</td><td class="down">0</td><td class="down">0</td></tr>
+  <tr><td class="left">Cross-links to other letters</td><td class="down">0</td><td class="down">0</td><td class="down">0</td><td class="down">0</td></tr>
+  <tr><td class="left">Sections with &lt;3 items</td><td class="down">2</td><td class="down">3</td><td>1</td><td class="up">0</td></tr>
+  <tr><td class="left">Farming appendix (words)</td><td>800</td><td>1,200</td><td class="down">1,500</td><td>1,000</td></tr>
+  <tr><td class="left">Total word count</td><td>1,526</td><td>2,236</td><td>2,508</td><td>1,937</td></tr>
+</table>
+
+<div class="takeaway">
+  <strong>What's Working:</strong>
+  <ul style="margin:6px 0;">
+    <li>"Week in One Paragraph" appeared Aug 3 and stuck. Aug 3 version is the gold standard &mdash; names theme, hits 4 items, ends with user warning.</li>
+    <li>Each item has a context sentence explaining <em>why it matters</em>, not just "X launched Y."</li>
+    <li>Issues sections include dollar amounts, affected protocols, and status updates.</li>
+    <li>Sponsor (DeFi Saver) placed after first batch of real content &mdash; correct.</li>
+  </ul>
+</div>
+
+<div class="alert">
+  <strong>What Needs Improvement:</strong>
+  <ul style="margin:6px 0;">
+    <li><strong>Zero action tags in 4 weeks.</strong> Every letter had 1-3 items needing user action (claims, withdrawals, updates) &mdash; none tagged.</li>
+    <li><strong>Items not ranked by impact.</strong> Jul 13: $20M BonkDAO drain buried 12 items deep. Jul 20: $24M Ostium exploit (in the headline!) isn't the first Issues item.</li>
+    <li><strong>No cross-links.</strong> Jul 13 mentions Rysk &mdash; the Jul 24 Guide covers Rysk covered calls. Zero reference.</li>
+    <li><strong>Farming appendix is thematically disconnected and growing.</strong> Every letter appends a 800-1,500 word farming guide unrelated to the recap.</li>
+    <li><strong>"Week in One Paragraph" missing from Jul 13 &amp; Jul 20.</strong> Both jump straight into bullets.</li>
+  </ul>
+</div>
+
+<h3>Missed Action Tags (examples from last 4 weeks)</h3>
+<table>
+  <tr><th style="text-align:left;">Letter</th><th style="text-align:left;">Item</th><th style="text-align:left;">Needed Tag</th></tr>
+  <tr><td class="left">Jul 13</td><td class="left">Velocity opened Insurance Fund claims</td><td class="left">&#9889; Claim at dfx.drift.trade</td></tr>
+  <tr><td class="left">Jul 20</td><td class="left">Summer.fi app stays live until August 31</td><td class="left">&#9889; Withdraw before Aug 31</td></tr>
+  <tr><td class="left">Aug 3</td><td class="left">Ebisu frontend closes October 30</td><td class="left">&#9889; Close Troves now</td></tr>
+  <tr><td class="left">Aug 10</td><td class="left">BTCPay zero-day actively exploited</td><td class="left">&#9889; Update to v2.4.2</td></tr>
+</table>
+
+<!-- LWID Tweets -->
+<h2 id="lwid-tweets">3. LWID Tweet Performance</h2>
+
+<h3>Last 4 Weeks &mdash; Tweet-by-Tweet</h3>
+<table>
+  <tr><th>Week</th><th style="text-align:left;">Timing</th><th style="text-align:left;">Style</th><th>Imps</th><th>Clicks</th><th>ER</th></tr>
+  <tr><td>Jul 13</td><td class="left">Sun evening</td><td class="left">Teaser (Maple buybacks)</td><td>846</td><td class="up">4</td><td>1.30%</td></tr>
+  <tr class="highlight"><td>Jul 13</td><td class="left">Mon morning</td><td class="left">Bullet dump (no @tags)</td><td>945</td><td class="down">0</td><td class="down">0.63%</td></tr>
+  <tr><td>Jul 20</td><td class="left">Sun evening</td><td class="left">Teaser (Ostium $24M)</td><td class="down">486</td><td class="down">0</td><td>1.03%</td></tr>
+  <tr><td>Jul 20</td><td class="left">Mon morning</td><td class="left">Bullet dump (no @tags)</td><td>1,293</td><td class="down">1</td><td>1.62%</td></tr>
+  <tr><td>Aug 3</td><td class="left">Mon morning</td><td class="left">Bullet dump (with @tags)</td><td>1,059</td><td class="down">0</td><td>2.46%</td></tr>
+  <tr><td>Aug 10</td><td class="left">Sun evening</td><td class="left">Teaser (weETH split)</td><td class="down">538</td><td class="down">0</td><td>1.12%</td></tr>
+  <tr><td>Aug 10</td><td class="left">Sun evening</td><td class="left">Teaser (Circle Arc)</td><td>866</td><td>2</td><td>1.15%</td></tr>
+  <tr class="highlight"><td>Aug 10</td><td class="left">Mon morning</td><td class="left">Bullet dump (with @tags)</td><td class="up">2,496</td><td class="down">0</td><td>1.52%</td></tr>
+</table>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value">1,066</div><div class="kpi-label">Avg Impressions</div></div>
+  <div class="kpi"><div class="kpi-value down">0.9</div><div class="kpi-label">Avg Clicks/Tweet</div></div>
+  <div class="kpi"><div class="kpi-value">1.35%</div><div class="kpi-label">Avg Eng. Rate</div></div>
+  <div class="kpi"><div class="kpi-value down">1.25</div><div class="kpi-label">Total Clicks/Week</div></div>
+</div>
+
+<div class="alert">
+  <strong>Bullet dumps get zero clicks.</strong> Across 4 weeks, the "What happened / Last week in DeFi" bullet format generated <strong>1 total click on 4 tweets</strong> (4,292 combined impressions). Readers see the TOC and feel satisfied &mdash; no reason to click.
+</div>
+
+<h3>The One Tweet That Broke Out</h3>
+<div class="takeaway">
+  <strong>Jun 1: 9,481 impressions, 18 clicks, 3 new follows</strong><br>
+  <em>"Last week's Issues&#9888;&#65039;: @0xfluid loses funds via compromised key &mdash; @gravity_bridge $5.4M exploit &mdash; @alephium $815K..."</em><br><br>
+  That's <strong>10x the average LWID tweet</strong>. Formula: <strong>@tags + exploit alerts + withheld details</strong>. Used exactly once.
+</div>
+
+<h3>Key Findings</h3>
+<table>
+  <tr><th style="text-align:left;">Finding</th><th style="text-align:left;">Evidence</th></tr>
+  <tr><td class="left"><strong>Evening tweets are consistently weaker</strong></td><td class="left">Sun evening avg: 684 imps. Mon morning avg: 1,448 imps. Morning gets 1.5&ndash;3x reach. (Sun evening Taiwan = Sun morning US = dead)</td></tr>
+  <tr><td class="left"><strong>@tags = 2x reach</strong></td><td class="left">With @tags: avg 1,778 imps. Without @tags: avg 908 imps.</td></tr>
+  <tr><td class="left"><strong>Teasers convert, dumps don't</strong></td><td class="left">Teaser avg: 1.2 clicks. Bullet dump avg: 0.25 clicks. But teasers are currently too vague for reach.</td></tr>
+  <tr><td class="left"><strong>"What happened last week" is dead</strong></td><td class="left">8 uses, avg 1,054 imps, avg 0.25 clicks. Kill permanently.</td></tr>
+</table>
+
+<h3>Recommended 3-Tweet Strategy</h3>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Sunday evening (UTC+8) &mdash; Hook Tweet</span>
+  <p>Single biggest story, incomplete. Lead with threat + dollar amount. Withhold the detail that drives clicks.</p>
+  <p><strong>Format:</strong> <code>[Scary/surprising number]. [One-line context]. Details in today's recap: [link]</code></p>
+</div>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Monday morning (UTC+8) &mdash; Issues Tweet</span>
+  <p>List 3 exploits/depegs/shutdowns, @tag every protocol. This is the <strong>growth tweet</strong> &mdash; the only format that's broken 5K impressions.</p>
+  <p><strong>Format:</strong> <code>This week's Issues &#9888;&#65039;: &bull; @protocol [$amount] &bull; @protocol [what] &bull; @protocol [what] Full details: [link]</code></p>
+</div>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Monday morning (UTC+8) &mdash; Launches Tweet</span>
+  <p>List 3&ndash;4 biggest launches, @tag each. Different audience from the Issues tweet.</p>
+  <p><strong>Format:</strong> <code>DeFi launches this week &#128200;: &bull; @protocol [what] &bull; @protocol [what] Full recap: [link]</code></p>
+</div>
+
+<h3>Performance Targets</h3>
+<table>
+  <tr><th style="text-align:left;">Metric</th><th>Current Avg</th><th>Target</th></tr>
+  <tr><td class="left">Evening teaser impressions</td><td class="down">684</td><td>1,500+</td></tr>
+  <tr><td class="left">Morning tweet impressions</td><td>1,448</td><td>3,000+</td></tr>
+  <tr><td class="left">Total clicks per recap</td><td class="down">1.25</td><td>10+</td></tr>
+  <tr><td class="left">New follows per recap</td><td class="down">0.25</td><td>2+</td></tr>
+</table>
+
+<!-- ============================================================ -->
+<!-- PART 2: PROTOCOL GUIDE -->
+<!-- ============================================================ -->
+
+<h2 id="guide-headlines">4. Guide Headlines &mdash; Jun-Aug 2026</h2>
+
+<table>
+  <tr><th>Date</th><th style="text-align:left;">Headline</th><th>Chars</th><th>OR</th><th>Words</th></tr>
+  <tr class="highlight"><td>Aug 14</td><td class="left">Ethereum Glamsterdam is Coming: Mainnet Fees Could Drop 3x</td><td>59</td><td class="down">18.98%</td><td>2,843</td></tr>
+  <tr class="highlight"><td>Aug 7</td><td class="left">After $116M Vanished From 'Secure' Wallets: The Actual Checklist for Safe Self-Custody</td><td>87</td><td class="down">17.95%</td><td>6,608</td></tr>
+  <tr><td>Jul 31</td><td class="left">DeFi Fixed Rate Loans: Lock in 2-3% Borrow on Mopho Midnight, Tenor, &amp; TermMax</td><td>80</td><td class="down">19.28%</td><td>2,325</td></tr>
+  <tr><td>Jul 24</td><td class="left">Earn Yield on Limit Orders: Crypto Covered Calls &amp; Cash-Secured Puts</td><td>68</td><td>19.79%</td><td>4,567</td></tr>
+  <tr><td>Jul 10</td><td class="left">Intro to Panoptic: Earn Yield From Volatility</td><td>47</td><td>20.16%</td><td>2,497</td></tr>
+  <tr><td>Jul 3</td><td class="left">After HyperLiquid and Lighter: The Top Perps Dexes in 2026</td><td>56</td><td>19.81%</td><td>2,393</td></tr>
+  <tr><td>Jun 26</td><td class="left">Opportunity Onchain? DeFi Tokens the Market May Have Mispriced</td><td>58</td><td class="up">21.23%</td><td>3,186</td></tr>
+  <tr><td>Jun 12</td><td class="left">Amplifying Stablecoin LP APY with Leverage: Tangent and LlamaLend v2</td><td>68</td><td class="up">20.97%</td><td>2,669</td></tr>
+  <tr><td>Jun 5</td><td class="left">Guide to Low-Risk Yield-Bearing Stablecoins</td><td>44</td><td class="up">20.86%</td><td>1,360</td></tr>
+</table>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value">19.89%</div><div class="kpi-label">Guide Avg OR</div></div>
+  <div class="kpi"><div class="kpi-value down">3.3pp</div><div class="kpi-label">Jun-to-Aug Decline</div></div>
+  <div class="kpi"><div class="kpi-value down">73</div><div class="kpi-label">Avg Headline Chars</div></div>
+  <div class="kpi"><div class="kpi-value">55</div><div class="kpi-label">Target Chars</div></div>
+</div>
+
+<div class="alert">
+  <strong>Guides dropped from 21.23% OR (Jun 26) to 17.95% (Aug 7) &mdash; a 3.3pp decline in 6 weeks.</strong> The two most recent Guides are the two worst performers.
+</div>
+
+<h3>What drives opens</h3>
+<table>
+  <tr><th style="text-align:left;">Pattern</th><th>Avg OR</th><th style="text-align:left;">Examples</th></tr>
+  <tr><td class="left">Question + intrigue</td><td class="up">21.23%</td><td class="left">"Opportunity Onchain? DeFi Tokens the Market May Have Mispriced"</td></tr>
+  <tr><td class="left">Outcome-first (&lt;58 chars)</td><td class="up">20.92%</td><td class="left">"Amplifying Stablecoin LP APY with Leverage"</td></tr>
+  <tr><td class="left">"Guide to" / "Intro to"</td><td>20.51%</td><td class="left">"Guide to Low-Risk...", "Intro to Panoptic"</td></tr>
+  <tr><td class="left">Long (&gt;68 chars) + niche protocols</td><td class="down">18.75%</td><td class="left">"DeFi Fixed Rate Loans: Lock in 2-3% Borrow on Mopho Midnight, Tenor, &amp; TermMax"</td></tr>
+</table>
+
+<h3>Suggested Rewrites</h3>
+<table>
+  <tr><th style="text-align:left;">Original (OR)</th><th style="text-align:left;">Rewrite</th><th>Chars</th></tr>
+  <tr><td class="left down">After $116M Vanished... (17.95%)</td><td class="left">$116M Drained From "Secure" Wallets &mdash; Is Yours Next?</td><td>53</td></tr>
+  <tr><td class="left down">Ethereum Glamsterdam... (18.98%)</td><td class="left">Ethereum Fees Could Drop 3x &mdash; What Changes for LPs</td><td>51</td></tr>
+  <tr><td class="left down">DeFi Fixed Rate Loans... (19.28%)</td><td class="left">Lock Your DeFi Borrow at 2-3% &mdash; Fixed-Rate Loans Are Here</td><td>58</td></tr>
+  <tr><td class="left">Earn Yield on Limit Orders... (19.79%)</td><td class="left">Get Paid While You Wait to Buy the Dip</td><td>39</td></tr>
+</table>
+
+<p style="font-size:12px; color:#888;"><strong>Note:</strong> Jul 31 headline has a typo &mdash; "Mopho" instead of "Morpho" &mdash; sent to ~4,700 subscribers.</p>
+
+<!-- Guide Content -->
+<h2 id="guide-content">5. Guide Content Audit</h2>
+
+<h3>Structure Comparison (4 most recent)</h3>
+<table>
+  <tr><th style="text-align:left;">Element</th><th>Jul 24 (Options)</th><th>Jul 31 (Fixed Rate)</th><th>Aug 7 (Self-Custody)</th><th>Aug 14 (Glamsterdam)</th></tr>
+  <tr><td class="left">TL;DR box</td><td class="down">No</td><td class="up">Yes</td><td class="up">Yes</td><td class="up">Yes</td></tr>
+  <tr><td class="left">News headlines block at top</td><td>Yes (7)</td><td>Yes (7)</td><td>Yes (2)</td><td>Yes (7)</td></tr>
+  <tr><td class="left">"Who is this for"</td><td class="down">No</td><td class="up">Yes</td><td class="up">Yes</td><td>Implicit</td></tr>
+  <tr><td class="left">"What to do right now" action box</td><td class="down">No</td><td class="down">No</td><td class="down">No</td><td class="down">No</td></tr>
+  <tr><td class="left">Premium CTA</td><td>Mid-letter</td><td>End</td><td class="down">None</td><td>Mid-letter</td></tr>
+  <tr><td class="left">Word count</td><td class="down">4,567</td><td>2,325</td><td class="down">6,608</td><td>2,843</td></tr>
+</table>
+
+<div class="takeaway">
+  <strong>What's Working:</strong>
+  <ul style="margin:6px 0;">
+    <li><strong>TL;DR boxes now standard</strong> (3 of 4 recent). Aug 7's is excellent: threat summary + "affected?" checklist + "do this now."</li>
+    <li><strong>Content quality is exceptional.</strong> Fixed Rate Loans guide compares 3 protocols with honest risk analysis. Options guide is one of the best DeFi explainers published.</li>
+    <li><strong>Unflinching risk sections.</strong> Glamsterdam: "validators may not vote capacity up." This is a major differentiator.</li>
+    <li><strong>Sponsor placed correctly</strong> &mdash; after TL;DR, before deep content.</li>
+  </ul>
+</div>
+
+<div class="alert">
+  <strong>What Needs Improvement:</strong>
+  <ul style="margin:6px 0;">
+    <li><strong>No "What to Do Right Now" action box at the end.</strong> Every Guide ends on a disclaimer or premium section. Reader finishes 3,000&ndash;6,600 words and gets&hellip; a disclaimer. Flagged months ago; still not implemented.</li>
+    <li><strong>Word count is ballooning.</strong> Jun avg: 2,400. Jul avg: 3,152. Aug avg: <strong>4,726</strong>. Aug 7 is 6,608 words &mdash; a research paper.</li>
+    <li><strong>Same Stake DAO farming section appended to 3 consecutive Guides.</strong> Thematically disconnected (Options guide &rarr; "LP ETH for 5% APR on Stake DAO") and being auto-appended rather than curated.</li>
+    <li><strong>News headlines block at top is noise</strong> in a Guide. Delays the payoff.</li>
+    <li><strong>Inconsistent TL;DR formatting.</strong> Aug 7: "TL;DR" (correct). Jul 31: "TL:DR:" (wrong punctuation). Jul 24: no TL;DR at all.</li>
+  </ul>
+</div>
+
+<h3>Word Count Trend</h3>
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value">2,405</div><div class="kpi-label">Jun Avg</div><div class="kpi-change up">Ideal range</div></div>
+  <div class="kpi"><div class="kpi-value">3,152</div><div class="kpi-label">Jul Avg</div><div class="kpi-change">Growing</div></div>
+  <div class="kpi"><div class="kpi-value down">4,726</div><div class="kpi-label">Aug Avg</div><div class="kpi-change down">Too long</div></div>
+  <div class="kpi"><div class="kpi-value">2,500</div><div class="kpi-label">Target</div><div class="kpi-change">Max 3,000</div></div>
+</div>
+
+<!-- Guide Tweets -->
+<h2 id="guide-tweets">6. Guide Tweet Performance</h2>
+
+<h3>Recent Guide Promo Tweets</h3>
+<table>
+  <tr><th style="text-align:left;">Tweet (truncated)</th><th>Imps</th><th>Clicks</th><th>ER</th></tr>
+  <tr class="highlight"><td class="left">"Get paid for prices you'd already accept&hellip;" (outcome hook, no jargon)</td><td class="up">2,844</td><td>8</td><td>1.65%</td></tr>
+  <tr class="highlight"><td class="left">"$116M drained from hardware wallets where users did everything right&hellip;" (threat + irony)</td><td class="up">2,590</td><td class="up">20</td><td>1.89%</td></tr>
+  <tr><td class="left">"Nado is running a $100K weekly cash pool&hellip;" (specific $ opportunity)</td><td class="up">2,219</td><td>10</td><td>1.40%</td></tr>
+  <tr><td class="left">"Ethereum mainnet has been losing liquidity to L2s&hellip;" (background lead)</td><td class="down">711</td><td>5</td><td>2.53%</td></tr>
+  <tr><td class="left">"Earn yield on orders you'd place anyway&hellip;" (vague benefit)</td><td class="down">719</td><td class="down">0</td><td class="down">0.42%</td></tr>
+  <tr><td class="left">"Your borrowing cost shouldn't change mid-trade&hellip;" (abstract)</td><td class="down">750</td><td>2</td><td>1.47%</td></tr>
+</table>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value">~1,050</div><div class="kpi-label">Avg Impressions</div></div>
+  <div class="kpi"><div class="kpi-value down">4</div><div class="kpi-label">Avg URL Clicks</div></div>
+  <div class="kpi"><div class="kpi-value">1.5%</div><div class="kpi-label">Avg Eng. Rate</div></div>
+  <div class="kpi"><div class="kpi-value">2,500+</div><div class="kpi-label">Target Imps</div></div>
+</div>
+
+<div class="takeaway">
+  <strong>Key pattern:</strong> Tweets with specific dollar amounts or % yields in the first line get 2&ndash;3x the impressions. Tweets that open with context/background ("Ethereum has been&hellip;", "As lending yields compress&hellip;") die under 1,000.
+</div>
+
+<h3>Guide Tweet Drafts &mdash; "Smart Money Is Moving to Solana" (Aug 22)</h3>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Fri Aug 22, ~6-8pm UTC+8 &mdash; Hook Tweet</span>
+  <p>Solana stablecoin yields are quietly beating Ethereum's.</p>
+  <p>5&ndash;13% on dollar assets. Variable and fixed-rate borrowing. All on one chain with a 1:1 USDC bridge.</p>
+  <p>Here's the full map of what's earning and how to get in:<br>[link]</p>
+  <p style="font-size:11px; color:#888;">228 chars. Leads with comparison/tension. Specific range. Drives click.</p>
+</div>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Fri Aug 22, ~6-8pm UTC+8 &mdash; Protocol Tags</span>
+  <p>New guide &mdash; yield-bearing dollars on Solana:</p>
+  <p>@LoopscaleLabs vault: ~10.5% on USDC<br>
+  @KaminoFinance Multiply: loop reUSD, syrupUSDC, PRIME for 13%+<br>
+  @ExponentFi PT loop: ~30% fixed</p>
+  <p>Full breakdown + risks:<br>[link]</p>
+  <p style="font-size:11px; color:#888;">236 chars. Tags 3 protocols for reach. Specific numbers.</p>
+</div>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Mon Aug 25, ~8-9am UTC+8 &mdash; Why Now</span>
+  <p>Solana stablecoin supply: $15.4B, up from $12B a year ago.</p>
+  <p>That liquidity is why borrow rates stay calmer than Ethereum's &mdash; and why 5-13% stablecoin farms actually work here right now.</p>
+  <p>The full opportunity map:<br>[link]</p>
+  <p style="font-size:11px; color:#888;">234 chars. Data-first hook. Different angle from Friday &mdash; macro "why" instead of "what."</p>
+</div>
+
+<div class="tweet-draft">
+  <span class="handle">@safetyth1rd</span> <span class="time">Mon Aug 25, ~8-9am UTC+8 &mdash; Founder Take</span>
+  <p>I moved most of my stablecoin farming to Solana last month. Not ideology &mdash; just math.</p>
+  <p>Borrow rates don't spike like Aave's 14% cap did during the rsETH blowup. The yield-bearing dollars (reUSD, syrupUSDC, PRIME) are real collateral, not ponzi loops.</p>
+  <p>Wrote up exactly what I'm in:<br>[link]</p>
+  <p style="font-size:11px; color:#888;">276 chars. Personal frame, specific comparison, no hedging. Follows validated founder-account pattern.</p>
+</div>
+
+<!-- ============================================================ -->
+<!-- COMBINED ACTION ITEMS -->
+<!-- ============================================================ -->
+
+<h2>7. Combined Action Items (Priority Order)</h2>
+
+<h3>Headlines (biggest OR lever)</h3>
+<div class="action">
+  <strong>1. Kill "- Weekly Recap" and all series suffixes. Target &lt;55 chars.</strong> Lead with threats/$ amounts. The data: threat-first headlines outperform announcement-first by ~1pp. Every char over 55 is invisible in most inboxes.
+</div>
+<div class="action">
+  <strong>2. Try question/intrigue format on LWID.</strong> Best-ever newsletter headline was a question at 21.23%. Never tried on the recap.
+</div>
+<div class="action">
+  <strong>3. Kill "Guide to" / "Intro to" on Friday headlines.</strong> Replace with outcome. "Intro to Panoptic" &rarr; "Earn Yield From Volatility Without Picking a Direction."
+</div>
+
+<h3>Content (reader retention)</h3>
+<div class="action">
+  <strong>4. Standardize "Week in One Paragraph" on every LWID.</strong> Aug 3 template: theme + 3&ndash;4 highlights + warning. Proven; ship permanently.
+</div>
+<div class="action">
+  <strong>5. Add &#9889; Action tags on deadlines.</strong> Every letter has 1&ndash;3 urgent items. Tag them. Easiest improvement; zero times implemented.
+</div>
+<div class="action">
+  <strong>6. Add "What to Do Right Now" action box at end of every Guide.</strong> 3 bullets max. Flagged months ago; never shipped.
+</div>
+<div class="action">
+  <strong>7. Cap Guide body at 2,500 words.</strong> Stop auto-appending the same farming section. Either unique per issue or separate send.
+</div>
+
+<h3>Tweets (click-through &amp; reach)</h3>
+<div class="action">
+  <strong>8. Kill "What happened last week in DeFi?" permanently.</strong> 8 uses, avg 1,054 imps, avg 0.25 clicks.
+</div>
+<div class="action">
+  <strong>9. Switch to 3-tweet strategy:</strong> Evening hook (teaser) + Morning issues (@tags) + Morning launches (@tags). The Jun 1 exploit tweet proves 9,500 impressions is reachable.
+</div>
+<div class="action">
+  <strong>10. Always @tag protocols.</strong> With tags: avg 1,778 imps. Without: avg 908 imps. Never use raw contract addresses.
+</div>
+
+<p class="meta">Generated Aug 21, 2026 &middot; Data: substack_export.db, twitter_analytics.db &middot; Analysis covers Jul 13 &ndash; Aug 14 for LWID, Jun 5 &ndash; Aug 14 for Guides.</p>
+
+</body>
+</html>

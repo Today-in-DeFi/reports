@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Protocol Guide Deep Dive — Jun–Aug 2026</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; line-height: 1.5; }
+  h1 { font-size: 22px; border-bottom: 2px solid #ff6719; padding-bottom: 8px; }
+  h2 { font-size: 17px; margin-top: 32px; color: #333; }
+  h3 { font-size: 14px; margin-top: 20px; color: #555; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+  th, td { border: 1px solid #ddd; padding: 7px 10px; text-align: left; }
+  th { background: #f5f8fa; font-weight: 600; }
+  td:not(:first-child) { text-align: right; }
+  .down { color: #e0245e; }
+  .up { color: #17bf63; }
+  .highlight { background: #fffde7; }
+  .takeaway { background: #f5f8fa; border-left: 3px solid #ff6719; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+  .kpi { background: #f5f8fa; border-radius: 6px; padding: 12px; text-align: center; }
+  .kpi-value { font-size: 22px; font-weight: 700; color: #ff6719; }
+  .kpi-label { font-size: 11px; color: #666; margin-top: 2px; }
+  .kpi-change { font-size: 11px; margin-top: 2px; }
+  .alert { background: #fef3f2; border-left: 3px solid #e0245e; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .win { background: #f0fdf4; border-left: 3px solid #17bf63; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .meta { color: #888; font-size: 12px; margin-top: 40px; border-top: 1px solid #eee; padding-top: 10px; }
+  .tweet-card { background: #f5f8fa; border: 1px solid #e1e8ed; border-radius: 8px; padding: 12px 14px; margin: 8px 0; font-size: 12px; }
+  .tweet-card .tweet-text { color: #333; margin-bottom: 6px; line-height: 1.4; }
+  .tweet-card .tweet-stats { color: #888; font-size: 11px; }
+  .tweet-card .tweet-stats span { margin-right: 12px; }
+  .rewrite { font-style: italic; color: #555; }
+  .vs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0; }
+  .vs > div { padding: 10px; border-radius: 6px; font-size: 12px; }
+  .vs .bad { background: #fef3f2; border: 1px solid #fecaca; }
+  .vs .good { background: #f0fdf4; border: 1px solid #bbf7d0; }
+</style>
+</head>
+<body>
+
+<h1>Protocol Guide Letter &mdash; Deep Dive</h1>
+<p style="color:#666; font-size:14px;">11 issues analyzed &bull; Jun 5 &ndash; Aug 28, 2026 &bull; Headlines, content &amp; Twitter promotion</p>
+
+<!-- ===== KPI SUMMARY ===== -->
+<h2>Guide at a Glance (Jun&ndash;Aug 2026)</h2>
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value">20.0%</div><div class="kpi-label">Avg Open Rate</div><div class="kpi-change">3rd of 5 letters</div></div>
+  <div class="kpi"><div class="kpi-value">943</div><div class="kpi-label">Avg Unique Opens</div><div class="kpi-change">4th of 5 letters</div></div>
+  <div class="kpi"><div class="kpi-value">2.82pp</div><div class="kpi-label">OR Range</div><div class="kpi-change">18.4%&ndash;21.2%</div></div>
+  <div class="kpi"><div class="kpi-value">2,987</div><div class="kpi-label">Avg Word Count</div><div class="kpi-change">2nd longest letter</div></div>
+</div>
+
+<div class="takeaway">
+<strong>Guide is the most volatile letter.</strong> Its 2.82pp range is second only to Farming (3.09pp). LWID, by comparison, stays in a tight 1.08pp band. Headline framing swings the Guide &plusmn;1.4pp from the mean.
+</div>
+
+<!-- ===== VS OTHER LETTERS ===== -->
+<h2>Guide vs. Other Letters (Jun&ndash;Aug)</h2>
+<table>
+  <tr><th style="text-align:left;">Letter</th><th>Day</th><th>Issues</th><th>Avg OR</th><th>Avg Opens</th><th>OR Range</th><th>Avg Words</th></tr>
+  <tr class="highlight"><td style="text-align:left;">Airdrops</td><td>Wed</td><td>12</td><td class="up">20.7%</td><td>977</td><td>19.5&ndash;21.4%</td><td>1,443</td></tr>
+  <tr><td style="text-align:left;">LWID</td><td>Mon</td><td>10</td><td>20.6%</td><td>974</td><td>20.1&ndash;21.1%</td><td>2,228</td></tr>
+  <tr><td style="text-align:left;"><strong>Guide</strong></td><td>Fri</td><td>11</td><td>20.0%</td><td>943</td><td>18.4&ndash;21.2%</td><td>2,987</td></tr>
+  <tr><td style="text-align:left;">Farming</td><td>Thu</td><td>11</td><td>20.0%</td><td>941</td><td>18.5&ndash;21.6%</td><td>1,425</td></tr>
+  <tr><td style="text-align:left;">Outlook</td><td>Tue</td><td>13</td><td>19.7%</td><td>930</td><td>18.5&ndash;20.9%</td><td>3,444</td></tr>
+</table>
+
+<div class="takeaway">
+<strong>Guide sits in the middle of the pack on opens but has the widest upside potential.</strong> Its best issue (21.2%) beats every other letter&rsquo;s average. When the headline works, the Guide outperforms everything &mdash; when it doesn&rsquo;t, it hits the floor.
+</div>
+
+<!-- ===== ALL 11 ISSUES ===== -->
+<h2>All 11 Issues &mdash; Ranked by Open Rate</h2>
+<table>
+  <tr><th style="text-align:left;">Date</th><th style="text-align:left;">Title</th><th>OR</th><th>Opens</th><th>Words</th><th style="text-align:left;">Headline Style</th></tr>
+  <tr class="highlight">
+    <td style="text-align:left;">Jun 26</td>
+    <td style="text-align:left; font-size:12px;">Opportunity Onchain? DeFi Tokens the Market May Have Mispriced</td>
+    <td class="up">21.2%</td><td>1,002</td><td>3,186</td>
+    <td style="text-align:left; font-size:11px;">Curiosity + contrarian</td>
+  </tr>
+  <tr class="highlight">
+    <td style="text-align:left;">Jun 12</td>
+    <td style="text-align:left; font-size:12px;">Amplifying Stablecoin LP APY with Leverage: Tangent and LlamaLend v2</td>
+    <td class="up">21.0%</td><td>992</td><td>2,669</td>
+    <td style="text-align:left; font-size:11px;">Outcome + named protocols</td>
+  </tr>
+  <tr class="highlight">
+    <td style="text-align:left;">Jun 5</td>
+    <td style="text-align:left; font-size:12px;">Guide to Low-Risk Yield-Bearing Stablecoins</td>
+    <td class="up">20.9%</td><td>988</td><td>1,360</td>
+    <td style="text-align:left; font-size:11px;">Evergreen reference</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Aug 14</td>
+    <td style="text-align:left; font-size:12px;">Ethereum Glamsterdam is Coming: Mainnet Fees Could Drop 3x</td>
+    <td>20.7%</td><td>970</td><td>2,843</td>
+    <td style="text-align:left; font-size:11px;">News-hook + number</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Jul 10</td>
+    <td style="text-align:left; font-size:12px;">Intro to Panoptic: Earn Yield From Volatility</td>
+    <td>20.2%</td><td>952</td><td>2,497</td>
+    <td style="text-align:left; font-size:11px;">Protocol intro + outcome</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Aug 21</td>
+    <td style="text-align:left; font-size:12px;">Smart Money is Farming 10%+ Yields on Solana</td>
+    <td>20.0%</td><td>939</td><td>1,965</td>
+    <td style="text-align:left; font-size:11px;">Social proof + yield</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Jul 24</td>
+    <td style="text-align:left; font-size:12px;">Earn Yield on Limit Orders: Crypto Covered Calls &amp; Cash-Secured Puts</td>
+    <td>19.8%</td><td>935</td><td>4,567</td>
+    <td style="text-align:left; font-size:11px;">Outcome + jargon</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Jul 3</td>
+    <td style="text-align:left; font-size:12px;">After HyperLiquid and Lighter: The Top Perps Dexes in 2026</td>
+    <td>19.8%</td><td>936</td><td>2,393</td>
+    <td style="text-align:left; font-size:11px;">Brand hook + listicle</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Jul 31</td>
+    <td style="text-align:left; font-size:12px;">DeFi Fixed Rate Loans: Lock in 2-3% Borrow on Mopho Midnight, Tenor, &amp; TermMax</td>
+    <td class="down">19.6%</td><td>922</td><td>2,325</td>
+    <td style="text-align:left; font-size:11px;">Product listing + typo</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Aug 7</td>
+    <td style="text-align:left; font-size:12px;">After $116M Vanished From &lsquo;Secure&rsquo; Wallets: The Actual Checklist for Safe Self-Custody</td>
+    <td class="down">18.7%</td><td>880</td><td>6,608</td>
+    <td style="text-align:left; font-size:11px;">Threat-led (but 86 chars &mdash; truncated)</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Aug 28</td>
+    <td style="text-align:left; font-size:12px;">Tokenized Stocks Can Now Earn You Yield &mdash; Here&rsquo;s How</td>
+    <td class="down">18.4%</td><td>862</td><td>2,442</td>
+    <td style="text-align:left; font-size:11px;">Generic clickbait</td>
+  </tr>
+</table>
+
+<!-- ===== HEADLINE ANALYSIS ===== -->
+<h2>Headline Analysis</h2>
+
+<h3>What works (20%+ OR)</h3>
+<div class="takeaway">
+<strong>1. Curiosity + contrarian framing.</strong> &ldquo;DeFi Tokens the Market May Have Mispriced&rdquo; (21.2%) &mdash; the question mark + &ldquo;mispriced&rdquo; implies the reader knows something others don&rsquo;t. This was the best Guide headline of the period.
+</div>
+<div class="takeaway">
+<strong>2. Outcome + named protocols.</strong> &ldquo;Amplifying Stablecoin LP APY with Leverage: Tangent and LlamaLend v2&rdquo; (21.0%) &mdash; tells you the result (amplify APY) and names specific protocols so it doesn&rsquo;t feel generic.
+</div>
+<div class="takeaway">
+<strong>3. News-hook + number.</strong> &ldquo;Ethereum Glamsterdam is Coming: Mainnet Fees Could Drop 3x&rdquo; (20.7%) &mdash; combines a timely event with a concrete magnitude. Reads like breaking analysis, not an explainer.
+</div>
+
+<h3>What doesn&rsquo;t work (sub-19.5% OR)</h3>
+<div class="alert">
+<strong>1. Generic &ldquo;Here&rsquo;s How&rdquo; framing.</strong> &ldquo;Tokenized Stocks Can Now Earn You Yield &mdash; Here&rsquo;s How&rdquo; (18.4%) &mdash; no urgency, no number, no edge. &ldquo;Here&rsquo;s How&rdquo; is the most overused CTA in newsletters and signals low-effort content.
+</div>
+<div class="alert">
+<strong>2. Too-long headlines that truncate.</strong> &ldquo;After $116M Vanished From &lsquo;Secure&rsquo; Wallets: The Actual Checklist for Safe Self-Custody&rdquo; (18.7%) &mdash; 86 characters, most inboxes cut at ~60. The strongest part (&ldquo;$116M Vanished&rdquo;) shows but the payoff (&ldquo;Checklist for Safe Self-Custody&rdquo;) doesn&rsquo;t.
+</div>
+<div class="alert">
+<strong>3. Product-listing headlines with niche names.</strong> &ldquo;DeFi Fixed Rate Loans: Lock in 2-3% Borrow on Mopho Midnight, Tenor, &amp; TermMax&rdquo; (19.6%) &mdash; three unknown protocol names and a typo (&ldquo;Mopho&rdquo;). Reads like an ad, not editorial. Also truncates at 80 chars.
+</div>
+
+<h3>Headline rewrites for bottom performers</h3>
+<div class="vs">
+  <div class="bad"><strong>18.4% actual:</strong><br>&ldquo;Tokenized Stocks Can Now Earn You Yield &mdash; Here&rsquo;s How&rdquo;</div>
+  <div class="good"><strong>Rewrite:</strong><br>&ldquo;Coinbase Just Tokenized Stocks on Base &mdash; 3 Ways to Earn From Them&rdquo;</div>
+</div>
+<div class="vs">
+  <div class="bad"><strong>18.7% actual:</strong><br>&ldquo;After $116M Vanished From &lsquo;Secure&rsquo; Wallets: The Actual Checklist...&rdquo;</div>
+  <div class="good"><strong>Rewrite:</strong><br>&ldquo;$116M Drained From Coldcard &mdash; The 4-Layer Fix&rdquo;</div>
+</div>
+<div class="vs">
+  <div class="bad"><strong>19.6% actual:</strong><br>&ldquo;DeFi Fixed Rate Loans: Lock in 2-3% Borrow on Mopho Midnight...&rdquo;</div>
+  <div class="good"><strong>Rewrite:</strong><br>&ldquo;Variable Rates Just Spiked &mdash; 3 Ways to Lock Fixed&rdquo;</div>
+</div>
+
+<h3>Guide headline formula</h3>
+<div class="win">
+<strong>Pattern from the top 5:</strong> <code>[Tension or curiosity hook] + [specific number or named catalyst]</code><br>
+Keep under 60 characters. Lead with what the reader gains or what the market got wrong &mdash; never with the protocol name or &ldquo;Guide to.&rdquo;
+</div>
+
+<!-- ===== CONTENT ANALYSIS ===== -->
+<h2>Content Analysis</h2>
+
+<h3>Word count vs. open rate</h3>
+<table>
+  <tr><th style="text-align:left;">Bucket</th><th>Issues</th><th>Avg OR</th><th style="text-align:left;">Titles</th></tr>
+  <tr class="highlight">
+    <td style="text-align:left;">Under 2,000 words</td><td>2</td><td class="up">20.5%</td>
+    <td style="text-align:left; font-size:11px;">Low-Risk Stablecoins (1,360w), Solana Yields (1,965w)</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">2,000&ndash;3,200 words</td><td>7</td><td>20.2%</td>
+    <td style="text-align:left; font-size:11px;">Most issues</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Over 4,500 words</td><td>2</td><td class="down">19.3%</td>
+    <td style="text-align:left; font-size:11px;">Covered Calls (4,567w), Self-Custody (6,608w)</td>
+  </tr>
+</table>
+<div class="takeaway">
+<strong>Shorter Guides open better.</strong> The two longest issues (4,500+ words) averaged 19.3% OR vs. 20.5% for sub-2,000 word issues. Length doesn&rsquo;t cause low opens directly (readers can&rsquo;t see word count before opening) &mdash; but longer Guides tend to have more technical, niche headlines that signal &ldquo;this will be a heavy read.&rdquo;
+</div>
+
+<h3>Content structure observations</h3>
+
+<div class="win">
+<strong>TL;DR adoption is working.</strong> All recent Guides include a TL;DR box at the top with 4&ndash;5 bullets (what, why now, best opportunity, biggest risk, who it&rsquo;s for). This is good &mdash; keep it. The best TL;DRs read like a standalone briefing, not a table of contents.
+</div>
+
+<div class="takeaway">
+<strong>Topic diversity is the Guide&rsquo;s strength.</strong> The 11 issues span: yield strategies (stablecoins, LPs, options), protocol deep-dives (Panoptic, Tangent, LlamaLend), ecosystem maps (perps dexes, Solana yields), security (self-custody), macro/valuation (mispriced tokens), and new primitives (tokenized stocks, fixed-rate loans). No other letter covers this range. Lean into this &mdash; it&rsquo;s what makes the Guide distinct.
+</div>
+
+<div class="takeaway">
+<strong>Best-performing issues share a common structure:</strong>
+<ol style="margin:6px 0; padding-left:20px;">
+  <li>Open with the &ldquo;hidden truth&rdquo; &mdash; the non-obvious insight that justifies the Guide existing (e.g., &ldquo;most tokens are down 40&ndash;70% but some are still earning&rdquo;)</li>
+  <li>Framework or filter &mdash; give the reader a decision tool, not just information</li>
+  <li>Specific opportunities &mdash; name venues, rates, links</li>
+  <li>Risk section &mdash; honest, quantitative</li>
+</ol>
+</div>
+
+<div class="alert">
+<strong>Weakest issues skip the &ldquo;why now&rdquo; hook.</strong> The Self-Custody guide (18.7% OR) opened with background on the Coldcard hack rather than leading with &ldquo;your seed may be compromised right now.&rdquo; The Covered Calls guide (19.8% OR) opened with a textbook definition of options rather than the practical edge. Frontload the urgency.
+</div>
+
+<h3>General content recommendations</h3>
+<table>
+  <tr><th style="text-align:left;">#</th><th style="text-align:left;">Recommendation</th><th style="text-align:left;">Why</th></tr>
+  <tr>
+    <td>1</td>
+    <td style="text-align:left;"><strong>Open with the contrarian insight, not the explainer.</strong> First 2 sentences should be: &ldquo;here&rsquo;s what the market is getting wrong&rdquo; or &ldquo;here&rsquo;s the window that just opened.&rdquo;</td>
+    <td style="text-align:left;">Top 3 Guides all led with a market observation, not a definition</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td style="text-align:left;"><strong>Target 2,000&ndash;2,800 words.</strong> Enough depth to justify the &ldquo;guide&rdquo; label, short enough to not signal &ldquo;homework.&rdquo;</td>
+    <td style="text-align:left;">Sweet-spot bucket averaged 20.2% OR; 4,500+ word issues averaged 19.3%</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td style="text-align:left;"><strong>End with &ldquo;What to do right now&rdquo;</strong> &mdash; a 3&ndash;4 bullet action box, not a risk disclaimer.</td>
+    <td style="text-align:left;">Readers who scroll to the end are the most engaged &mdash; give them a clear next step</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td style="text-align:left;"><strong>Cross-link to Farming letter</strong> when the Guide covers a yield strategy.</td>
+    <td style="text-align:left;">6 of 11 Guides were yield-adjacent &mdash; link to that week&rsquo;s specific farms</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td style="text-align:left;"><strong>Add a &ldquo;who is this for&rdquo; qualifier</strong> in the TL;DR or opening paragraph.</td>
+    <td style="text-align:left;">Guide topics vary widely &mdash; letting readers self-select reduces unsubscribe risk on niche topics</td>
+  </tr>
+</table>
+
+<!-- ===== TWITTER ANALYSIS ===== -->
+<h2>Twitter Promotion Analysis</h2>
+<p style="color:#666; font-size:13px;">27 tweets matched to 9 Guide issues (2 most recent Guides had no tweet data available). Tweets posted Fri evening + Mon morning Taiwan time (UTC+8).</p>
+
+<h3>Per-Guide tweet performance</h3>
+<table>
+  <tr><th style="text-align:left;">Guide</th><th>OR</th><th>Tweets</th><th>Best Imp.</th><th>Best ER</th><th style="text-align:left;">Best tweet framing</th></tr>
+  <tr class="highlight">
+    <td style="text-align:left; font-size:11px;">Opportunity Onchain? Mispriced Tokens</td>
+    <td>21.2%</td><td>3</td><td>1,156</td><td>2.41%</td>
+    <td style="text-align:left; font-size:11px;">Contrarian: &ldquo;cheap &ne; undervalued&rdquo;</td>
+  </tr>
+  <tr class="highlight">
+    <td style="text-align:left; font-size:11px;">Amplifying LP APY: Tangent &amp; LlamaLend</td>
+    <td>21.0%</td><td>3</td><td>699</td><td class="up">6.58%</td>
+    <td style="text-align:left; font-size:11px;">Direct benefit: &ldquo;Your Curve LP shouldn&rsquo;t just sit there&rdquo;</td>
+  </tr>
+  <tr class="highlight">
+    <td style="text-align:left; font-size:11px;">Low-Risk Yield-Bearing Stablecoins</td>
+    <td>20.9%</td><td>3</td><td>1,938</td><td>3.12%</td>
+    <td style="text-align:left; font-size:11px;">TradFi comparison: &ldquo;savings accounts pay under 1%&rdquo;</td>
+  </tr>
+  <tr>
+    <td style="text-align:left; font-size:11px;">Glamsterdam: Fees Could Drop 3x</td>
+    <td>20.7%</td><td>3</td><td>762</td><td>2.53%</td>
+    <td style="text-align:left; font-size:11px;">Consequence framing: &ldquo;strategies priced out for years become viable&rdquo;</td>
+  </tr>
+  <tr>
+    <td style="text-align:left; font-size:11px;">Intro to Panoptic</td>
+    <td>20.2%</td><td>3</td><td>1,139</td><td class="up">3.51%</td>
+    <td style="text-align:left; font-size:11px;">Differentiation: &ldquo;Most DeFi yield comes from the same crowded trades&rdquo;</td>
+  </tr>
+  <tr>
+    <td style="text-align:left; font-size:11px;">Covered Calls &amp; Cash-Secured Puts</td>
+    <td>19.8%</td><td>3</td><td>2,844</td><td>1.65%</td>
+    <td style="text-align:left; font-size:11px;">Delayed Mon tweet outperformed Fri pair by 4x impressions</td>
+  </tr>
+  <tr>
+    <td style="text-align:left; font-size:11px;">Top Perps Dexes in 2026</td>
+    <td>19.8%</td><td>3</td><td>1,024</td><td>1.72%</td>
+    <td style="text-align:left; font-size:11px;">FOMO: &ldquo;$5B volume, no token&rdquo;</td>
+  </tr>
+  <tr>
+    <td style="text-align:left; font-size:11px;">Fixed Rate Loans</td>
+    <td>19.6%</td><td>3</td><td>3,651</td><td>1.56%</td>
+    <td style="text-align:left; font-size:11px;">Hook tweet with image drove 3,651 impressions (outlier)</td>
+  </tr>
+  <tr>
+    <td style="text-align:left; font-size:11px;">$116M Self-Custody</td>
+    <td>18.7%</td><td>3</td><td>2,590</td><td>1.89%</td>
+    <td style="text-align:left; font-size:11px;">Fear-hook: &ldquo;$116M drained&rdquo; drove massive reach</td>
+  </tr>
+</table>
+
+<h3>Twitter patterns that work</h3>
+
+<div class="win">
+<strong>1. Highest engagement rate: &ldquo;Direct benefit&rdquo; framing (avg 4.2% ER).</strong><br>
+&ldquo;Your Curve LP shouldn&rsquo;t just sit there&rdquo; (6.58% ER) and &ldquo;Most DeFi yield comes from the same crowded trades&rdquo; (3.51% ER). These tell the reader their current behavior is leaving money on the table.
+</div>
+
+<div class="win">
+<strong>2. Highest impressions: Fear/news hooks (avg 2,590 imp).</strong><br>
+&ldquo;$116M drained from hardware wallets&rdquo; (2,590 imp) and &ldquo;A carry trade only works if your cost of funds is known&rdquo; (3,651 imp with image). Threat-first tweets get amplified, even when the Guide OR was lower.
+</div>
+
+<div class="takeaway">
+<strong>3. Monday tweets outperform Friday tweets.</strong><br>
+Across all 9 Guides with tweet data, the Monday follow-up tweet averaged 1,330 impressions vs. 770 for Friday evening tweets. The Covered Calls Monday tweet (2,844 imp) beat both Friday tweets (579 + 719) combined. Weekend readers discover the letter and are primed for the reminder.
+</div>
+
+<h3>Twitter patterns that don&rsquo;t work</h3>
+
+<div class="alert">
+<strong>1. Repeating the headline verbatim.</strong> Friday tweets that just restated the subject line averaged 0.6% ER &mdash; readers who skipped the email won&rsquo;t click the same words on Twitter. Reframe the angle.
+</div>
+
+<div class="alert">
+<strong>2. Two similar tweets on the same day.</strong> Several Guides had two Friday tweets with near-identical framing. The second consistently got 40&ndash;60% fewer impressions. Use the second slot for a different angle (e.g., if tweet 1 is the insight, tweet 2 is a specific number or risk callout).
+</div>
+
+<h3>Recommended tweet template per Guide</h3>
+<table>
+  <tr><th style="text-align:left;">Slot</th><th style="text-align:left;">Timing</th><th style="text-align:left;">Framing</th><th style="text-align:left;">Example</th></tr>
+  <tr>
+    <td style="text-align:left;">Tweet 1</td>
+    <td style="text-align:left;">Fri evening (UTC+8)</td>
+    <td style="text-align:left;">Contrarian insight or fear hook &mdash; no link in first tweet if doing a thread</td>
+    <td style="text-align:left; font-size:11px;">&ldquo;Most &lsquo;safe&rsquo; stablecoin farms are actually paying you in emissions that disappear. The ones that aren&rsquo;t:&rdquo;</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Tweet 2</td>
+    <td style="text-align:left;">Fri evening (UTC+8)</td>
+    <td style="text-align:left;">Specific number or opportunity &mdash; different angle from Tweet 1, include link</td>
+    <td style="text-align:left; font-size:11px;">&ldquo;One protocol lets you borrow against your LP without closing the position &mdash; and your LP keeps earning fees while you do. Details:&rdquo;</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Tweet 3</td>
+    <td style="text-align:left;">Mon morning (UTC+8)</td>
+    <td style="text-align:left;">Standalone hook &mdash; don&rsquo;t reference Friday&rsquo;s tweet. Fresh angle for weekend readers</td>
+    <td style="text-align:left; font-size:11px;">&ldquo;Your Curve LP is doing one job. It could be doing two. Here&rsquo;s how:&rdquo;</td>
+  </tr>
+</table>
+
+<!-- ===== BEST TWEETS ===== -->
+<h3>Top 5 Guide promotion tweets</h3>
+
+<div class="tweet-card">
+  <div class="tweet-text">&ldquo;Your Curve LP shouldn&rsquo;t just sit there. The newly launched LlamaLend v2 lets it keep earning fees while you borrow against it. Understand how it works and the risks behind it&rdquo;</div>
+  <div class="tweet-stats"><span>699 imp</span><span class="up">6.58% ER</span><span>8 likes, 4 RTs, 16 URL clicks</span></div>
+</div>
+
+<div class="tweet-card">
+  <div class="tweet-text">&ldquo;What if you could provide liquidity and still capture 100% of the upside? That&rsquo;s what Yield Basis is trying to do.&rdquo;</div>
+  <div class="tweet-stats"><span>707 imp</span><span class="up">4.38% ER</span><span>7 likes, 1 RT, 11 URL clicks</span></div>
+</div>
+
+<div class="tweet-card">
+  <div class="tweet-text">&ldquo;Most DeFi yield comes from the same crowded trades. Discover how Panoptic can generate yield from an entirely different source&rdquo;</div>
+  <div class="tweet-stats"><span>1,139 imp</span><span class="up">3.51% ER</span><span>5 likes, 3 RTs, 9 URL clicks</span></div>
+</div>
+
+<div class="tweet-card">
+  <div class="tweet-text">&ldquo;Everyone&rsquo;s parking stablecoin LPs at 5-12% and calling it a day. Meanwhile, some protocols enable looping for 45%+ delta-neutral yield.&rdquo;</div>
+  <div class="tweet-stats"><span>546 imp</span><span class="up">3.48% ER</span><span>4 likes, 1 RT, 7 URL clicks</span></div>
+</div>
+
+<div class="tweet-card">
+  <div class="tweet-text">&ldquo;Did you know you can get 4&ndash;6% APY onchain? With some of the lowest risk in crypto? No leverage. No lockups. No obscure protocol.&rdquo;</div>
+  <div class="tweet-stats"><span>192 imp</span><span class="up">3.12% ER</span><span>2 likes, 0 RTs, 1 URL click</span></div>
+</div>
+
+<div class="takeaway">
+<strong>Common thread in top-performing tweets:</strong> all five challenge the reader&rsquo;s current strategy (&ldquo;your LP shouldn&rsquo;t just sit there,&rdquo; &ldquo;everyone&rsquo;s parking at 5&ndash;12%,&rdquo; &ldquo;same crowded trades&rdquo;). They make the reader feel like they&rsquo;re missing something &mdash; then offer the Guide as the answer.
+</div>
+
+<!-- ===== SUMMARY ===== -->
+<h2>Summary &amp; Key Actions</h2>
+
+<table>
+  <tr><th style="text-align:left;">#</th><th style="text-align:left;">Action</th><th style="text-align:left;">Expected Impact</th></tr>
+  <tr>
+    <td>1</td>
+    <td style="text-align:left;"><strong>Headlines: lead with tension or contrarian insight, not protocol names.</strong> Kill &ldquo;Guide to,&rdquo; &ldquo;Intro to,&rdquo; and &ldquo;Here&rsquo;s How.&rdquo; Keep under 60 chars.</td>
+    <td style="text-align:left;">Top 3 headlines used this pattern and averaged 21.0% OR vs. 18.9% for bottom 3</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td style="text-align:left;"><strong>Content: open with the &ldquo;hidden truth,&rdquo; not the explainer.</strong> First 2 sentences should be the non-obvious insight.</td>
+    <td style="text-align:left;">Best Guides all led with a market observation, not a definition</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td style="text-align:left;"><strong>Content: target 2,000&ndash;2,800 words.</strong> Deep enough to justify &ldquo;guide,&rdquo; concise enough to not signal homework.</td>
+    <td style="text-align:left;">Sub-3,200w Guides averaged 20.3% OR vs. 19.3% for 4,500w+</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td style="text-align:left;"><strong>Content: end with an action box, not a risk disclaimer.</strong></td>
+    <td style="text-align:left;">Engaged readers reaching the end need a clear next step</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td style="text-align:left;"><strong>Twitter: vary the angle between Fri tweets.</strong> Tweet 1 = insight/fear. Tweet 2 = specific opportunity. Don&rsquo;t repeat.</td>
+    <td style="text-align:left;">Same-angle duplicates lose 40&ndash;60% impressions</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td style="text-align:left;"><strong>Twitter: invest in the Monday tweet.</strong> Monday follow-ups averaged 1,330 imp vs. 770 on Friday.</td>
+    <td style="text-align:left;">Weekend readers are primed for a fresh hook</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td style="text-align:left;"><strong>Twitter: challenge the reader&rsquo;s current behavior.</strong> Top 5 tweets by ER all used &ldquo;you&rsquo;re leaving money on the table&rdquo; framing.</td>
+    <td style="text-align:left;">Avg 4.2% ER vs. 1.2% for headline-repeat tweets</td>
+  </tr>
+</table>
+
+<p class="meta">Report generated Sep 4, 2026 &bull; Data: Substack export DB + Twitter analytics DB &bull; Covers 11 Guide issues (Jun 5 &ndash; Aug 28) + 27 matched tweets &bull; @todayindefi</p>
+
+</body>
+</html>

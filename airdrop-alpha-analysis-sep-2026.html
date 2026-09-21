@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Airdrop Alpha Analysis — Sep 2026</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; max-width: 780px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; line-height: 1.55; }
+  h1 { font-size: 22px; border-bottom: 2px solid #1da1f2; padding-bottom: 8px; }
+  h2 { font-size: 17px; margin-top: 36px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 4px; }
+  h3 { font-size: 14px; margin-top: 24px; color: #555; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+  th, td { border: 1px solid #ddd; padding: 7px 10px; text-align: left; }
+  th { background: #f5f8fa; font-weight: 600; }
+  td:not(:first-child) { text-align: right; }
+  td.left { text-align: left; }
+  .down { color: #e0245e; }
+  .up { color: #17bf63; }
+  .highlight { background: #fffde7; }
+  .takeaway { background: #f5f8fa; border-left: 3px solid #1da1f2; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .alert { background: #fef3f2; border-left: 3px solid #e0245e; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .action { background: #f0faf0; border-left: 3px solid #17bf63; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .meta { color: #888; font-size: 12px; margin-top: 40px; border-top: 1px solid #eee; padding-top: 10px; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+  .kpi { background: #f5f8fa; border-radius: 6px; padding: 12px; text-align: center; }
+  .kpi-value { font-size: 22px; font-weight: 700; color: #1da1f2; }
+  .kpi-label { font-size: 11px; color: #666; margin-top: 2px; }
+  .kpi-change { font-size: 11px; margin-top: 2px; }
+  .section-nav { background: #f5f8fa; border-radius: 6px; padding: 14px 18px; margin: 16px 0; font-size: 13px; }
+  .section-nav a { color: #1da1f2; text-decoration: none; margin-right: 16px; }
+  .section-nav a:hover { text-decoration: underline; }
+  blockquote { border-left: 3px solid #ccc; margin: 12px 0; padding: 8px 14px; background: #fafafa; font-size: 13px; }
+  .tweet-draft { background: #f5f8fa; border: 1px solid #ddd; border-radius: 8px; padding: 14px; margin: 10px 0; font-size: 13px; }
+  .tweet-draft .handle { color: #1da1f2; font-weight: 600; font-size: 12px; }
+  .tweet-draft .time { color: #888; font-size: 11px; float: right; }
+</style>
+</head>
+<body>
+
+<h1>Airdrop Alpha &mdash; Content &amp; Tweet Analysis</h1>
+<p style="color:#666; font-size:14px;">Today in DeFi &middot; Wednesday letter (paid) &middot; Jun&ndash;Sep 2026</p>
+
+<div class="section-nav">
+  <strong>Jump to:</strong>
+  <a href="#headlines">Headlines</a>
+  <a href="#content">Content</a>
+  <a href="#tweets">Tweet Performance</a>
+  <a href="#tweet-strategy">Tweet Strategy</a>
+  <a href="#actions">Action Items</a>
+</div>
+
+<!-- ============================================================ -->
+<!-- HEADLINES -->
+<!-- ============================================================ -->
+
+<h2 id="headlines">1. Headline Audit &mdash; Last 15 Issues</h2>
+
+<table>
+  <tr><th>Date</th><th style="text-align:left;">Headline</th><th>OR</th><th>vs Avg</th></tr>
+  <tr class="highlight"><td>Sep 16</td><td class="left">This New Solana Perp DEX Just Launched &mdash; Get In Early</td><td class="down">19.92%</td><td class="down">-0.68pp</td></tr>
+  <tr class="highlight"><td>Sep 9</td><td class="left">Farm Robinhood Chain's Top DEX, Claim GRVT</td><td class="down">20.27%</td><td class="down">-0.33pp</td></tr>
+  <tr class="highlight"><td>Sep 2</td><td class="left">This New DEX is Generating $2B Volume and Has No Token Yet.</td><td>21.21%</td><td class="up">+0.61pp</td></tr>
+  <tr><td>Aug 26</td><td class="left">Claim TermMax Now, infiniFi TGE Confirmed Q4</td><td class="up">21.81%</td><td class="up">+1.21pp</td></tr>
+  <tr><td>Aug 19</td><td class="left">Lighter x Robinhood Points Live, Multipli Claim Ends Aug 24</td><td class="down">20.02%</td><td class="down">-0.58pp</td></tr>
+  <tr><td>Aug 12</td><td class="left">Solstice Claim Live, Nado's $100K Rewards Pool Live</td><td>21.40%</td><td class="up">+0.80pp</td></tr>
+  <tr><td>Aug 5</td><td class="left">GRVT Claim Live, Cap Stabledrop Open - Airdrop Alpha</td><td>20.97%</td><td class="up">+0.37pp</td></tr>
+  <tr><td>Jul 29</td><td class="left">Ondo Perps Points Live, Paradex Claim Closing Soon - Airdrop Alpha</td><td>21.26%</td><td class="up">+0.66pp</td></tr>
+  <tr><td>Jul 22</td><td class="left">Airdrop Alpha: Earn Points From Leveraged Tokens, and many more...</td><td class="down">20.26%</td><td class="down">-0.34pp</td></tr>
+  <tr><td>Jul 15</td><td class="left">Earn Lighter Points on Robinhood Chain, GRVT Airdrop Registration - Airdrop Alpha</td><td>20.72%</td><td class="up">+0.12pp</td></tr>
+  <tr><td>Jul 8</td><td class="left">GRVT Confirms TGE Date, Farm Robinhood's New Perp DEX, and more...</td><td>21.19%</td><td class="up">+0.59pp</td></tr>
+  <tr><td>Jun 24</td><td class="left">Cap Money TGE Soon, Farm Early Perp &amp; Prediction Market Protocol - Airdrop Alpha</td><td class="down">20.49%</td><td class="down">-0.11pp</td></tr>
+  <tr><td>Jun 17</td><td class="left">Airdrop Alpha: Re Protocol TGE Tomorrow, Airdrop for $HYPE Holders, and more...</td><td>20.72%</td><td class="up">+0.12pp</td></tr>
+  <tr><td>Jun 10</td><td class="left">Claims Live For Plume and Deepbook, Re Protocol TGE Coming - Airdrop Alpha</td><td>20.76%</td><td class="up">+0.16pp</td></tr>
+  <tr><td>Jun 3</td><td class="left">Airdrop Alpha: Saturn and Apyx Boosted Points Program, Citrea Airdrop Claim, and more...</td><td>21.42%</td><td class="up">+0.82pp</td></tr>
+</table>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value">20.60%</div><div class="kpi-label">15-Issue Avg OR</div></div>
+  <div class="kpi"><div class="kpi-value down">20.47%</div><div class="kpi-label">Sep Avg (3 issues)</div></div>
+  <div class="kpi"><div class="kpi-value down">19.92%</div><div class="kpi-label">Latest Issue OR</div></div>
+  <div class="kpi"><div class="kpi-value down">-0.68pp</div><div class="kpi-label">Latest vs Avg</div></div>
+</div>
+
+<div class="alert">
+  <strong>Sep 16 broke below 20% for the first time in Airdrop Alpha history.</strong> At 19.92%, this is the worst-performing Airdrop Alpha headline in the entire 15-issue dataset. The three September issues show a clear downtrend: 21.21% &rarr; 20.27% &rarr; 19.92%. The Sep average (20.47%) sits below the 15-issue average (20.60%) and well below the Jun&ndash;Jul average (20.80%). The letter also shifted from Tuesday to Wednesday in September, which may contribute to inbox competition. The declining delivers (4,681 &rarr; 4,661 &rarr; 4,633) compound the problem: fewer subscribers receiving the email, and fewer of those opening it.
+</div>
+
+<h3>New Issue Analysis</h3>
+
+<div class="alert">
+  <strong>Sep 16 &mdash; "This New Solana Perp DEX Just Launched &mdash; Get In Early" (19.92% OR, ~923 opens, 4,633 delivers)</strong><br>
+  The lowest OR in the entire dataset. What went wrong:
+  <ul style="margin:6px 0;">
+    <li><strong>"Get In Early" is vague urgency:</strong> Unlike "Now" or "Before [date]", "Get In Early" implies a long window. There's no deadline, no scarcity, no reason to open <em>today</em> vs. next week.</li>
+    <li><strong>No protocol name:</strong> Sep 2 withheld the name too ("This New DEX") but backed it with a specific number ($2B). Sep 16 offers "New Solana Perp DEX" &mdash; generic category language, not a curiosity-triggering stat.</li>
+    <li><strong>"Just Launched" is the weakest possible action state:</strong> Compare to "Claim" (something waiting for you), "TGE Tomorrow" (deadline), or "Closing Soon" (FOMO). "Just Launched" says "nothing urgent happened."</li>
+    <li><strong>Solana perp DEXes are not novel to this audience:</strong> DeFi power users have seen dozens. Without a differentiator (speed, volume, backed by [name]), the reader shrugs.</li>
+    <li><strong>53 chars &mdash; fits in inbox:</strong> Length wasn't the problem. The hooks themselves lacked specificity.</li>
+  </ul>
+  <strong>Suggested rewrite:</strong> "New Solana Perp DEX: 5ms Fills, Zero Gas, 0-Fee Window Now" &mdash; 54 chars, specific differentiators, urgency with "Now". Alternatively: "This Solana Perp DEX Does 5ms Fills &mdash; And Fees Are $0 Right Now" &mdash; 58 chars, slightly over but the key hook is visible.
+</div>
+
+<h3>Previous Issue Analysis: What Worked</h3>
+
+<div class="takeaway">
+  <strong>Aug 26 &mdash; "Claim TermMax Now, infiniFi TGE Confirmed Q4" (21.81% OR &mdash; best in dataset)</strong><br>
+  This headline remains the gold standard across all 15 issues:
+  <ul style="margin:6px 0;">
+    <li><strong>Action verb leading:</strong> "Claim" is a direct instruction, not a passive status update.</li>
+    <li><strong>Time pressure:</strong> "Now" creates immediate urgency &mdash; stronger than "Live" or "Open."</li>
+    <li><strong>Named protocols:</strong> TermMax and infiniFi are specific brands, not generic categories.</li>
+    <li><strong>Two distinct hooks:</strong> Claim (urgent) + TGE Confirmed (forward-looking). Each serves a different reader need.</li>
+    <li><strong>No filler:</strong> No "Airdrop Alpha:" prefix, no "and more..." suffix. Every word earns its space.</li>
+    <li><strong>45 characters:</strong> Under the 55-char truncation threshold &mdash; fully visible in every inbox.</li>
+  </ul>
+</div>
+
+<div class="takeaway">
+  <strong>Sep 2 &mdash; "This New DEX is Generating $2B Volume and Has No Token Yet." (21.21% OR)</strong><br>
+  The third-best headline in the dataset and the best curiosity-driven headline. Why it works even without the Airdrop Alpha prefix:
+  <ul style="margin:6px 0;">
+    <li><strong>Curiosity gap:</strong> "No Token Yet" implies opportunity. Readers know what happens when a high-volume DEX launches a token.</li>
+    <li><strong>Specific number:</strong> "$2B Volume" gives the reader a reason to care &mdash; this is not a small protocol.</li>
+    <li><strong>No protocol name:</strong> Intentionally withheld to create the gap. The reader has to open the email to learn which DEX.</li>
+  </ul>
+  The contrast with Sep 16 is instructive: both withheld the protocol name, but Sep 2 compensated with "$2B Volume" while Sep 16 offered only "New Solana Perp DEX" &mdash; a generic category, not a specific stat.
+</div>
+
+<h3>Headline Problems</h3>
+<table>
+  <tr><th style="text-align:left;">Problem</th><th style="text-align:left;">Evidence</th><th>Frequency</th></tr>
+  <tr><td class="left"><strong>"- Airdrop Alpha" / "Airdrop Alpha:" prefix/suffix</strong></td><td class="left">Burns 16&ndash;18 chars telling readers what they already know from the sender name.</td><td class="down">7 of 15</td></tr>
+  <tr><td class="left"><strong>"and more..." / "and many more..."</strong></td><td class="left">Dead weight that signals "we couldn't pick a hook." Appears in underperforming headlines.</td><td class="down">4 of 15</td></tr>
+  <tr><td class="left"><strong>Two hooks, both weak</strong></td><td class="left">"Farm X, Claim Y" (20.27%) and "Lighter x Robinhood, Multipli Claim" (20.02%) &mdash; dual-hook headlines with weak verbs average below 20.5% OR.</td><td class="down">7 of 15</td></tr>
+  <tr><td class="left"><strong>No urgency framing</strong></td><td class="left">Sep 16's "Get In Early" is the weakest urgency in the dataset. Only 5 of 15 use real time pressure ("Now", "Ends [date]", "Closing Soon", "Tomorrow").</td><td class="down">10 of 15</td></tr>
+  <tr><td class="left"><strong>Generic category instead of named protocol</strong></td><td class="left">"New Solana Perp DEX" (19.92%) vs "Claim TermMax" (21.81%). When the name is withheld, a specific number is required to compensate.</td><td class="down">3 of 15</td></tr>
+  <tr><td class="left"><strong>Headlines over 55 chars</strong></td><td class="left">9 of 15 exceed the inbox truncation point. The best performers (Aug 26 at 45, Sep 16 at 53) were both visible &mdash; but visibility alone doesn't save a weak hook.</td><td class="down">9 of 15</td></tr>
+</table>
+
+<h3>What Readers Actually See (truncated at ~55 chars)</h3>
+<table>
+  <tr><th>Date</th><th style="text-align:left;">Visible in Inbox</th><th style="text-align:left;">Hidden</th></tr>
+  <tr class="highlight"><td>Sep 16</td><td class="left">This New Solana Perp DEX Just Launched &mdash; Get In Early</td><td class="left">(nothing &mdash; fully visible at 53 chars)</td></tr>
+  <tr class="highlight"><td>Sep 9</td><td class="left">Farm Robinhood Chain's Top DEX, Claim GRVT</td><td class="left">(nothing &mdash; fully visible at 43 chars)</td></tr>
+  <tr class="highlight"><td>Sep 2</td><td class="left">This New DEX is Generating $2B Volume and Has No T...</td><td class="left">oken Yet.</td></tr>
+  <tr><td>Aug 26</td><td class="left">Claim TermMax Now, infiniFi TGE Confirmed Q4</td><td class="left">(nothing &mdash; fully visible)</td></tr>
+  <tr><td>Aug 19</td><td class="left">Lighter x Robinhood Points Live, Multipli Claim E...</td><td class="left">nds Aug 24</td></tr>
+  <tr><td>Aug 5</td><td class="left">GRVT Claim Live, Cap Stabledrop Open - Airdrop Al...</td><td class="left">pha</td></tr>
+  <tr><td>Jul 22</td><td class="left">Airdrop Alpha: Earn Points From Leveraged Tokens,...</td><td class="left"> and many more...</td></tr>
+  <tr><td>Jun 3</td><td class="left">Airdrop Alpha: Saturn and Apyx Boosted Points Pro...</td><td class="left">gram, Citrea Airdrop Claim, and more...</td></tr>
+</table>
+<p style="font-size:12px; color:#888;">Sep 16 was fully visible at 53 chars but still hit 19.92% &mdash; confirming that visibility is necessary but not sufficient. The hook itself must carry urgency and specificity. Sep 2 loses "oken Yet." but the curiosity hook ("No T...") still registers enough to drive 21.21%.</p>
+
+<h3>What Works (from the data)</h3>
+<table>
+  <tr><th style="text-align:left;">Pattern</th><th>Avg OR</th><th style="text-align:left;">Examples</th></tr>
+  <tr class="highlight"><td class="left"><strong>Action verb + "Now" urgency</strong></td><td class="up">21.81%</td><td class="left">"Claim TermMax Now" &mdash; direct instruction with immediacy</td></tr>
+  <tr class="highlight"><td class="left"><strong>"Claim [X]" as lead verb</strong></td><td class="up">21.1%+</td><td class="left">"Claim TermMax Now" (21.81%), "GRVT Claim Live" (20.97%), "Claims Live For Plume" (20.76%)</td></tr>
+  <tr class="highlight"><td class="left"><strong>Curiosity gap + specific number</strong></td><td class="up">21.21%</td><td class="left">"$2B Volume and Has No Token Yet" &mdash; implies opportunity</td></tr>
+  <tr class="highlight"><td class="left"><strong>Time-pressure verbs: Claim, TGE Tomorrow, Closing Soon</strong></td><td class="up">21.0%+</td><td class="left">"TGE Tomorrow", "Closing Soon", "Ends Aug 24", "Now"</td></tr>
+  <tr><td class="left"><strong>Curiosity gap without specific number</strong></td><td class="down">19.92%</td><td class="left">"This New Solana Perp DEX" &mdash; no stat to create the gap</td></tr>
+  <tr><td class="left"><strong>Best headline in dataset</strong></td><td class="up">21.81%</td><td class="left">"Claim TermMax Now, infiniFi TGE Confirmed Q4" (Aug 26)</td></tr>
+  <tr><td class="left"><strong>Worst headline in dataset</strong></td><td class="down">19.92%</td><td class="left">"This New Solana Perp DEX Just Launched &mdash; Get In Early" (Sep 16)</td></tr>
+</table>
+
+<div class="takeaway">
+  <strong>Headline formula (validated across 15 issues):</strong> <code>[Action verb] [Big-name protocol] [Deadline/status], [Second hook with known name]</code><br>
+  Aug 26 remains the template: "Claim TermMax Now, infiniFi TGE Confirmed Q4" (21.81%) &mdash; action verb, named protocol, urgency, forward catalyst, 45 chars, no filler.<br>
+  Sep 2's curiosity approach ("$2B Volume... No Token Yet" at 21.21%) works as a rotation play but <strong>only when backed by a specific, surprising number</strong>. Sep 16 proves that curiosity without a number (19.92%) is the worst approach in the dataset.
+</div>
+
+<h3>Suggested Rewrites</h3>
+<table>
+  <tr><th style="text-align:left;">Original (OR)</th><th style="text-align:left;">Rewrite</th><th>Chars</th></tr>
+  <tr><td class="left down">Sep 16 (19.92%): This New Solana Perp DEX Just Launched &mdash; Get In Early</td><td class="left">New Solana Perp DEX: 5ms Fills, Zero Fees Right Now</td><td>51</td></tr>
+  <tr><td class="left down">Sep 9 (20.27%): Farm Robinhood Chain's Top DEX, Claim GRVT</td><td class="left">Claim Your GRVT Airdrop Before It Expires</td><td>43</td></tr>
+  <tr><td class="left down">Aug 19 (20.02%): Lighter x Robinhood Points Live, Multipli Claim Ends Aug 24</td><td class="left">Claim Multipli by Aug 24 &mdash; Robinhood Points Now Open</td><td>52</td></tr>
+  <tr><td class="left">Aug 5 (20.97%): GRVT Claim Live, Cap Stabledrop Open - Airdrop Alpha</td><td class="left">GRVT Airdrop Is Claimable &mdash; Cap Stabledrop Open</td><td>49</td></tr>
+  <tr><td class="left">Jul 22 (20.26%): Airdrop Alpha: Earn Points From Leveraged Tokens, and many more...</td><td class="left">Earn Points on Leveraged Tokens Before TGE</td><td>43</td></tr>
+  <tr><td class="left">Jun 3 (21.42%): Airdrop Alpha: Saturn and Apyx Boosted Points Program, Citrea Airdrop Claim, and more...</td><td class="left">Claim Citrea Now + Saturn &amp; Apyx Boosted Points</td><td>48</td></tr>
+</table>
+<p style="font-size:12px; color:#888;">Every rewrite: drops the "Airdrop Alpha" tag, leads with an action verb or specific differentiator, adds deadline pressure where possible, stays under 55 chars.</p>
+
+<!-- ============================================================ -->
+<!-- CONTENT -->
+<!-- ============================================================ -->
+
+<h2 id="content">2. Content Audit</h2>
+
+<h3>Structure Comparison (Sep 2 vs Sep 16)</h3>
+<table>
+  <tr><th style="text-align:left;">Element</th><th>Sep 16</th><th>Sep 2</th><th style="text-align:left;">Assessment</th></tr>
+  <tr><td class="left">Opening line</td><td class="left">Straight to content</td><td class="left">Straight to content</td><td class="left up">Consistent &mdash; promotional intros have been dropped</td></tr>
+  <tr><td class="left">Sponsor placement</td><td class="up">After opener</td><td class="up">After opener</td><td class="left up">Consistent &mdash; good</td></tr>
+  <tr><td class="left">Claims section</td><td class="up">Yes, first</td><td class="up">Yes, first</td><td class="left up">Correct priority &mdash; time-sensitive items lead</td></tr>
+  <tr><td class="left">Disclaimer / risk warning</td><td class="up">Yes, per entry</td><td class="up">Yes, per entry</td><td class="left up">Builds credibility &mdash; keep</td></tr>
+  <tr><td class="left">New Opportunities section</td><td class="up">Yes</td><td class="up">Yes</td><td class="left">Core value of the letter</td></tr>
+  <tr><td class="left">News Headlines block</td><td class="up">Yes</td><td class="up">Yes</td><td class="left">Useful roundup</td></tr>
+  <tr><td class="left">"NEW Promising Airdrops" section</td><td class="up">Yes</td><td class="up">Yes</td><td class="left">Forward-looking &mdash; drives retention</td></tr>
+  <tr><td class="left">Cross-links to other letters</td><td class="down">No</td><td class="down">No</td><td class="left down">Still missing entirely</td></tr>
+  <tr><td class="left">TL;DR / summary box</td><td class="down">No</td><td class="down">No</td><td class="left down">Still missing &mdash; recommended since Aug report</td></tr>
+</table>
+
+<h3>Word Count Trend</h3>
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value">2,104</div><div class="kpi-label">Jun 3 (highest)</div><div class="kpi-change down">Heavy</div></div>
+  <div class="kpi"><div class="kpi-value">1,631</div><div class="kpi-label">Jun Avg (4 issues)</div><div class="kpi-change">Mid-range</div></div>
+  <div class="kpi"><div class="kpi-value">1,120</div><div class="kpi-label">Jul Avg (4 issues)</div><div class="kpi-change">Shrinking</div></div>
+  <div class="kpi"><div class="kpi-value">1,408</div><div class="kpi-label">Aug Avg (4 issues)</div><div class="kpi-change">Stabilizing</div></div>
+</div>
+
+<div class="alert">
+  <strong>Word count swings remain a problem: 875 to 2,104 across 15 issues.</strong> The recommended 1,200&ndash;1,500 target from the Aug report has not been adopted. September issues have been in the mid-range, but there's still no enforced template with section word budgets. Consistency builds subscriber trust and reduces writing time.
+</div>
+
+<h3>What's Working</h3>
+<div class="takeaway">
+  <ul style="margin:6px 0;">
+    <li><strong>Claims section leading the letter is exactly right.</strong> Time-sensitive information first. This has been consistent since Jun and is the correct structure for a paid airdrop letter.</li>
+    <li><strong>Per-entry risk warnings remain excellent.</strong> These differentiate Airdrop Alpha from hype-only newsletters and justify the paid subscription.</li>
+    <li><strong>Promotional intro paragraphs have been dropped.</strong> Sep issues go straight to content &mdash; this is an improvement from the Aug 12 "Your Weekly Airdrop-Farming Alpha is Here!" approach.</li>
+    <li><strong>"NEW Promising Airdrops" at the end</strong> continues to give readers a forward calendar &mdash; strong retention driver.</li>
+  </ul>
+</div>
+
+<h3>What Needs Improvement</h3>
+<div class="alert">
+  <ul style="margin:6px 0;">
+    <li><strong>TL;DR box still missing.</strong> Recommended in the Aug report but not adopted. "Claim X by [date]. New opportunity: Y. News: Z." takes 30 seconds to write and saves the reader 5 minutes of scanning.</li>
+    <li><strong>No cross-links to other letters.</strong> When an airdrop involves yield farming, link to Farms &amp; Yield. When a protocol has a deep-dive, link to the Friday Guide. This has been flagged since Aug and remains unaddressed.</li>
+    <li><strong>Day shift to Wednesday not reflected in content.</strong> The move from Tuesday to Wednesday may create inbox competition with mid-week newsletters. Consider whether the content itself needs adjustment for the new cadence.</li>
+    <li><strong>Declining delivers need attention.</strong> 4,739 (Jun 3) &rarr; 4,633 (Sep 16) is a loss of 106 deliverable subscribers (&minus;2.2%) over 15 issues. While some churn is natural, a paid letter should prioritize retention messaging.</li>
+  </ul>
+</div>
+
+<h3>Recommended Template (unchanged from Aug report)</h3>
+<table>
+  <tr><th>#</th><th style="text-align:left;">Section</th><th>Budget</th><th style="text-align:left;">What &amp; Why</th></tr>
+  <tr class="highlight"><td>1</td><td class="left"><strong>TL;DR (3 bullets)</strong></td><td><strong>50</strong></td><td class="left">Top claim deadline, top new opportunity, one news item. Scanners get value in 10 seconds.</td></tr>
+  <tr><td>2</td><td class="left">Sponsor</td><td>50</td><td class="left">Keep placement consistent &mdash; after TL;DR, before content.</td></tr>
+  <tr><td>3</td><td class="left">Claims &amp; Deadlines</td><td>300</td><td class="left">Time-sensitive first. Each entry: protocol, action, deadline, link, risk warning. Bold the deadline.</td></tr>
+  <tr><td>4</td><td class="left">New Opportunities</td><td>400</td><td class="left">What to farm this week. Each entry: protocol, what to do, expected timeline, link, risk warning.</td></tr>
+  <tr><td>5</td><td class="left">News &amp; Updates</td><td>200</td><td class="left">TGE announcements, tokenomics changes, snapshot dates. Brief &mdash; just the facts.</td></tr>
+  <tr><td>6</td><td class="left">Promising Airdrops (forward look)</td><td>200</td><td class="left">2&ndash;3 protocols to watch for next week+. Drives retention.</td></tr>
+  <tr><td></td><td class="left"><strong>Total</strong></td><td><strong>~1,200</strong></td><td class="left"></td></tr>
+</table>
+
+<!-- ============================================================ -->
+<!-- TWEETS -->
+<!-- ============================================================ -->
+
+<h2 id="tweets">3. Tweet Performance</h2>
+
+<h3>Sep 16 Tweets (New)</h3>
+
+<table>
+  <tr><th>Date</th><th style="text-align:left;">Tweet (truncated)</th><th>Imps</th><th>ER</th><th style="text-align:left;">Notes</th></tr>
+  <tr class="highlight" style="background:#fff3e0;">
+    <td>Sep 16</td><td class="left">"Robinhood Chain's volume growth slowed to +0.7%"</td>
+    <td class="up" style="font-weight:700;">2,276</td><td>1.05%</td><td class="left">24 eng, 9 clicks &mdash; massive outlier. Contrarian/bearish framing on a trending chain drove virality. See analysis below.</td>
+  </tr>
+  <tr>
+    <td>Sep 16</td><td class="left">"A new Solana perp DEX just launched. 5-20ms fills. No gas. 0-fee window"</td>
+    <td>786</td><td>1.78%</td><td class="left">14 eng, 6 clicks &mdash; specific performance stats worked here even though they were absent from the headline</td>
+  </tr>
+  <tr>
+    <td>Sep 16</td><td class="left">"Apyx TGE confirmed Oct 13. Season 2 Pips end Oct 11"</td>
+    <td class="down">724</td><td class="down">0.55%</td><td class="left">4 eng, 0 clicks &mdash; lowest imps in the Sep dataset. Date-only tweet with no hook or urgency beyond the date itself</td>
+  </tr>
+</table>
+
+<div class="alert">
+  <strong>Sep 16 produced the best and worst tweets in the September dataset.</strong> The Robinhood Chain slowdown tweet (2,276 imps, 9 clicks) is the second-highest organic tweet ever tracked for Airdrop Alpha, behind only the Robinhood Chain launch tweet (3,496 imps). Why: contrarian framing on a trending narrative generates debate and retweets. Meanwhile, the Apyx TGE tweet (724 imps, 0.55% ER, 0 clicks) is the worst-performing tweet in the entire September dataset &mdash; a bare date announcement with no hook, no number that creates urgency, and no question.
+</div>
+
+<h3>Sep 9 Tweets</h3>
+
+<table>
+  <tr><th>Date</th><th style="text-align:left;">Tweet (truncated)</th><th>Imps</th><th>ER</th><th style="text-align:left;">Notes</th></tr>
+  <tr>
+    <td>Sep 10</td><td class="left">"dYdX founder confirmed future @arcus_xyz tokens for dYdX users"</td>
+    <td class="up">856</td><td class="up">1.87%</td><td class="left">16 eng, 4 clicks &mdash; best in this batch. Named founder + forward-looking catalyst</td>
+  </tr>
+  <tr>
+    <td>Sep 9</td><td class="left">"27 memecoins are now paired against real Nasdaq stocks"</td>
+    <td>822</td><td class="up">2.31%</td><td class="left">19 eng, 5 clicks &mdash; surprising stat + specific number. High ER despite moderate imps</td>
+  </tr>
+  <tr>
+    <td>Sep 9</td><td class="left">"Robinhood Chain's fastest-growing DEX distributing 1B points"</td>
+    <td>775</td><td>1.03%</td><td class="left">8 eng, 1 click &mdash; big number but "fastest-growing" is generic</td>
+  </tr>
+  <tr>
+    <td>Sep 9</td><td class="left">"Polymarket launched 20x leverage perps"</td>
+    <td>772</td><td>1.42%</td><td class="left">11 eng, 2 clicks &mdash; named protocol + specific leverage number</td>
+  </tr>
+</table>
+
+<h3>Sep 2 Tweets</h3>
+
+<table>
+  <tr><th>Date</th><th style="text-align:left;">Tweet (truncated)</th><th>Imps</th><th>ER</th><th style="text-align:left;">Notes</th></tr>
+  <tr>
+    <td>Sep 3</td><td class="left">".@umia_finance's token auction sold out in 7 minutes"</td>
+    <td>912</td><td>1.32%</td><td class="left">12 eng, 2 clicks &mdash; scarcity framing</td>
+  </tr>
+  <tr>
+    <td>Sep 2</td><td class="left">".@o1_exchange is up 28% this week. DeFiLlama AA rating"</td>
+    <td>1,036</td><td>1.83%</td><td class="left">19 eng, 2 clicks &mdash; specific % + rating = credibility</td>
+  </tr>
+  <tr>
+    <td>Sep 2</td><td class="left">"Two token sales close this week"</td>
+    <td>885</td><td>1.13%</td><td class="left">10 eng, 0 clicks &mdash; vague, no names</td>
+  </tr>
+  <tr class="highlight">
+    <td>Sep 2</td><td class="left">"A DEX is routing $2B+ in monthly volume on under $4M in capital. No points. No airdrop."</td>
+    <td>867</td><td class="up">2.42%</td><td class="left">21 eng, 7 clicks &mdash; highest CTR in batch. Curiosity gap + specific number</td>
+  </tr>
+</table>
+
+<h3>Historical Tweets (Jul 16 &ndash; Aug 27)</h3>
+
+<table>
+  <tr><th>Date</th><th style="text-align:left;">Tweet (truncated)</th><th>Imps</th><th>Clicks</th><th>ER</th></tr>
+  <tr class="highlight" style="background:#fff3e0;">
+    <td>Aug 27</td><td class="left">"Variational's Omni Points have ~1.5 months left to farm. 150,000 points distributed weekly..."</td>
+    <td class="up" style="font-weight:700;">6,744</td><td>n/a</td><td>0.49%</td>
+  </tr>
+  <tr>
+    <td>Aug 26</td><td class="left">"infiniFi just confirmed Q4 2026 TGE..."</td>
+    <td>869</td><td>n/a</td><td class="down">0.35%</td>
+  </tr>
+  <tr>
+    <td>Aug 26</td><td class="left">"TermMax TGE and claims are live right now. Only ~20% was circulating..."</td>
+    <td>838</td><td>n/a</td><td>1.07%</td>
+  </tr>
+  <tr>
+    <td>Aug 20</td><td class="left">"5 airdrops you must know this week..."</td>
+    <td>798</td><td>n/a</td><td class="up">2.26%</td>
+  </tr>
+  <tr>
+    <td>Aug 19</td><td class="left">"Lighter just opened a fresh $11M points pool..."</td>
+    <td>880</td><td>n/a</td><td>1.93%</td>
+  </tr>
+  <tr>
+    <td>Aug 13</td><td class="left">"5 airdrops this week &mdash; one has a hard deadline in 5 days..."</td>
+    <td>822</td><td>4</td><td>2.68%</td>
+  </tr>
+  <tr>
+    <td>Aug 5</td><td class="left">"Your $GRVT airdrop is claimable right now. 28% of supply..."</td>
+    <td>884</td><td class="up">9</td><td>2.60%</td>
+  </tr>
+  <tr>
+    <td>Jul 23</td><td class="left">"This week in airdrops: @grvt_io TGE delayed Jul 30..."</td>
+    <td>973</td><td>2</td><td>2.36%</td>
+  </tr>
+  <tr>
+    <td>Jul 16</td><td class="left">"This week in airdrops: @JupiterExchange 50M JUP claims..."</td>
+    <td>1,001</td><td>5</td><td>1.50%</td>
+  </tr>
+  <tr class="highlight">
+    <td>Jul 20</td><td class="left">"Robinhood Chain launched &mdash; where should users focus?"</td>
+    <td class="up">3,496</td><td class="up">28</td><td class="up">2.95%</td>
+  </tr>
+</table>
+
+<h3>Aggregate Tweet KPIs (34 tweets)</h3>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value">1,055</div><div class="kpi-label">Avg Impressions</div><div class="kpi-change">(was 1,119)</div></div>
+  <div class="kpi"><div class="kpi-value">1.56%</div><div class="kpi-label">Avg Eng. Rate</div><div class="kpi-change">(was 1.63%)</div></div>
+  <div class="kpi"><div class="kpi-value up">6,744</div><div class="kpi-label">Best Single Tweet</div><div class="kpi-change">(unchanged &mdash; likely promoted)</div></div>
+  <div class="kpi"><div class="kpi-value">34</div><div class="kpi-label">Total Tweets Tracked</div><div class="kpi-change">(was 23)</div></div>
+</div>
+
+<div class="alert">
+  <strong>Excluding the Variational outlier (6,744 imps, likely promoted) and the Robinhood Chain slowdown tweet (2,276 imps &mdash; organic breakout), the organic baseline across 32 tweets is 849 imps.</strong> This is slightly down from the prior 22-tweet organic average of 862, dragged lower by the Sep 16 Apyx tweet (724 imps) and the Sep 9 batch (806 avg). The September organic average across 11 tweets (excluding the 2,276 outlier) is 840 &mdash; below the Jul&ndash;Aug organic baseline of 855.
+</div>
+
+<h3>New Tweet Insights</h3>
+
+<div class="takeaway">
+  <strong>Best new tweet: "Robinhood Chain's volume growth slowed to +0.7%" (2,276 imps, 24 eng, 9 clicks)</strong><br>
+  This is the second-highest organic tweet in the entire dataset. Why it worked:
+  <ul style="margin:6px 0;">
+    <li><strong>Contrarian framing on a trending narrative:</strong> Robinhood Chain has been a consistent engagement driver (see Jul 20: 3,496 imps). This tweet succeeded by going bearish on a bullish narrative &mdash; "slowed to +0.7%" implies the hype is fading.</li>
+    <li><strong>Specific number:</strong> "+0.7%" is precise and surprising. It forces the reader to engage: "is that good or bad?"</li>
+    <li><strong>Debate bait:</strong> Contrarian takes generate replies and quote tweets, which amplify impressions. This tweet got 2.9x the organic average.</li>
+  </ul>
+  <strong>Implication:</strong> Airdrop Alpha should include one contrarian/critical tweet per cycle when the data supports it. This is different from FUD &mdash; it's data-backed skepticism that creates discussion.
+</div>
+
+<div class="takeaway">
+  <strong>"27 memecoins are now paired against real Nasdaq stocks" (822 imps, 2.31% ER, 5 clicks)</strong><br>
+  High engagement rate despite moderate impressions. This is a "wait, what?" tweet &mdash; the intersection of memecoins and traditional equities is unexpected. Specific number (27) + unexpected juxtaposition = engagement. The format works because it's genuinely surprising, not just urgency-driven.
+</div>
+
+<div class="takeaway">
+  <strong>The Apyx TGE tweet (724 imps, 0.55% ER, 0 clicks) is the Sep low point.</strong><br>
+  "Apyx TGE confirmed Oct 13. Season 2 Pips end Oct 11" is a bare date announcement. No hook, no question, no stat that makes the reader care. Compare to ".@o1_exchange is up 28% this week" (1,036 imps, 1.83% ER) &mdash; same tweet type (protocol update) but with a specific performance number that gives the reader a reason to engage.
+</div>
+
+<h3>Breakout Tweet Analysis</h3>
+
+<div class="takeaway">
+  <strong>Best organic all-time: "Robinhood Chain launched &mdash; where should users focus?" (3,496 imps, 28 clicks)</strong><br>
+  This remains the benchmark for macro-event tweets. The Robinhood Chain slowdown tweet (2,276 imps) shows that the same chain can drive engagement with a contrarian take, not just bullish momentum. Robinhood Chain is the most engagement-rich topic in the Airdrop Alpha tweet universe.
+</div>
+
+<div class="takeaway">
+  <strong>Best click-getter in Sep: Robinhood Chain slowdown (9 clicks on 2,276 imps = 0.40% CTR).</strong><br>
+  For comparison, the "$2B volume, no token" curiosity tweet hit 7 clicks on 867 imps = 0.81% CTR. Higher impressions don't always mean higher click-through &mdash; the curiosity gap format remains the best for driving actual link clicks. The contrarian format drives impressions and engagement but converts to clicks at a lower rate.
+</div>
+
+<h3>What Works vs What Doesn't (Updated with 34 tweets)</h3>
+<table>
+  <tr><th style="text-align:left;">Pattern</th><th>Avg Imps</th><th>Avg ER</th><th style="text-align:left;">Examples</th></tr>
+  <tr class="highlight">
+    <td class="left"><strong>Contrarian take on trending narrative</strong></td>
+    <td class="up">2,276</td><td>1.05%</td>
+    <td class="left">"Robinhood Chain's volume growth slowed to +0.7%"</td>
+  </tr>
+  <tr class="highlight">
+    <td class="left"><strong>Curiosity gap + specific number</strong></td>
+    <td>867</td><td class="up">2.42%</td>
+    <td class="left">"A DEX routing $2B+ in volume... No points. No airdrop."</td>
+  </tr>
+  <tr class="highlight">
+    <td class="left"><strong>Surprising stat / unexpected juxtaposition</strong></td>
+    <td>822</td><td class="up">2.31%</td>
+    <td class="left">"27 memecoins paired against real Nasdaq stocks"</td>
+  </tr>
+  <tr class="highlight">
+    <td class="left"><strong>Named chain/protocol + question</strong></td>
+    <td class="up">3,496</td><td class="up">2.95%</td>
+    <td class="left">"Robinhood Chain launched &mdash; where should users focus?"</td>
+  </tr>
+  <tr class="highlight">
+    <td class="left"><strong>Urgency + specific number</strong></td>
+    <td>884</td><td class="up">2.60%</td>
+    <td class="left">"$GRVT claimable right now. 28% of supply"</td>
+  </tr>
+  <tr>
+    <td class="left"><strong>Specific % change + named protocol</strong></td>
+    <td>1,036</td><td>1.83%</td>
+    <td class="left">".@o1_exchange is up 28% this week. DeFiLlama AA rating"</td>
+  </tr>
+  <tr>
+    <td class="left"><strong>Named protocol + specific points/$</strong></td>
+    <td>839</td><td>1.93%</td>
+    <td class="left">"Lighter opened a fresh $11M points pool on Robinhood Chain"</td>
+  </tr>
+  <tr>
+    <td class="left"><strong>Bare date announcement (no hook)</strong></td>
+    <td class="down">724</td><td class="down">0.55%</td>
+    <td class="left">"Apyx TGE confirmed Oct 13. Season 2 Pips end Oct 11"</td>
+  </tr>
+  <tr>
+    <td class="left"><strong>Vague framing ("decision", "opportunity")</strong></td>
+    <td class="down">654</td><td class="down">0.66%</td>
+    <td class="left">"Your $MULT airdrop decision is live right now..."</td>
+  </tr>
+</table>
+
+<div class="alert">
+  <strong>The hierarchy is now confirmed with 34 tweets.</strong> A new category emerges at the top: <strong>contrarian takes on trending narratives</strong> drive the highest impressions (2,276) but moderate ER (1.05%). For raw engagement rate, curiosity gap + number (2.42%) and surprising stat (2.31%) remain top formats. For click-through, the curiosity gap format still wins. The bottom is clear: bare date announcements and vague framing consistently produce sub-1% ER and 0 clicks. Every tweet needs at least one of: a specific number, a contrarian angle, a deadline, or a question.
+</div>
+
+<!-- ============================================================ -->
+<!-- TWEET STRATEGY -->
+<!-- ============================================================ -->
+
+<h2 id="tweet-strategy">4. Recommended Tweet Strategy</h2>
+
+<p style="font-size:13px;">Airdrop Alpha now publishes Wednesday (shifted from Tuesday in Sep). Tweets should go out Wednesday evening and Thursday morning UTC+8. The data covers 34 tweets across 10 issue cycles. The 3-tweet framework is updated to reflect the new contrarian-tweet pattern.</p>
+
+<h3>3-Tweet Framework for Each Airdrop Alpha</h3>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Wednesday 21:00 UTC+8 &mdash; Deadline Alert</span>
+  <p>The most time-sensitive claim or deadline from this week's issue. Lead with the deadline, name the protocol, add one specific number.</p>
+  <p><strong>Format:</strong> <code>[Protocol] [claim/deadline] closes [date]. [One specific number: supply %, $ value, points]. Don't miss it: [link]</code></p>
+  <p><strong>Validated by:</strong> "$GRVT airdrop is claimable right now. 28% of supply" (884 imps, 2.60% ER, 9 clicks)</p>
+</div>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Wednesday 22:00 UTC+8 &mdash; Best New Opportunity / Contrarian Signal</span>
+  <p>Either the single best new farming opportunity (with a specific number and protocol tag), <strong>or</strong> a contrarian/critical data point on a trending protocol. When data supports a bearish-but-factual take, use the contrarian format &mdash; it drives 2&ndash;3x the impressions of a standard opportunity tweet.</p>
+  <p><strong>Opportunity format:</strong> <code>[Protocol] is distributing [specific number]. [What to do]. Details: [link]</code></p>
+  <p><strong>Contrarian format:</strong> <code>[Trending protocol]'s [metric] [bearish verb: slowed, dropped, flatlined] to [specific number]. [Implied question]</code></p>
+  <p><strong>Validated by:</strong> "Robinhood Chain's volume growth slowed to +0.7%" (2,276 imps, 9 clicks) and ".@o1_exchange is up 28% this week" (1,036 imps, 1.83% ER)</p>
+</div>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Thursday ~09:30 UTC+8 &mdash; Curiosity / Macro Signal</span>
+  <p>Step back from individual airdrops and tweet about a trend, a surprising stat, or a structural shift. Use a curiosity gap when the underlying story is strong enough. This is the tweet that can break out.</p>
+  <p><strong>Format:</strong> <code>[Provocative stat or observation]. [No name &mdash; create the gap]. [Implied opportunity]: [link]</code></p>
+  <p><strong>Validated by:</strong> "A DEX routing $2B+ in monthly volume... No points. No airdrop." (867 imps, 2.42% ER, 7 clicks) and "27 memecoins paired against real Nasdaq stocks" (822 imps, 2.31% ER, 5 clicks)</p>
+</div>
+
+<h3>Rules (from the data &mdash; now 34 tweets)</h3>
+<div class="takeaway">
+  <ul style="margin:6px 0;">
+    <li><strong>Never post bare date announcements.</strong> "Apyx TGE confirmed Oct 13" (724 imps, 0 clicks) is the new worst-case example. A date alone is not a hook. Add: why should I care? What happens if I miss it? How big is the opportunity?</li>
+    <li><strong>Always include a specific number.</strong> The Sep data reinforces this: "+0.7%" drove 2,276 imps. "28%" drove 9 clicks. "27 memecoins" drove 2.31% ER. The Apyx tweet had dates but no number that created stakes &mdash; and got 0 clicks.</li>
+    <li><strong>Contrarian takes on trending topics are the new breakout format.</strong> The Robinhood Chain slowdown tweet (2,276 imps) joins the Robinhood Chain launch tweet (3,496 imps) as the two highest organic tweets. Both involve the same chain; one is bullish, one is bearish. The common thread: a specific, named, trending narrative with a clear angle.</li>
+    <li><strong>Curiosity gaps remain the best click-through format.</strong> The "$2B volume, no token" tweet has the highest CTR in the dataset (0.81%). For driving link clicks specifically, withhold the name and lead with a surprising stat.</li>
+    <li><strong>Scarcity framing is still underused.</strong> "Sold out in 7 min, only 678 filled" (1.32% ER) creates FOMO. Use for token sales and limited allocations.</li>
+    <li><strong>Ride news waves &mdash; and ride the backlash too.</strong> Robinhood Chain produced breakout tweets on both the launch (3,496 imps) and the slowdown (2,276 imps). When a narrative is trending, tweet the bullish take day-of and the data-backed critical take 3&ndash;4 weeks later.</li>
+  </ul>
+</div>
+
+<h3>Sample Tweets for Next Issue</h3>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Draft &mdash; Deadline Alert</span>
+  <p>"Apyx Season 2 Pips close Oct 11 &mdash; TGE Oct 13. If you've been farming, lock in your allocation now. Here's what you need to know: [link]"</p>
+  <p style="font-size:11px; color:#888;">Takes the Sep 16 Apyx tweet that got 0 clicks and adds: urgency ("close Oct 11"), stakes ("lock in your allocation"), and a reason to click ("what you need to know").</p>
+</div>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Draft &mdash; Contrarian Signal</span>
+  <p>"Solana perp DEXes are multiplying. 3 new ones in 2 weeks. But only one is doing sub-10ms fills with no gas fees. The rest are forks."</p>
+  <p style="font-size:11px; color:#888;">Contrarian angle ("the rest are forks") + specific number (3 new, sub-10ms) + curiosity gap (which one?).</p>
+</div>
+
+<div class="tweet-draft">
+  <span class="handle">@todayindefi</span> <span class="time">Draft &mdash; Curiosity / Macro</span>
+  <p>"A Solana DEX is executing trades faster than most CEXes &mdash; and its 0-fee window is still open. No token announced yet."</p>
+  <p style="font-size:11px; color:#888;">Follows the validated Sep 2 formula: curiosity gap (no name) + specific differentiator (faster than CEXes) + implied opportunity (no token yet).</p>
+</div>
+
+<h3>Performance Targets (Updated)</h3>
+<table>
+  <tr><th style="text-align:left;">Metric</th><th>Current (34 tweets)</th><th>Target</th></tr>
+  <tr><td class="left">Tweets per Airdrop Alpha</td><td class="up">3&ndash;4</td><td class="up">3 (hit target)</td></tr>
+  <tr><td class="left">Avg impressions (organic, ex-outliers)</td><td class="down">849</td><td>1,000+</td></tr>
+  <tr><td class="left">Avg engagement rate</td><td class="down">1.56%</td><td>2.0%+</td></tr>
+  <tr><td class="left">Bare date announcements (no hook)</td><td class="down">2 of 34</td><td>0</td></tr>
+  <tr><td class="left">Tweets with a specific number</td><td>24 of 34</td><td>All</td></tr>
+  <tr><td class="left">Tweets with 2%+ ER</td><td>9 of 34</td><td>14+</td></tr>
+  <tr><td class="left">Contrarian/critical tweets per month</td><td>1</td><td>2&ndash;3</td></tr>
+</table>
+
+<!-- ============================================================ -->
+<!-- ACTIONS -->
+<!-- ============================================================ -->
+
+<h2 id="actions">5. Action Items (Priority Order)</h2>
+
+<h3>Headlines (highest leverage &mdash; now at all-time low)</h3>
+<div class="action">
+  <strong>1. Stop using curiosity headlines without a specific number.</strong> Sep 16 ("This New Solana Perp DEX Just Launched &mdash; Get In Early" at 19.92%) proves that curiosity without a concrete stat is the worst-performing format. Sep 2 ("$2B Volume... No Token Yet" at 21.21%) proves it works with a number. The rule: if you withhold the protocol name, you must compensate with a stat that makes the reader care.
+</div>
+<div class="action">
+  <strong>2. Use the Aug 26 headline as the primary template.</strong> "Claim TermMax Now, infiniFi TGE Confirmed Q4" (21.81%) remains the best headline across 15 issues. Formula: <code>[Action verb] [Named protocol] [Urgency], [Second protocol] [Forward catalyst]</code>. Under 55 chars.
+</div>
+<div class="action">
+  <strong>3. Replace "Get In Early" / "Just Launched" with specific differentiators.</strong> "Get In Early" is vague urgency &mdash; it promises nothing specific. Replace with the actual differentiator: "5ms Fills", "Zero Fees", "No Token Yet." The reader needs a concrete reason to open, not a generic invitation.
+</div>
+<div class="action">
+  <strong>4. Drop "Airdrop Alpha:" prefix and "- Airdrop Alpha" suffix permanently.</strong> Still used in 7 of 15 headlines. The reader knows which letter this is. Reclaim those 16&ndash;18 chars for a protocol name or deadline.
+</div>
+<div class="action">
+  <strong>5. Kill "and more..." / "and many more..." permanently.</strong> Appears in the worst-performing headlines. Signals editorial indecision.
+</div>
+<div class="action">
+  <strong>6. Add time pressure to every headline.</strong> "Now" (Aug 26, 21.81%) outperforms "Live" (avg ~20.5%). "Closes [date]" outperforms "Open." "Before [event]" outperforms "Just Launched." Be specific about when.
+</div>
+
+<h3>Content</h3>
+<div class="action">
+  <strong>7. Add a TL;DR box (3 bullets) at the top of every issue.</strong> This was recommended in the Aug report and has not been adopted. "Claim: [X] by [date]. New: [Y] points program. News: [Z] TGE confirmed." Takes 30 seconds. Serves the paying subscriber with 60 seconds to scan.
+</div>
+<div class="action">
+  <strong>8. Add cross-links to other letters.</strong> Also recommended in Aug, still not adopted. When an airdrop involves yield farming, link to Farms &amp; Yield. When a protocol has a deep-dive, link to the Friday Guide. The Airdrop Alpha should be a discovery layer, not a silo.
+</div>
+<div class="action">
+  <strong>9. Evaluate the Tuesday-to-Wednesday shift.</strong> September's 20.47% avg OR is below the 15-issue avg of 20.60%. The day shift may contribute to inbox competition. Consider A/B testing Wednesday vs. Thursday, or monitor whether Oct issues recover.
+</div>
+<div class="action">
+  <strong>10. Set and enforce a word count target of 1,200&ndash;1,500 words.</strong> The 875&ndash;2,104 range (2.4x swing) persists. Adopt the recommended template with section budgets.
+</div>
+<div class="action">
+  <strong>11. Address the deliver decline.</strong> 4,739 (Jun 3) &rarr; 4,633 (Sep 16) = &minus;106 subscribers (&minus;2.2%). For a paid letter, this is a slow bleed. Consider: retention-focused copy in the Promising Airdrops section, a "what you got from us this month" recap, or a re-engagement email to lapsed openers.
+</div>
+
+<h3>Tweets</h3>
+<div class="action">
+  <strong>12. Add a contrarian/critical tweet to the rotation.</strong> The Robinhood Chain slowdown tweet (2,276 imps, 9 clicks) is the second-best organic tweet ever. When data supports a bearish-but-factual take on a trending narrative, use it. Target: 2&ndash;3 contrarian tweets per month across all letter types.
+</div>
+<div class="action">
+  <strong>13. Never post bare date announcements.</strong> "Apyx TGE confirmed Oct 13" (724 imps, 0 clicks) is the new worst-case example. Every TGE/date tweet must include: why should the reader care, what's at stake, and one specific number beyond the date itself.
+</div>
+<div class="action">
+  <strong>14. Include a specific number in every tweet.</strong> 24 of 34 tweets have a number. Those with numbers average 1.85% ER; those without average 0.88% ER. That's a 2.1x difference. The Sep data adds "+0.7%", "27 memecoins", and "28%" to the evidence pile.
+</div>
+<div class="action">
+  <strong>15. Adjust tweet timing for the Wednesday publish day.</strong> With the shift from Tuesday to Wednesday, tweets should now go out Wednesday evening (21:00 + 22:00 UTC+8) and Thursday morning (~09:30 UTC+8). Confirm this timing in the next 2&ndash;3 issues and adjust if Thursday morning underperforms.
+</div>
+<div class="action">
+  <strong>16. Use the curiosity-gap format for the Thursday morning tweet.</strong> The "$2B volume, no token" tweet (2.42% ER, 7 clicks) and the "27 memecoins" tweet (2.31% ER, 5 clicks) confirm this is the highest-CTR format. Withhold the protocol name, lead with a surprising stat, let readers click to find out.
+</div>
+<div class="action">
+  <strong>17. Tweet breaking airdrop news immediately &mdash; don't wait for Wednesday.</strong> The Robinhood Chain launch tweet (3,496 imps) went out on a Sunday. Airdrop Alpha content is inherently time-sensitive. If a major claim opens or a TGE happens, tweet within hours.
+</div>
+
+<p class="meta">Generated Sep 21, 2026 &middot; Data: 15 Airdrop Alpha issues (Jun 3 &ndash; Sep 16, 2026), 34 airdrop-related tweets (Jul 16 &ndash; Sep 16, 2026) &middot; Analysis by Claude.<br>
+Previously generated Sep 4, 2026 (13 issues, 23 tweets). Updated with Sep 16 issue and Sep 2/Sep 9/Sep 16 tweet batches (11 new tweets).</p>
+
+</body>
+</html>

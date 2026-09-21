@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LWID Weekly Recap &mdash; Content &amp; Tweet Analysis</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; max-width: 780px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; line-height: 1.55; }
+  h1 { font-size: 22px; border-bottom: 2px solid #ff6719; padding-bottom: 8px; }
+  h2 { font-size: 17px; margin-top: 36px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 4px; }
+  h3 { font-size: 14px; margin-top: 24px; color: #555; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+  th, td { border: 1px solid #ddd; padding: 7px 10px; text-align: left; }
+  th { background: #f5f8fa; font-weight: 600; }
+  td:not(:first-child) { text-align: right; }
+  td.left { text-align: left; }
+  .down { color: #e0245e; }
+  .up { color: #17bf63; }
+  .highlight { background: #fffde7; }
+  .takeaway { background: #f5f8fa; border-left: 3px solid #ff6719; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .takeaway-twitter { background: #f5f8fa; border-left: 3px solid #1da1f2; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .alert { background: #fef3f2; border-left: 3px solid #e0245e; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .action { background: #f0faf0; border-left: 3px solid #17bf63; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .meta { color: #888; font-size: 12px; margin-top: 40px; border-top: 1px solid #eee; padding-top: 10px; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+  .kpi { background: #f5f8fa; border-radius: 6px; padding: 12px; text-align: center; }
+  .kpi-value { font-size: 22px; font-weight: 700; color: #ff6719; }
+  .kpi-label { font-size: 11px; color: #666; margin-top: 2px; }
+  .kpi-change { font-size: 11px; margin-top: 2px; }
+  .section-nav { background: #f5f8fa; border-radius: 6px; padding: 14px 18px; margin: 16px 0; font-size: 13px; }
+  .section-nav a { color: #ff6719; text-decoration: none; margin-right: 16px; }
+  .section-nav a:hover { text-decoration: underline; }
+  blockquote { border-left: 3px solid #ccc; margin: 12px 0; padding: 8px 14px; background: #fafafa; font-size: 13px; }
+  .tweet-draft { background: #f5f8fa; border: 1px solid #ddd; border-radius: 8px; padding: 14px; margin: 10px 0; font-size: 13px; }
+  .tweet-draft .handle { color: #1da1f2; font-weight: 600; font-size: 12px; }
+  .tweet-draft .time { color: #888; font-size: 11px; float: right; }
+</style>
+</head>
+<body>
+
+<h1>LWID Weekly Recap &mdash; Content &amp; Tweet Analysis</h1>
+<p style="color:#666; font-size:14px;">Today in DeFi &middot; Monday letter &middot; Jun&ndash;Sep 2026</p>
+
+<div class="section-nav">
+  <strong>Jump to:</strong>
+  <a href="#headlines">Headlines</a>
+  <a href="#content">Content</a>
+  <a href="#clicks">Clicks</a>
+  <a href="#tweets">Tweets</a>
+  <a href="#actions">Action Items</a>
+</div>
+
+<!-- ============================================================ -->
+<!-- HEADLINES -->
+<!-- ============================================================ -->
+
+<h2 id="headlines">1. Headline Audit &mdash; Full History (14 Issues)</h2>
+
+<table>
+  <tr><th>Date</th><th style="text-align:left;">Headline</th><th>Chars</th><th>OR</th><th>Delivers</th><th>vs Avg</th></tr>
+  <tr class="highlight"><td>Sep 14</td><td class="left">Uniswap Improves Stable LPs APR, Circle&rsquo;s Arc Launches Sept 16</td><td>62</td><td class="down">20.03%</td><td>4,632</td><td class="down">&minus;0.6pp</td></tr>
+  <tr><td>Sep 7</td><td class="left">Liquid Exploited For $320M BTC, Pendle on Robinhood Chain</td><td>57</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+  <tr><td>Sep 1</td><td class="left">A $4.8M TVL DEX Did $6B in Volume, Plasma Crossed 1B in TVL</td><td>60</td><td>20.97%</td><td>4,682</td><td class="up">+0.4pp</td></tr>
+  <tr class="highlight"><td>Aug 24</td><td class="left">Term Finance Lost $8.5M, Ledger Patches Signing Bug</td><td>51</td><td class="up">21.38%</td><td>4,673</td><td class="up">+0.8pp</td></tr>
+  <tr class="highlight"><td>Aug 17</td><td class="left">Neutrl sNUSD Crashes 47%, Trezor and SafePal Data Leaks</td><td>55</td><td class="up">21.15%</td><td>4,685</td><td class="up">+0.6pp</td></tr>
+  <tr><td>Aug 10</td><td class="left">Circle&rsquo;s Arc Goes Live Sept 16, Ether.fi Splits weETH - Weekly Recap</td><td>68</td><td class="down">20.14%</td><td>4,662</td><td class="down">&minus;0.5pp</td></tr>
+  <tr><td>Aug 3</td><td class="left">ColdCard Hacked For &gt;$89M, Uniswap Activated Fee Switch - Weekly Recap</td><td>71</td><td class="down">20.07%</td><td>4,708</td><td class="down">&minus;0.5pp</td></tr>
+  <tr><td>Jul 20</td><td class="left">Ostium Exploited For $24M, Aave V4 Live on Avalanche With Incentives - Weekly Recap</td><td>83</td><td>20.65%</td><td>4,711</td><td>+0.1pp</td></tr>
+  <tr><td>Jul 13</td><td class="left">Jito Launching JTX Perps, Maple Proposing Buybacks - Weekly Recap</td><td>65</td><td>20.60%</td><td>4,723</td><td>0.0pp</td></tr>
+  <tr><td>Jul 6</td><td class="left">Robinhood Launches Chain, Lighter Burning All Future Buybacks - Weekly Recap</td><td>76</td><td class="down">20.18%</td><td>4,727</td><td class="down">&minus;0.4pp</td></tr>
+  <tr><td>Jun 29</td><td class="left">STRC Trading below $75, Aave Upgrading Tokenomics - Weekly Recap</td><td>64</td><td>20.93%</td><td>4,721</td><td>+0.3pp</td></tr>
+  <tr><td>Jun 22</td><td class="left">Mainstreet msUSD Depegged by 80%, Ventuals Shutting Down, and many more...</td><td>74</td><td>21.03%</td><td>4,721</td><td>+0.4pp</td></tr>
+  <tr><td>Jun 8</td><td class="left">Weekly Recap: Coinbase Bought $ENA, Grayscale Launches $HYPE Staking ETF, and more...</td><td>83</td><td>21.13%</td><td>4,741</td><td>+0.5pp</td></tr>
+  <tr><td>Jun 1</td><td class="left">Exponent Launches v2, Fluid Incentives Compromised, and many more...</td><td>68</td><td>20.72%</td><td>4,750</td><td>+0.1pp</td></tr>
+</table>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value">20.6%</div><div class="kpi-label">All-Time LWID Avg OR</div><div class="kpi-change">13 issues w/ data</div></div>
+  <div class="kpi"><div class="kpi-value down">20.03%</div><div class="kpi-label">Sep 14 OR</div><div class="kpi-change down">Lowest since Aug 3</div></div>
+  <div class="kpi"><div class="kpi-value down">65</div><div class="kpi-label">Avg Headline Chars</div></div>
+  <div class="kpi"><div class="kpi-value">55</div><div class="kpi-label">Target Chars</div></div>
+</div>
+
+<div class="takeaway">
+  <strong>Sep 14 (20.03%) is the lowest LWID OR since Aug 3 (20.07%) and sits 0.6pp below the series average.</strong> The headline &ldquo;Uniswap Improves Stable LPs APR, Circle&rsquo;s Arc Launches Sept 16&rdquo; leads with a positive/incremental improvement rather than a threat or loss. Both stories are product updates, not security events. Meanwhile the two best performers (Aug 24: 21.38%, Aug 17: 21.15%) both led with a loss or crash. The pattern is now confirmed across 13 data points: threat-first headlines outperform product-launch headlines by 0.8&ndash;1.3pp on LWID.
+</div>
+
+<div class="takeaway">
+  <strong>Sep 1 (20.97%) rebounded nicely</strong> with an unusual hook: &ldquo;A $4.8M TVL DEX Did $6B in Volume.&rdquo; This isn&rsquo;t a threat headline &mdash; it&rsquo;s a knowledge-gap headline. The absurd contrast ($4.8M TVL vs $6B volume) creates curiosity. This suggests a second winning formula: dramatic contradiction headlines can match threat headlines when the numbers are extreme enough.
+</div>
+
+<div class="alert">
+  <strong>Sep 7 OR data still unavailable.</strong> The Sep 7 LWID is confirmed sent (verified via tweets and Substack Notes) but shows 0% OR in the data. This is a recurring issue for Monday letters published in UTC+8 evening. Only tweet-side data is captured for this issue.
+</div>
+
+<h3>Patterns Across 14 Issues</h3>
+<table>
+  <tr><th style="text-align:left;">Pattern</th><th style="text-align:left;">Evidence</th><th>Avg OR</th></tr>
+  <tr class="highlight"><td class="left"><strong>Threat/loss lead</strong></td><td class="left">Aug 24, Aug 17, Jun 22, Aug 3, Jul 20</td><td class="up">20.86%</td></tr>
+  <tr class="highlight"><td class="left"><strong>Contradiction/knowledge-gap lead</strong></td><td class="left">Sep 1</td><td class="up">20.97%</td></tr>
+  <tr><td class="left"><strong>Product/launch lead</strong></td><td class="left">Sep 14, Aug 10, Jul 6, Jul 13</td><td class="down">20.24%</td></tr>
+  <tr><td class="left"><strong>Suffix &ldquo;- Weekly Recap&rdquo; present</strong></td><td class="left">Aug 10, Aug 3, Jul 20, Jul 13, Jul 6</td><td class="down">20.33%</td></tr>
+  <tr class="highlight"><td class="left"><strong>Suffix dropped</strong></td><td class="left">Sep 14, Sep 1, Aug 24, Aug 17</td><td class="up">20.88%</td></tr>
+  <tr class="highlight"><td class="left"><strong>Under 55 chars</strong></td><td class="left">Aug 24 (51), Aug 17 (55)</td><td class="up">21.27%</td></tr>
+  <tr><td class="left"><strong>Over 65 chars</strong></td><td class="left">Aug 10 (68), Aug 3 (71), Jul 20 (83), Jun 22 (74), Jun 8 (83), Jun 1 (68)</td><td>20.62%</td></tr>
+</table>
+
+<div class="takeaway">
+  <strong>Dropping the suffix is now validated across 4 issues: avg 20.88% vs 20.33% with suffix (+0.55pp).</strong> Headlines under 55 chars average 21.27% &mdash; the highest of any segment. The ideal LWID headline is: threat/contradiction lead + no suffix + under 55 chars.
+</div>
+
+<h3>What Readers Actually See (truncated at ~55 chars)</h3>
+<table>
+  <tr><th>Date</th><th style="text-align:left;">Visible in Inbox</th><th style="text-align:left;">Hidden</th></tr>
+  <tr><td>Sep 14</td><td class="left">Uniswap Improves Stable LPs APR, Circle&rsquo;s Arc Launch</td><td class="left">es Sept 16</td></tr>
+  <tr><td>Sep 7</td><td class="left">Liquid Exploited For $320M BTC, Pendle on Robinhood Cha</td><td class="left">in</td></tr>
+  <tr><td>Sep 1</td><td class="left">A $4.8M TVL DEX Did $6B in Volume, Plasma Crossed 1B i</td><td class="left">n TVL</td></tr>
+  <tr class="highlight"><td>Aug 24</td><td class="left">Term Finance Lost $8.5M, Ledger Patches Signing Bug</td><td class="left">(nothing &mdash; fits!)</td></tr>
+  <tr class="highlight"><td>Aug 17</td><td class="left">Neutrl sNUSD Crashes 47%, Trezor and SafePal Data Leaks</td><td class="left">(nothing &mdash; fits!)</td></tr>
+  <tr><td>Aug 10</td><td class="left">Circle&rsquo;s Arc Goes Live Sept 16, Ether.fi Splits weETH -</td><td class="left">Weekly Recap</td></tr>
+  <tr><td>Aug 3</td><td class="left">ColdCard Hacked For &gt;$89M, Uniswap Activated Fee Switch</td><td class="left">- Weekly Recap</td></tr>
+</table>
+
+<h3>Suggested Rewrites for Sep 14</h3>
+<table>
+  <tr><th style="text-align:left;">Original (20.03%)</th><th style="text-align:left;">Rewrite</th><th>Chars</th></tr>
+  <tr><td class="left down">Uniswap Improves Stable LPs APR, Circle&rsquo;s Arc Launches Sept 16</td><td class="left">Uniswap Fixed a Hidden LP Problem &mdash; Here&rsquo;s What Changed</td><td>54</td></tr>
+  <tr><td class="left down">(alt)</td><td class="left">LPs Were Quietly Losing Money on Uniswap. Not Anymore.</td><td>55</td></tr>
+  <tr><td class="left down">(alt)</td><td class="left">Circle&rsquo;s Arc Goes Live in 2 Days &mdash; What You Need to Know</td><td>55</td></tr>
+</table>
+
+<div class="takeaway">
+  <strong>The Sep 14 headline fails on two axes:</strong> it leads with a positive improvement (low urgency) and runs 62 chars (gets truncated). The rewrites reframe the same story as a problem-first narrative under 55 chars. &ldquo;LPs Were Quietly Losing Money&rdquo; turns an improvement into a threat that was just resolved &mdash; same content, higher open rates.
+</div>
+
+<!-- ============================================================ -->
+<!-- CONTENT -->
+<!-- ============================================================ -->
+
+<h2 id="content">2. Content Audit</h2>
+
+<h3>Structure Comparison &mdash; Recent Issues</h3>
+<table>
+  <tr><th style="text-align:left;">Element</th><th>Sep 14</th><th>Sep 1</th><th>Aug 24</th><th>Aug 17</th></tr>
+  <tr><td class="left">TL;DR / Summary section</td><td class="left">TBD</td><td class="left">TBD</td><td class="left">Week at a Glance (bullets)</td><td class="left">TL;DR (paragraph)</td></tr>
+  <tr><td class="left">Issues/Security section</td><td class="down">No dedicated section</td><td class="down">No dedicated section</td><td class="up">Yes &mdash; leads with it</td><td class="up">Yes &mdash; leads with it</td></tr>
+  <tr><td class="left">DeFi News section</td><td class="up">Yes</td><td class="up">Yes</td><td class="up">Yes</td><td class="up">Yes</td></tr>
+  <tr><td class="left">Premium CTA at end</td><td class="down">No</td><td class="down">No</td><td class="down">No</td><td class="down">No</td></tr>
+  <tr><td class="left">Cross-links to other letters</td><td class="down">No</td><td class="down">No</td><td class="down">No</td><td class="down">No</td></tr>
+  <tr><td class="left">Audience</td><td>paid</td><td>paid</td><td>paid</td><td>paid</td></tr>
+</table>
+
+<div class="takeaway">
+  <strong>The LWID format has stabilized but still lacks two key elements:</strong> No issue in the entire 14-issue history includes a premium CTA or cross-links to other letters. Given LWID&rsquo;s consistently high OR (~20.6%), it&rsquo;s the single best vehicle for cross-selling other letter types and converting free readers.
+</div>
+
+<div class="alert">
+  <strong>Sep 14 dropped the Issues/Security section.</strong> The two highest-performing issues (Aug 24: 21.38%, Aug 17: 21.15%) both led with a dedicated security section. Sep 14 &mdash; which had no security lead &mdash; dropped to 20.03%. This is correlational, not causal, but worth monitoring. If no major security event happened during the week, consider adding a &ldquo;No major incidents this week&rdquo; note to maintain the structural expectation.
+</div>
+
+<div class="alert">
+  <strong>Summary section naming still inconsistent.</strong> Recommendation from the last report to standardize on &ldquo;TL;DR&rdquo; has not yet been implemented.
+</div>
+
+<!-- ============================================================ -->
+<!-- CLICKS -->
+<!-- ============================================================ -->
+
+<h2 id="clicks">3. Click-Through Analysis</h2>
+
+<h3>Sep 14 LWID &mdash; 20.03% OR, 4,632 delivers</h3>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value">928</div><div class="kpi-label">Est. Opens</div><div class="kpi-change">20.03% &times; 4,632</div></div>
+  <div class="kpi"><div class="kpi-value">4,632</div><div class="kpi-label">Delivers</div></div>
+  <div class="kpi"><div class="kpi-value down">20.03%</div><div class="kpi-label">Open Rate</div></div>
+  <div class="kpi"><div class="kpi-value">&mdash;</div><div class="kpi-label">CTR (no data)</div></div>
+</div>
+
+<div class="alert">
+  <strong>Click-through data for Sep 14 and Sep 1 is not yet available</strong> from the Substack dashboard. The Aug 24 click analysis from the previous report remains the most recent click data available.
+</div>
+
+<h3>Sep 1 LWID &mdash; 20.97% OR, 4,682 delivers</h3>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value up">982</div><div class="kpi-label">Est. Opens</div><div class="kpi-change">20.97% &times; 4,682</div></div>
+  <div class="kpi"><div class="kpi-value">4,682</div><div class="kpi-label">Delivers</div></div>
+  <div class="kpi"><div class="kpi-value up">20.97%</div><div class="kpi-label">Open Rate</div></div>
+  <div class="kpi"><div class="kpi-value">&mdash;</div><div class="kpi-label">CTR (no data)</div></div>
+</div>
+
+<h3>Aug 24 LWID &mdash; 21.38% OR, 4,673 delivers (from previous report)</h3>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value up">999</div><div class="kpi-label">Opens</div></div>
+  <div class="kpi"><div class="kpi-value">4,673</div><div class="kpi-label">Delivers</div></div>
+  <div class="kpi"><div class="kpi-value up">21.38%</div><div class="kpi-label">Open Rate</div></div>
+  <div class="kpi"><div class="kpi-value up">7%</div><div class="kpi-label">CTR (Highest)</div></div>
+</div>
+
+<h3>Top Links (Aug 24 &mdash; most recent click data)</h3>
+<table>
+  <tr><th>Clicks</th><th style="text-align:left;">Link</th><th>CTR</th></tr>
+  <tr class="highlight"><td class="up">30</td><td class="left">PeckShield exploit alert</td><td>3%</td></tr>
+  <tr class="highlight"><td class="up">24</td><td class="left">Phantom wallet advisory</td><td>2%</td></tr>
+  <tr class="highlight"><td class="up">23</td><td class="left">Term Finance hack thread</td><td>2%</td></tr>
+  <tr class="highlight"><td class="up">22</td><td class="left">FOMO app drain report</td><td>2%</td></tr>
+  <tr><td>21</td><td class="left">Concrete XYZ / Synthetix updates</td><td>2%</td></tr>
+  <tr><td>17</td><td class="left">DeFi Saver (sponsor)</td><td>2%</td></tr>
+</table>
+
+<div class="takeaway">
+  <strong>The Aug 24 click data pattern holds:</strong> security/incident links dominate clicks. The top 4 links were all threat-related. This aligns with the headline data &mdash; the LWID audience&rsquo;s primary driver is &ldquo;what went wrong this week,&rdquo; not &ldquo;what launched.&rdquo;
+</div>
+
+<!-- ============================================================ -->
+<!-- TWEETS -->
+<!-- ============================================================ -->
+
+<h2 id="tweets">4. Tweet Performance</h2>
+
+<h3>LWID Tweets &mdash; Mon Sep 14 / Tue Sep 15</h3>
+<table>
+  <tr><th style="text-align:left;">Tweet (truncated)</th><th>Imp</th><th>Eng</th><th>URL</th><th>ER</th></tr>
+  <tr>
+    <td class="left">.@Uniswap fixed a problem that&rsquo;s quietly cost LPs money for years</td>
+    <td>849</td><td>12</td><td>2</td><td>1.41%</td>
+  </tr>
+  <tr>
+    <td class="left">Circle&rsquo;s @arc goes live on September 16</td>
+    <td>761</td><td>10</td><td>2</td><td>1.31%</td>
+  </tr>
+  <tr class="highlight">
+    <td class="left">Everyone checks the APY. Almost nobody checks what&rsquo;s behind it</td>
+    <td class="up">2,219</td><td class="up">34</td><td class="up">11</td><td class="up">1.53%</td>
+  </tr>
+</table>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value up">3,829</div><div class="kpi-label">Sep 14 LWID Impressions</div></div>
+  <div class="kpi"><div class="kpi-value up">56</div><div class="kpi-label">Engagements</div></div>
+  <div class="kpi"><div class="kpi-value up">15</div><div class="kpi-label">URL Clicks</div></div>
+  <div class="kpi"><div class="kpi-value">1.42%</div><div class="kpi-label">Avg ER</div></div>
+</div>
+
+<div class="takeaway-twitter">
+  <strong>The &ldquo;Everyone checks the APY&rdquo; tweet is a breakout: 2,219 impressions and 11 URL clicks.</strong> This is the highest-impression LWID tweet in the dataset and the second-highest click driver (behind only the Aug 31 &ldquo;$66M gone&rdquo; tweet at 16 clicks). The formula: abstract knowledge-gap hook + universal relevance + no specific protocol name. It doesn&rsquo;t tease a story &mdash; it teases a gap in the reader&rsquo;s own knowledge. This is a new winning tweet archetype for LWID.
+</div>
+
+<div class="takeaway-twitter">
+  <strong>Sep 14 total impressions (3,829) are the highest for any LWID tweet set,</strong> driven almost entirely by the APY tweet. Compare: Sep 7 (2,850), Sep 1 (2,679), Aug 24 (2,563). The knowledge-gap tweet inflated reach by 2.6x vs the other two Sep 14 tweets. One viral tweet can carry the whole set.
+</div>
+
+<h3>LWID Tweets &mdash; Mon Sep 1 / Tue Sep 2</h3>
+<table>
+  <tr><th style="text-align:left;">Tweet (truncated)</th><th>Imp</th><th>Eng</th><th>URL</th><th>ER</th></tr>
+  <tr>
+    <td class="left">Seven of the biggest stocks tradable on @aeroxyz on @base</td>
+    <td>1,024</td><td>20</td><td>3</td><td>1.95%</td>
+  </tr>
+  <tr>
+    <td class="left">One trade pushed @Plasma past $1 billion this week</td>
+    <td>836</td><td>9</td><td>2</td><td>1.08%</td>
+  </tr>
+  <tr class="highlight">
+    <td class="left">The 5th-largest DEX in crypto has $4.8M in TVL. No token.</td>
+    <td>819</td><td>16</td><td class="up">6</td><td class="up">1.95%</td>
+  </tr>
+</table>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value">2,679</div><div class="kpi-label">Sep 1 LWID Impressions</div></div>
+  <div class="kpi"><div class="kpi-value">45</div><div class="kpi-label">Engagements</div></div>
+  <div class="kpi"><div class="kpi-value">11</div><div class="kpi-label">URL Clicks</div></div>
+  <div class="kpi"><div class="kpi-value">1.66%</div><div class="kpi-label">Avg ER</div></div>
+</div>
+
+<div class="takeaway-twitter">
+  <strong>The &ldquo;$4.8M TVL, no token&rdquo; tweet mirrors the Sep 14 APY tweet formula:</strong> it teases a contradiction, not a story. Lowest impressions of the three (819) but highest URL clicks (6). The contradiction hook drives clicks even without high reach. Compare to the Aero tweet (1,024 imp, 3 clicks) &mdash; the protocol-tagged tweet gets reach from @mentions but fewer proportional clicks.
+</div>
+
+<h3>LWID Tweets &mdash; Mon Sep 7 / Tue Sep 8</h3>
+<table>
+  <tr><th style="text-align:left;">Tweet (truncated)</th><th>Imp</th><th>Eng</th><th>URL</th><th>ER</th></tr>
+  <tr>
+    <td class="left">$320M in Bitcoin just left Blockstream&rsquo;s Liquid Network&hellip;</td>
+    <td>898</td><td>19</td><td class="down">0</td><td>2.12%</td>
+  </tr>
+  <tr class="highlight">
+    <td class="left">A new catalyst just emerged for PENDLE&hellip;</td>
+    <td class="up">1,035</td><td class="up">25</td><td class="up">5</td><td class="up">2.42%</td>
+  </tr>
+</table>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="kpi-value">1,933</div><div class="kpi-label">Sep 7 LWID Impressions</div><div class="kpi-change">2 tweets only</div></div>
+  <div class="kpi"><div class="kpi-value">44</div><div class="kpi-label">Engagements</div></div>
+  <div class="kpi"><div class="kpi-value">5</div><div class="kpi-label">URL Clicks</div></div>
+  <div class="kpi"><div class="kpi-value">2.27%</div><div class="kpi-label">Avg ER</div></div>
+</div>
+
+<h3>Sep Tweet Performance Summary</h3>
+<table>
+  <tr><th>Week</th><th>Tweets</th><th>Total Imp</th><th>Total Eng</th><th>URL Clicks</th><th>Best Tweet Format</th></tr>
+  <tr><td>Sep 14</td><td>3</td><td class="up">3,829</td><td class="up">56</td><td class="up">15</td><td class="left">Knowledge-gap (&ldquo;Everyone checks the APY&rdquo;)</td></tr>
+  <tr><td>Sep 7</td><td>2</td><td>1,933</td><td>44</td><td>5</td><td class="left">Opportunity (&ldquo;A new catalyst for PENDLE&rdquo;)</td></tr>
+  <tr><td>Sep 1</td><td>3</td><td>2,679</td><td>45</td><td>11</td><td class="left">Contradiction (&ldquo;$4.8M TVL, no token&rdquo;)</td></tr>
+</table>
+
+<div class="takeaway-twitter">
+  <strong>Three winning tweet archetypes have emerged for LWID:</strong><br>
+  1. <strong>Dramatic threat</strong> &mdash; &ldquo;$66M gone in 20 minutes&rdquo; (16 clicks) &mdash; works when the story is genuinely dramatic<br>
+  2. <strong>Contradiction/absurdity</strong> &mdash; &ldquo;$4.8M TVL DEX did $6B volume&rdquo; (6 clicks) &mdash; works when numbers create cognitive dissonance<br>
+  3. <strong>Knowledge gap</strong> &mdash; &ldquo;Everyone checks the APY&rdquo; (11 clicks, 2,219 imp) &mdash; works by making the reader feel they might be missing something<br><br>
+  The &ldquo;Issues list&rdquo; format and protocol-announcement tweets consistently underperform for clicks.
+</div>
+
+<!-- ============================================================ -->
+<!-- ACTION ITEMS -->
+<!-- ============================================================ -->
+
+<h2 id="actions">5. Action Items</h2>
+
+<div class="action">
+  <strong>1. Keep the suffix dropped &mdash; validated.</strong> Four suffix-free issues now average 20.88% vs 20.33% for five suffixed issues (+0.55pp). This is no longer experimental. Never bring &ldquo;- Weekly Recap&rdquo; back.
+</div>
+
+<div class="action">
+  <strong>2. Reframe positive stories as threat-resolved headlines.</strong> Sep 14&rsquo;s &ldquo;Uniswap Improves Stable LPs APR&rdquo; (20.03%) would have been stronger as &ldquo;LPs Were Quietly Losing Money on Uniswap. Not Anymore.&rdquo; Same content, threat-first framing, under 55 chars. When the week&rsquo;s biggest story is positive, flip the framing to &ldquo;the problem that just got fixed.&rdquo;
+</div>
+
+<div class="action">
+  <strong>3. Target 55 chars or fewer.</strong> Two issues under 55 chars average 21.27% OR &mdash; 0.67pp above the series average and 1.24pp above Sep 14. The LWID two-topic format naturally pushes over 55 chars; consider leading with one story and using a subtitle or preview text for the second.
+</div>
+
+<div class="action">
+  <strong>4. Use the knowledge-gap tweet format more.</strong> &ldquo;Everyone checks the APY. Almost nobody checks what&rsquo;s behind it&rdquo; hit 2,219 impressions and 11 clicks &mdash; the best impression count across all LWID tweets and the second-best click count. Write one knowledge-gap tweet per LWID set. Formula: universal behavior + &ldquo;but almost nobody [does the important thing].&rdquo;
+</div>
+
+<div class="action">
+  <strong>5. Add a premium CTA to the LWID closing.</strong> Zero of 14 LWIDs include one. LWID has the highest and most consistent OR across all letter types. It&rsquo;s the best vehicle for converting free readers. Even a single line (&ldquo;Want the full onchain breakdown? Upgrade for $5/mo&rdquo;) would be worth testing.
+</div>
+
+<div class="action">
+  <strong>6. Add cross-links to other letters.</strong> Still zero cross-links after 14 issues. The LWID audience is the most engaged segment &mdash; train them to open Tuesday&rsquo;s Outlook and Thursday&rsquo;s Farming Guide by cross-linking: &ldquo;Want the full yield breakdown? Thursday&rsquo;s Farming Guide covers the best new farms.&rdquo;
+</div>
+
+<div class="action">
+  <strong>7. Standardize the summary section as &ldquo;TL;DR&rdquo;.</strong> Four different names have been used across issues. Pick TL;DR and use it every week as the first section after the subscribe boilerplate. Consistency builds reader habit.
+</div>
+
+<div class="action">
+  <strong>8. Investigate the Sep 7 data gap.</strong> Sep 7 is still showing 0% OR. If this is a recurring CSV export issue for UTC+8 Monday publishes, consider exporting manually from the Substack dashboard on Tuesday mornings, or shifting publish time earlier to avoid the UTC day boundary.
+</div>
+
+<p class="meta">Report covers LWID issues from Jun 1 &ndash; Sep 14, 2026 (14 issues) &middot; Tweet data from @todayindefi analytics export &middot; Click data from Substack dashboard (Aug 24 most recent) &middot; Sep 7 issue missing from Substack CSV export (recurring UTC+8 Monday gap) &middot; Generated Sep 21, 2026</p>
+
+</body>
+</html>

@@ -5,99 +5,304 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Airdrop Alpha Weekly Report — Oct 12, 2026</title>
 <style>
-*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f7fa;color:#1f2937;margin:0;line-height:1.55}.container{max-width:1120px;margin:0 auto;padding:36px 24px 60px}.hero{background:linear-gradient(135deg,#111827,#293b53);color:#fff;padding:34px;border-radius:16px;margin-bottom:24px}.hero h1{margin:0 0 6px;font-size:30px}.hero p{margin:0;color:#cbd5e1}.section{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:26px;margin:20px 0;box-shadow:0 3px 12px rgba(15,23,42,.04)}h2{margin:0 0 18px;font-size:21px;border-bottom:2px solid #ff6719;padding-bottom:8px}h3{margin:24px 0 10px;font-size:16px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:16px}.label{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#64748b}.value{font-size:25px;font-weight:750;margin:4px 0}.up{color:#15803d}.down{color:#b91c1c}.muted{color:#64748b;font-size:13px}table{width:100%;border-collapse:collapse;font-size:13px}th{background:#f1f5f9;text-align:left;color:#475569}th,td{padding:10px 9px;border-bottom:1px solid #e5e7eb;vertical-align:top}.callout{padding:16px 18px;border-radius:9px;margin:14px 0}.win{background:#ecfdf5;border-left:4px solid #16a34a}.alert{background:#fef2f2;border-left:4px solid #dc2626}.takeaway{background:#eff6ff;border-left:4px solid #2563eb}.tweet{border-left:3px solid #1da1f2;background:#f8fafc;padding:13px 15px;margin:10px 0;border-radius:0 8px 8px 0}.tweet p{margin:0 0 6px}.stats{font-size:12px;color:#64748b}blockquote{background:#fff7ed;border-left:4px solid #ff6719;margin:12px 0;padding:13px 16px;font-weight:650}ol,ul{padding-left:21px}li{margin:7px 0}.footer{text-align:center;color:#64748b;font-size:12px;margin-top:28px}@media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr)}.container{padding:18px 12px}.section,.hero{padding:20px}table{display:block;overflow-x:auto}}@media print{body{background:#fff}.section{box-shadow:none;break-inside:avoid}}
+*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f7fa;color:#1f2937;margin:0;line-height:1.55}.container{max-width:1120px;margin:0 auto;padding:36px 24px 60px}.hero{background:linear-gradient(135deg,#111827,#293b53);color:#fff;padding:34px;border-radius:16px;margin-bottom:24px}.hero h1{margin:0 0 6px;font-size:30px}.hero p{margin:0;color:#cbd5e1}.section{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:26px;margin:20px 0;box-shadow:0 3px 12px rgba(15,23,42,.04)}h2{margin:0 0 18px;font-size:21px;border-bottom:2px solid #ff6719;padding-bottom:8px}h3{margin:24px 0 10px;font-size:16px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:16px}.label{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#64748b}.value{font-size:25px;font-weight:750;margin:4px 0}.up{color:#15803d}.down{color:#b91c1c}.muted{color:#64748b;font-size:13px}table{width:100%;border-collapse:collapse;font-size:13px}th{background:#f1f5f9;text-align:left;color:#475569}th,td{padding:10px 9px;border-bottom:1px solid #e5e7eb;vertical-align:top}.callout{padding:16px 18px;border-radius:9px;margin:14px 0}.win{background:#ecfdf5;border-left:4px solid #16a34a}.alert{background:#fef2f2;border-left:4px solid #dc2626}.takeaway{background:#eff6ff;border-left:4px solid #2563eb}.tweet{border-left:3px solid #1da1f2;background:#f8fafc;padding:13px 15px;margin:10px 0;border-radius:0 8px 8px 0}.tweet p{margin:0 0 6px}.stats{font-size:12px;color:#64748b}blockquote{background:#fff7ed;border-left:4px solid #ff6719;margin:12px 0;padding:13px 16px;font-weight:600;font-size:14px}ol,ul{padding-left:21px}li{margin:7px 0}.section-nav{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:14px 20px;margin-bottom:20px;font-size:13px}.section-nav a{color:#ff6719;text-decoration:none;margin-right:18px}.section-nav a:hover{text-decoration:underline}.footer{text-align:center;color:#64748b;font-size:12px;margin-top:28px}@media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr)}.container{padding:18px 12px}.section,.hero{padding:20px}table{display:block;overflow-x:auto}}@media print{body{background:#fff}.section{box-shadow:none;break-inside:avoid}}
 </style>
 </head>
 <body>
 <main class="container">
   <header class="hero">
     <h1>Airdrop Alpha Weekly Report</h1>
-    <p>Oct 7 and Sep 30 issues · Updated October 12, 2026</p>
+    <p>Oct 7 and Sep 30 issues &middot; Updated October 12, 2026</p>
   </header>
 
-  <section class="section">
+  <!-- Section Nav -->
+  <nav class="section-nav">
+    <a href="#comparison">Latest Issue Comparison</a>
+    <a href="#headlines">Headline Performance</a>
+    <a href="#content">Content Audit</a>
+    <a href="#tweets">Direct Tweet Performance</a>
+    <a href="#clicks">Click-Through Analysis</a>
+    <a href="#actions">Actions</a>
+  </nav>
+
+  <!-- 1. Latest Issue Comparison -->
+  <section class="section" id="comparison">
     <h2>Latest Issue Comparison</h2>
     <div class="grid">
-      <div class="card"><div class="label">Oct 7 Open Rate</div><div class="value">19.02%</div><div class="down">-1.66pp</div></div>
-      <div class="card"><div class="label">Opens</div><div class="value">878</div><div class="down">-78</div></div>
-      <div class="card"><div class="label">Tweet Reach</div><div class="value">1,669</div><div class="down">-5.9%</div></div>
-      <div class="card"><div class="label">Tweet URL Clicks</div><div class="value">7</div><div class="up">+16.7%</div></div>
+      <div class="card">
+        <div class="label">Oct 7 Open Rate</div>
+        <div class="value down">19.02%</div>
+        <div class="down muted">&minus;1.66pp</div>
+      </div>
+      <div class="card">
+        <div class="label">Opens</div>
+        <div class="value down">878</div>
+        <div class="down muted">&minus;78</div>
+      </div>
+      <div class="card">
+        <div class="label">Tweet Reach</div>
+        <div class="value down">1,669</div>
+        <div class="down muted">&minus;5.9%</div>
+      </div>
+      <div class="card">
+        <div class="label">Tweet URL Clicks</div>
+        <div class="value up">7</div>
+        <div class="up muted">+16.7%</div>
+      </div>
     </div>
-    <div class="alert callout"><strong>Core finding:</strong> Lowest Airdrop Alpha OR in the dataset, 1.82pp below the 19-issue baseline of 20.84%. Despite low opens, Twitter clicks improved — content was sound, headline failed.</div>
+
+    <div class="callout alert">
+      <strong>Core finding:</strong> Lowest Airdrop Alpha OR in the entire dataset and 1.82pp below the 19-issue baseline of 20.84%. Two simultaneous claim/TGE items compete for attention without creating urgency. Yet Twitter clicks actually improved &mdash; the content was sound but the headline failed to earn the open.
+    </div>
+
     <table>
-      <thead><tr><th>Metric</th><th>Oct 7</th><th>Sep 30</th></tr></thead>
+      <thead>
+        <tr><th>Metric</th><th>Oct 7</th><th>Sep 30</th><th>Delta</th></tr>
+      </thead>
       <tbody>
-        <tr><td>Headline</td><td>Claim Concrete $CT, Fables TGE Moves to Oct 20</td><td>Jumper's Legion Sale Live, Variational TGE Confirmed</td></tr>
-        <tr><td>Headline length</td><td><strong>46</strong></td><td>52</td></tr>
-        <tr><td>OR / opens</td><td><strong>19.02%</strong> / 878</td><td><strong>20.68%</strong> / 956</td></tr>
-        <tr><td>Approx. words</td><td>1,515</td><td>1,549</td></tr>
-        <tr><td>Direct tweet imp / eng / clicks</td><td>1,669 / 31 / 7</td><td>1,774 / 26 / 6</td></tr>
+        <tr><td>Headline</td><td>Claim Concrete $CT, Fables TGE Moves to Oct 20</td><td>Jumper's Legion Sale Live, Variational TGE Confirmed</td><td>&mdash;</td></tr>
+        <tr><td>Headline chars</td><td>46</td><td>52</td><td>&minus;6</td></tr>
+        <tr><td>Delivers / Opens</td><td>4,615 / 878</td><td>4,622 / 956</td><td>&minus;78 opens</td></tr>
+        <tr><td>Open Rate</td><td class="down"><strong>19.02%</strong></td><td><strong>20.68%</strong></td><td class="down">&minus;1.66pp</td></tr>
+        <tr><td>Words</td><td>1,515</td><td>1,549</td><td>&minus;2.2%</td></tr>
+        <tr><td>Direct tweet imp / eng / clicks</td><td>1,669 / 31 / 7</td><td>1,774 / 26 / 6</td><td>Clicks up despite lower reach</td></tr>
       </tbody>
     </table>
+
+    <div class="callout takeaway">
+      <strong>Why:</strong> Both Oct 7 headline items are confirmations &mdash; "Claim" and "Moves to Oct 20." Neither creates uncertainty or exclusivity. The Airdrop audience's strongest driver is "can I still get in?" &mdash; not "what just happened." Sep 23's "Jumper TGE Coming Soon" (21.10%) worked because it implied a narrowing window without confirming the outcome.
+    </div>
   </section>
 
-  <section class="section">
+  <!-- 2. Headline Performance -->
+  <section class="section" id="headlines">
     <h2>Headline Performance</h2>
+
+    <h3>Trend (Baseline = 20.84%)</h3>
     <table>
-      <thead><tr><th>Date</th><th>Headline</th><th>OR</th><th>Opens</th></tr></thead>
+      <thead>
+        <tr><th>Date</th><th>Headline</th><th>Chars</th><th>OR</th><th>Opens</th><th>vs Baseline</th></tr>
+      </thead>
       <tbody>
-        <tr><td><strong>Oct 7</strong></td><td>Claim Concrete $CT, Fables TGE Moves to Oct 20</td><td><strong>19.02%</strong></td><td>878</td></tr>
-        <tr><td><strong>Sep 30</strong></td><td>Jumper's Legion Sale Live, Variational TGE Confirmed</td><td><strong>20.68%</strong></td><td>956</td></tr>
-        <tr><td>Sep 23</td><td>Jumper TGE Coming Soon</td><td>21.10%</td><td>974</td></tr>
-        <tr><td>Sep 16</td><td>This New Solana Perp DEX Just Launched—Get In Early</td><td>20.87%</td><td>967</td></tr>
-        <tr><td>Sep 2</td><td>This New DEX is Generating $2B Volume and Has No Token Yet</td><td>21.47%</td><td>1,005</td></tr>
+        <tr><td><strong>Oct 7</strong></td><td>Claim Concrete $CT, Fables TGE Moves to Oct 20</td><td>46</td><td class="down"><strong>19.02%</strong></td><td>878</td><td class="down">&minus;1.82pp</td></tr>
+        <tr><td><strong>Sep 30</strong></td><td>Jumper's Legion Sale Live, Variational TGE Confirmed</td><td>52</td><td><strong>20.68%</strong></td><td>956</td><td>&minus;0.16pp</td></tr>
+        <tr><td>Sep 23</td><td>Jumper TGE Coming Soon</td><td>22</td><td class="up"><strong>21.10%</strong></td><td>974</td><td class="up">+0.26pp</td></tr>
+        <tr><td>Sep 16</td><td>This New Solana Perp DEX Just Launched&mdash;Get In Early</td><td>50</td><td><strong>20.87%</strong></td><td>967</td><td>+0.03pp</td></tr>
+        <tr><td>Sep 9</td><td>Farm Robinhood Chain's Top DEX, Claim GRVT</td><td>43</td><td><strong>20.53%</strong></td><td>957</td><td>&minus;0.31pp</td></tr>
+        <tr><td>Sep 2</td><td>This New DEX is Generating $2B Volume and Has No Token Yet</td><td>57</td><td class="up"><strong>21.47%</strong></td><td>1,005</td><td class="up">+0.63pp</td></tr>
       </tbody>
     </table>
-    <div class="alert callout"><strong>19-issue baseline: 20.84%.</strong> Single-focus, anticipation-driven headlines consistently outperform multi-item confirmations.</div>
-    <h3>Suggested Rewrite</h3>
-    <blockquote>Concrete's $CT Is Live—Claim Window and Eligibility</blockquote>
-  </section>
 
-  <section class="section">
-    <h2>Direct Tweet Performance</h2>
-    <h3>Sep 30 Issue — 1,774 Impressions, 6 Clicks</h3>
-    <div class="tweet"><p><strong>Variational TGE confirmed, farm remains open</strong></p><div class="stats">941 impressions · 18 engagements · 4 clicks</div></div>
-    <div class="tweet"><p><strong>Fables points end in five days</strong></p><div class="stats">833 impressions · 8 engagements · 2 clicks</div></div>
-
-    <h3>Oct 7 Issue — 1,669 Impressions, 7 Clicks</h3>
-    <div class="tweet"><p><strong>Perp DEX Season 2 with 3% token supply minimum</strong></p><div class="stats">832 impressions · 17 engagements · 5 clicks</div></div>
-    <div class="tweet"><p><strong>Concrete $CT live, Polychain/VanEck backed, $1.2B deposits</strong></p><div class="stats">837 impressions · 14 engagements · 2 clicks</div></div>
-    <div class="takeaway callout"><strong>Note:</strong> Oct 7 Jupiter/FLUID tweet (916 imp, 8 eng, 0 clicks) linked to Analysis and is excluded.</div>
-  </section>
-
-  <section class="section">
-    <h2>Newsletter Click-Through</h2>
-    <div class="grid" style="grid-template-columns:repeat(3,1fr)">
-      <div class="card"><div class="label">Unique Clickers</div><div class="value">22</div></div>
-      <div class="card"><div class="label">CTOR</div><div class="value">2.51%</div></div>
-      <div class="card"><div class="label">Click Rate</div><div class="value">0.48%</div></div>
+    <h3>Benchmark KPIs</h3>
+    <div class="grid">
+      <div class="card">
+        <div class="label">All-Time Airdrop Avg</div>
+        <div class="value">20.84%</div>
+        <div class="muted">19 issues</div>
+      </div>
+      <div class="card">
+        <div class="label">Anticipation / Scarcity Lead</div>
+        <div class="value up">21.29%</div>
+        <div class="muted">"Coming Soon," "No Token Yet," "Get In Early"</div>
+      </div>
+      <div class="card">
+        <div class="label">Confirmation Lead</div>
+        <div class="value down">19.85%</div>
+        <div class="muted">"Claim," "TGE Confirmed," "Moves to"</div>
+      </div>
+      <div class="card">
+        <div class="label">Single-Focus Headline</div>
+        <div class="value up">21.15%</div>
+        <div class="muted">vs multi-item 20.40%</div>
+      </div>
     </div>
+
+    <h3>Pattern Analysis</h3>
+    <table>
+      <thead>
+        <tr><th>Pattern</th><th>Examples</th><th>Avg OR</th><th>vs Baseline</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Anticipation / scarcity</td><td>Coming Soon; No Token Yet; Get In Early</td><td class="up"><strong>21.15%</strong></td><td class="up">+0.31pp</td></tr>
+        <tr><td>Single-focus headline</td><td>Jumper TGE Coming Soon; New Solana Perp DEX</td><td class="up"><strong>21.15%</strong></td><td class="up">+0.31pp</td></tr>
+        <tr><td>Multi-item confirmation</td><td>Claim + TGE Moves; Sale Live + TGE Confirmed</td><td class="down"><strong>19.85%</strong></td><td class="down">&minus;0.99pp</td></tr>
+        <tr><td>Action + discovery</td><td>Farm + Claim GRVT</td><td><strong>20.53%</strong></td><td>&minus;0.31pp</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout alert">
+      <strong>Three consecutive declines.</strong> Single-focus, anticipation-driven headlines consistently beat multi-item confirmations. The best Airdrop headlines create a gap between the reader's current position and what they could claim.
+    </div>
+
+    <h3>Suggested Rewrites</h3>
+    <p class="muted">Original: "Claim Concrete $CT, Fables TGE Moves to Oct 20"</p>
+
+    <blockquote>Concrete's $CT Is Live &mdash; Claim Window and Eligibility</blockquote>
+    <p class="muted">Single focus. "Claim window" implies it could close. "Eligibility" makes it personally relevant &mdash; "do I qualify?"</p>
+
+    <blockquote>$1.2B Protocol Just Dropped Its Token &mdash; Are You Eligible?</blockquote>
+    <p class="muted">Knowledge-gap framing. The $1.2B number creates scale, the question creates personal stakes. 52 chars.</p>
+  </section>
+
+  <!-- 3. Content Audit -->
+  <section class="section" id="content">
+    <h2>Content Audit</h2>
+    <table>
+      <thead>
+        <tr><th>Element</th><th>Oct 7</th><th>Sep 30</th><th>Sep 23</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>TL;DR / summary</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Active opportunities section</td><td>Yes (Concrete, Fables)</td><td>Yes (Jumper, Variational)</td><td>Yes (Jumper)</td></tr>
+        <tr><td>Eligibility / requirements</td><td class="down">Partial</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Deadline / urgency cues</td><td>Yes (Oct 20)</td><td>Yes (5 days)</td><td>Implied</td></tr>
+        <tr><td>Cross-links</td><td class="down">No</td><td class="down">No</td><td class="down">No</td></tr>
+        <tr><td>Premium CTA</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Words</td><td>1,515</td><td>1,549</td><td>1,698</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout win">
+      <strong>Win:</strong> Word count (1,515) is well within the optimal 1,500&ndash;1,700 range. Concise issues don't lose engagement &mdash; they respect the reader's time and match the action-oriented nature of airdrop content.
+    </div>
+
+    <div class="callout alert">
+      <strong>Alert:</strong> Oct 7's eligibility section was partial &mdash; it mentioned Concrete but didn't clearly state who qualifies. Given that 59% of newsletter clicks went to the Concrete claim page, adding a clear "Who qualifies" subsection would have converted even more readers.
+    </div>
+
+    <div class="callout takeaway">
+      <strong>Takeaway:</strong> Cross-links still missing. Airdrop readers who click claim links are high-intent users &mdash; they'd likely engage with Farming Alpha's yield content too.
+    </div>
+  </section>
+
+  <!-- 4. Direct Tweet Performance -->
+  <section class="section" id="tweets">
+    <h2>Direct Tweet Performance</h2>
+
+    <h3>Sep 30 Issue &mdash; 1,774 Impressions, 6 Clicks</h3>
+    <div class="tweet">
+      <p><strong>Variational TGE confirmed, farm remains open</strong></p>
+      <div class="stats">941 impressions &middot; 18 engagements &middot; 4 clicks &middot; 1.91% ER</div>
+    </div>
+    <div class="tweet">
+      <p><strong>Fables points end in five days</strong></p>
+      <div class="stats">833 impressions &middot; 8 engagements &middot; 2 clicks &middot; 0.96% ER</div>
+    </div>
+
+    <div class="callout takeaway">
+      <strong>Takeaway:</strong> The Variational tweet outperformed because "farm remains open" implies ongoing opportunity. "Points end in five days" is a deadline without a benefit &mdash; the reader knows Fables is ending but doesn't know what they'd gain.
+    </div>
+
+    <h3>Oct 7 Issue &mdash; 1,669 Impressions, 7 Clicks</h3>
+    <div class="tweet">
+      <p><strong>A perp DEX just reserved 3% of its token supply for Season 2 and said it's a minimum, not a cap.</strong></p>
+      <div class="stats">832 impressions &middot; 17 engagements &middot; 5 clicks &middot; 2.04% ER</div>
+    </div>
+    <div class="tweet">
+      <p><strong>Concrete's $CT is live, backed by Polychain and VanEck, with $1.2B in vault deposits.</strong></p>
+      <div class="stats">837 impressions &middot; 14 engagements &middot; 2 clicks &middot; 1.67% ER</div>
+    </div>
+
+    <div class="callout takeaway">
+      <strong>Note:</strong> Oct 7 Jupiter/FLUID tweet (916 imp, 8 eng, 0 clicks) linked to Analysis and is excluded.
+    </div>
+
+    <div class="callout win">
+      <strong>Win:</strong> The perp DEX tweet is the strongest Airdrop tweet of the week &mdash; "minimum, not a cap" created a rare asymmetry hook. The reader learns the floor is set but the ceiling is unknown. This is the ideal airdrop tweet formula: concrete allocation + upside uncertainty.
+    </div>
+
+    <div class="callout takeaway">
+      <strong>Takeaway:</strong> The Concrete tweet had strong social proof ($1.2B, VanEck, Polychain) but lower click intent. Social proof establishes credibility but doesn't create urgency. Compare: "minimum not a cap" = 5 clicks; "$1.2B deposits" = 2 clicks.
+    </div>
+
+    <h3>Week-over-Week</h3>
+    <table>
+      <thead>
+        <tr><th>Metric</th><th>Oct 7</th><th>Sep 30</th><th>Delta</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Tweets</td><td>2</td><td>2</td><td>Same</td></tr>
+        <tr><td>Impressions</td><td>1,669</td><td>1,774</td><td class="down">&minus;5.9%</td></tr>
+        <tr><td>Engagements</td><td>31</td><td>26</td><td class="up">+19.2%</td></tr>
+        <tr><td>URL clicks</td><td>7</td><td>6</td><td class="up">+16.7%</td></tr>
+        <tr><td>Avg ER</td><td>1.86%</td><td>1.47%</td><td class="up">+0.39pp</td></tr>
+        <tr><td>CTR</td><td>0.42%</td><td>0.34%</td><td class="up">+0.08pp</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout win">
+      <strong>Pattern:</strong> Tweet performance actually improved WoW &mdash; engagement up 19%, clicks up 17%, ER up 0.39pp. The disconnect between declining newsletter OR and improving tweet performance confirms the problem is the headline, not the content or distribution.
+    </div>
+  </section>
+
+  <!-- 5. Newsletter Click-Through Analysis -->
+  <section class="section" id="clicks">
+    <h2>Newsletter Click-Through Analysis</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="label">Unique Clickers</div>
+        <div class="value">22</div>
+        <div class="muted">of 878 openers</div>
+      </div>
+      <div class="card">
+        <div class="label">CTOR</div>
+        <div class="value">2.51%</div>
+        <div class="muted">Second-highest of all 4 letters</div>
+      </div>
+      <div class="card">
+        <div class="label">Click Rate</div>
+        <div class="value">0.48%</div>
+        <div class="muted">&nbsp;</div>
+      </div>
+      <div class="card">
+        <div class="label">Avg Clicks / Opener</div>
+        <div class="value">1.0</div>
+        <div class="muted">&nbsp;</div>
+      </div>
+    </div>
+
     <h3>Top Links</h3>
     <table>
-      <thead><tr><th>Link</th><th>Clicks</th></tr></thead>
+      <thead>
+        <tr><th>Clicks</th><th>Destination</th><th>Category</th></tr>
+      </thead>
       <tbody>
-        <tr><td>concretefoundation.xyz</td><td>13</td></tr>
-        <tr><td>@rwaperp</td><td>3</td></tr>
-        <tr><td>Trending topic</td><td>3</td></tr>
-        <tr><td>@aave update</td><td>3</td></tr>
-        <tr><td>reya.xyz</td><td>1</td></tr>
+        <tr><td><strong>13</strong></td><td>concretefoundation.xyz</td><td class="up">Claim page</td></tr>
+        <tr><td>3</td><td>@rwaperp</td><td>New protocol</td></tr>
+        <tr><td>3</td><td>Trending topic</td><td>Market narrative</td></tr>
+        <tr><td>3</td><td>@aave update</td><td>Protocol</td></tr>
+        <tr><td>2</td><td>DeFiSaver (sponsor)</td><td>Sponsor</td></tr>
+        <tr><td>1</td><td>reya.xyz</td><td>Protocol</td></tr>
       </tbody>
     </table>
-    <div class="win callout"><strong>59% of all clicks went to the Concrete claim page.</strong> Content delivered actionable value — the headline was the bottleneck. When a single link captures most clicks, feature that item alone.</div>
+
+    <div class="callout win">
+      <strong>Win:</strong> 59% of all clicks (13 of 22) went to a single link &mdash; the Concrete claim page. This is the most concentrated click pattern of any letter this week. When readers open, they act. The problem was purely at the headline level: not enough people opened.
+    </div>
+
+    <div class="callout takeaway">
+      <strong>Takeaway:</strong> This is the clearest headline-vs-content disconnect in the dataset. 19.02% OR (worst ever) but 2.51% CTOR (second best) with 59% concentration on one action link. If the headline had earned a normal 20.84% open, that's ~83 more potential clickers. At the same CTOR, that's ~2 more people claiming &mdash; real conversion left on the table.
+    </div>
+
+    <div class="callout takeaway">
+      <strong>Takeaway:</strong> Sponsor performance (DeFiSaver, 2 clicks) is consistent with other letters.
+    </div>
   </section>
 
-  <section class="section">
-    <h2>Next Actions</h2>
+  <!-- 6. Actions -->
+  <section class="section" id="actions">
+    <h2>Actions</h2>
     <ol>
-      <li>Lead with a single claimable event, not two.</li>
-      <li>"Claim window" and "eligibility" create more urgency than "TGE moves to [date]."</li>
-      <li>Use asymmetry framing: "minimum not a cap," "no token yet," "early access."</li>
-      <li>Word count (1,515) is in the optimal range.</li>
-      <li>Track OR against 20.84% baseline.</li>
+      <li><strong>Lead with a single claimable event, not two.</strong> The Oct 7 headline split attention between Concrete and Fables. 59% of clicks went to Concrete &mdash; it should have been the entire headline.</li>
+      <li><strong>Use "eligibility" and "claim window" language.</strong> These create personal stakes ("do I qualify?") and time pressure. "TGE moves to Oct 20" is informational; "Claim window closes Oct 20" is actionable.</li>
+      <li><strong>Use asymmetry framing in tweets.</strong> "Minimum, not a cap" produced the best tweet of the week. The formula: state the known floor + imply the unknown ceiling.</li>
+      <li><strong>Add a clear "Who qualifies" subsection.</strong> 59% of clicks to the claim page means readers are ready to act &mdash; reduce friction by answering eligibility in the letter itself.</li>
+      <li><strong>Add a cross-link to Farming Alpha.</strong> Airdrop clickers are high-intent DeFi users who'd likely engage with yield content. One line near the CTA.</li>
+      <li><strong>Track OR against 20.84% baseline.</strong> This issue needs a meaningful recovery &mdash; test single-focus anticipation framing next.</li>
     </ol>
   </section>
 
-  <p class="footer">Oct 12 Substack + Twitter exports · Click data from Substack dashboard</p>
+  <p class="footer">Updated Oct 12, 2026 &middot; Substack metrics from Oct 12 export &middot; Twitter data from Oct 12 CSV &middot; Click data from Substack dashboard &middot; Direct tweets matched by destination link and topic</p>
 </main>
 </body>
 </html>

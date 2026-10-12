@@ -1,49 +1,179 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Protocol Guide Weekly Report — Oct 12, 2026</title>
-<style>
-*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f7fa;color:#1f2937;margin:0;line-height:1.55}.container{max-width:1120px;margin:0 auto;padding:36px 24px 60px}.hero{background:linear-gradient(135deg,#111827,#293b53);color:#fff;padding:34px;border-radius:16px;margin-bottom:24px}.hero h1{margin:0 0 6px;font-size:30px}.hero p{margin:0;color:#cbd5e1}.section{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:26px;margin:20px 0;box-shadow:0 3px 12px rgba(15,23,42,.04)}h2{margin:0 0 18px;font-size:21px;border-bottom:2px solid #ff6719;padding-bottom:8px}h3{margin:24px 0 10px;font-size:16px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:16px}.label{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#64748b}.value{font-size:25px;font-weight:750;margin:4px 0}.up{color:#15803d}.down{color:#b91c1c}.muted{color:#64748b;font-size:13px}table{width:100%;border-collapse:collapse;font-size:13px}th{background:#f1f5f9;text-align:left;color:#475569}th,td{padding:10px 9px;border-bottom:1px solid #e5e7eb;vertical-align:top}.callout{padding:16px 18px;border-radius:9px;margin:14px 0}.win{background:#ecfdf5;border-left:4px solid #16a34a}.alert{background:#fef2f2;border-left:4px solid #dc2626}.takeaway{background:#eff6ff;border-left:4px solid #2563eb}ol,ul{padding-left:21px}li{margin:7px 0}.footer{text-align:center;color:#64748b;font-size:12px;margin-top:28px}@media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr)}.container{padding:18px 12px}.section,.hero{padding:20px}table{display:block;overflow-x:auto}}@media print{body{background:#fff}.section{box-shadow:none;break-inside:avoid}}
-</style>
-</head>
-<body>
-<main class="container">
-  <header class="hero">
-    <h1>Protocol Guide Weekly Report</h1>
-    <p>No new issue this week · Updated October 12, 2026</p>
-  </header>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Protocol Guide Weekly — Oct 12, 2026</title><style>
+*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f7fa;color:#1f2937;margin:0;line-height:1.55}.container{max-width:1120px;margin:0 auto;padding:36px 24px 60px}.hero{background:linear-gradient(135deg,#111827,#293b53);color:#fff;padding:34px;border-radius:16px;margin-bottom:24px}.hero h1{margin:0 0 6px;font-size:30px}.hero p{margin:0;color:#cbd5e1}.section{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:26px;margin:20px 0;box-shadow:0 3px 12px rgba(15,23,42,.04)}h2{margin:0 0 18px;font-size:21px;border-bottom:2px solid #ff6719;padding-bottom:8px}h3{margin:24px 0 10px;font-size:16px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:16px}.label{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#64748b}.value{font-size:25px;font-weight:750;margin:4px 0}.up{color:#15803d}.down{color:#b91c1c}.muted{color:#64748b;font-size:13px}table{width:100%;border-collapse:collapse;font-size:13px}th{background:#f1f5f9;text-align:left;color:#475569}th,td{padding:10px 9px;border-bottom:1px solid #e5e7eb;vertical-align:top}.callout{padding:16px 18px;border-radius:9px;margin:14px 0}.win{background:#ecfdf5;border-left:4px solid #16a34a}.alert{background:#fef2f2;border-left:4px solid #dc2626}.takeaway{background:#eff6ff;border-left:4px solid #2563eb}.tweet{border-left:3px solid #1da1f2;background:#f8fafc;padding:13px 15px;margin:10px 0;border-radius:0 8px 8px 0}.tweet p{margin:0 0 6px}.stats{font-size:12px;color:#64748b}blockquote{background:#fff7ed;border-left:4px solid #ff6719;margin:12px 0;padding:13px 16px;font-weight:600;font-size:14px}ol,ul{padding-left:21px}li{margin:7px 0}.section-nav{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:14px 20px;margin-bottom:20px;font-size:13px}.section-nav a{color:#ff6719;text-decoration:none;margin-right:18px}.section-nav a:hover{text-decoration:underline}.footer{text-align:center;color:#64748b;font-size:12px;margin-top:28px}@media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr)}.container{padding:18px 12px}.section,.hero{padding:20px}table{display:block;overflow-x:auto}}@media print{body{background:#fff}.section{box-shadow:none;break-inside:avoid}}
+</style></head><body>
+<div class="container">
 
-  <section class="section">
-    <h2>Status</h2>
-    <div class="takeaway callout"><strong>No new Friday Guide was published Oct 5–11.</strong> The comparison below carries forward the most recent pair (Oct 2 Arc vs Sep 18 Uniswap).</div>
-  </section>
+<header class="hero">
+<h1>Protocol Guide Weekly Report</h1>
+<p>No new issue this week &middot; Updated October 12, 2026</p>
+</header>
 
-  <section class="section">
-    <h2>Previous Comparison (Carried Forward)</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Oct 2 — Arc</th><th>Sep 18 — Uniswap</th></tr></thead>
-      <tbody>
-        <tr><td>Headline length</td><td>56</td><td>55</td></tr>
-        <tr><td>Open rate</td><td><strong>17.59%</strong></td><td><strong>21.47%</strong></td></tr>
-        <tr><td>Opens</td><td>812</td><td>993</td></tr>
-        <tr><td>Direct tweet imp / eng / clicks</td><td>1,349 / 23 / 5</td><td>1,361 / 19 / 4</td></tr>
-      </tbody>
-    </table>
-    <div class="alert callout"><strong>14-issue baseline: 20.27%.</strong> The Arc Guide remains the all-time Protocol Guide low at 17.59%.</div>
-  </section>
+<nav class="section-nav">
+<a href="#status">Status</a>
+<a href="#comparison">Previous Comparison</a>
+<a href="#headlines">Headlines</a>
+<a href="#recovery">Recovery Plan</a>
+</nav>
 
-  <section class="section">
-    <h2>Recovery Recommendations</h2>
-    <ol>
-      <li>Use numbered-scope headline ("5 things," "step-by-step").</li>
-      <li>Pick a well-known protocol.</li>
-      <li>Avoid extreme yield claims without mechanism context.</li>
-    </ol>
-  </section>
+<!-- STATUS -->
+<section class="section" id="status">
+<h2>Status</h2>
 
-  <p class="footer">Oct 12 Substack export · No new Friday issue this period</p>
-</main>
-</body>
-</html>
+<div class="callout alert">
+<strong>No new issue.</strong> No new Protocol Guide (Friday) was published during the Oct 5&ndash;11 week. The most recent Guide remains the Oct 2 Arc issue, which holds the lowest OR in the letter type's history at 17.59%. This gap is now entering its second week &mdash; the Friday publishing rhythm has been broken.
+</div>
+
+<div class="callout takeaway">
+<strong>Why this matters.</strong> Missing a Friday issue means no opportunity to recover from the Oct 2 low. It also breaks the five-day publishing cadence, which affects reader habit formation. The next Guide carries extra weight: it needs to both recover OR and re-establish the Friday expectation.
+</div>
+</section>
+
+<!-- PREVIOUS COMPARISON -->
+<section class="section" id="comparison">
+<h2>Previous Comparison (Carried Forward)</h2>
+<p class="muted">Oct 2 Arc Guide vs Sep 18 Uniswap Guide &mdash; no new data to compare against.</p>
+
+<div class="grid">
+<div class="card">
+<div class="label">Oct 2 OR</div>
+<div class="value down">17.59%</div>
+<div class="muted">Worst ever</div>
+</div>
+<div class="card">
+<div class="label">Sep 18 OR</div>
+<div class="value up">21.47%</div>
+<div class="muted">Best recent</div>
+</div>
+<div class="card">
+<div class="label">Gap</div>
+<div class="value down">&minus;3.88pp</div>
+<div class="muted">Widest consecutive</div>
+</div>
+<div class="card">
+<div class="label">14-Issue Baseline</div>
+<div class="value">20.27%</div>
+<div class="muted">Guide average</div>
+</div>
+</div>
+
+<table>
+<tr><th>Metric</th><th>Oct 2 Arc Guide</th><th>Sep 18 Uniswap Guide</th></tr>
+<tr><td>Headline</td><td>Arc is Offering 2 to 3-digit APRs for Pioneering Farmers</td><td>Uniswap's Improved Pools Pay &gt;10% &mdash; Here's How it Works</td></tr>
+<tr><td>Headline length</td><td>56</td><td>55</td></tr>
+<tr><td>OR</td><td class="down">17.59%</td><td class="up">21.47%</td></tr>
+<tr><td>Opens / delivers</td><td>812 / 4,616</td><td>993 / 4,626</td></tr>
+<tr><td>Words</td><td>1,392</td><td>2,457</td></tr>
+<tr><td>Direct tweet imp / eng / clicks</td><td>1,349 / 23 / 5</td><td>1,361 / 19 / 4</td></tr>
+</table>
+
+<div class="callout alert">
+<strong>Headline was the problem, not distribution.</strong> The 3.88pp gap is the widest between consecutive Guide issues. Twitter performance was nearly identical &mdash; the problem was isolated entirely to the newsletter headline. "2 to 3-digit APRs" creates credibility friction: the reader questions whether this is real or a scam. "Pioneering Farmers" is abstract and doesn't describe what the reader will learn. Sep 18's "Here's How it Works" promised a concrete mechanism, which is exactly what Guide readers want.
+</div>
+
+<div class="callout takeaway">
+<strong>Length also played a role.</strong> The Oct 2 issue was also 43% shorter than Sep 18 (1,392 vs 2,457 words). While brevity is normally positive, Guide readers expect depth &mdash; the format is meant to be a comprehensive walkthrough. Under 1,500 words may signal "thin content" for this letter type specifically.
+</div>
+</section>
+
+<!-- HEADLINE PERFORMANCE -->
+<section class="section" id="headlines">
+<h2>Headline Performance</h2>
+<p class="muted">Last 5 issues &middot; 14-issue baseline = 20.27%</p>
+
+<table>
+<tr><th>Date</th><th>Headline</th><th>Len</th><th>OR</th><th>Opens</th><th>vs Baseline</th></tr>
+<tr>
+<td>Oct 2</td>
+<td>Arc is Offering 2 to 3-digit APRs for Pioneering Farmers</td>
+<td>56</td>
+<td class="down">17.59%</td>
+<td>812</td>
+<td class="down">&minus;2.68pp</td>
+</tr>
+<tr>
+<td>Sep 18</td>
+<td>Uniswap's Improved Pools Pay &gt;10% &mdash; Here's How it Works</td>
+<td>55</td>
+<td class="up">21.47%</td>
+<td>993</td>
+<td class="up">+1.20pp</td>
+</tr>
+<tr>
+<td>Sep 11</td>
+<td>Farm Safer with These 5 DeFi Tools</td>
+<td>33</td>
+<td>20.36%</td>
+<td>947</td>
+<td>+0.09pp</td>
+</tr>
+<tr>
+<td>Sep 4</td>
+<td>Earn 11% Fixed APR From Funding Rates Arbitrage</td>
+<td>47</td>
+<td>20.44%</td>
+<td>954</td>
+<td>+0.17pp</td>
+</tr>
+<tr>
+<td>Aug 28</td>
+<td>Tokenized Stocks Can Now Earn You Yield &mdash; Here's How</td>
+<td>52</td>
+<td class="up">20.78%</td>
+<td>973</td>
+<td class="up">+0.51pp</td>
+</tr>
+</table>
+
+<h3>Pattern Analysis</h3>
+<table>
+<tr><th>Pattern</th><th>Examples</th><th>Avg OR</th><th>vs Baseline</th></tr>
+<tr>
+<td>"Here's How" / mechanism framing</td>
+<td>Uniswap pools; Tokenized stocks; Funding rates</td>
+<td class="up">20.90%</td>
+<td class="up">+0.63pp</td>
+</tr>
+<tr>
+<td>Numbered scope</td>
+<td>5 DeFi Tools</td>
+<td>20.36%</td>
+<td>+0.09pp</td>
+</tr>
+<tr>
+<td>Extreme claim / abstract language</td>
+<td>2 to 3-digit APRs; Pioneering Farmers</td>
+<td class="down">17.59%</td>
+<td class="down">&minus;2.68pp</td>
+</tr>
+</table>
+
+<div class="callout takeaway">
+<strong>Mechanism transparency wins.</strong> The Guide audience values mechanism transparency above all. "Here's How it Works" (21.47%) and "Here's How" (20.78%) both beat the baseline. The audience opens the Guide to learn a process, not to discover a yield number &mdash; that's what Farming Alpha is for.
+</div>
+</section>
+
+<!-- RECOVERY PLAN -->
+<section class="section" id="recovery">
+<h2>Recovery Plan</h2>
+
+<ol>
+<li><strong>Use a well-known protocol with existing reader interest.</strong> The Uniswap Guide (21.47%) benefited from brand recognition. Picking a protocol readers already use reduces the "is this worth my time?" barrier. Good candidates: Aave, Pendle, Hyperliquid, Morpho.</li>
+
+<li><strong>Use "Here's How" or "Step-by-Step" in the headline.</strong> Two of the three best-performing Guides used this framing. It promises concrete, actionable information &mdash; the Guide's core value proposition.</li>
+
+<li><strong>Use numbered scope when appropriate.</strong> "5 DeFi Tools" (20.36%) sets expectations and signals completeness. "3 Ways to Use [Protocol]" or "5 Things You Can Do on [Protocol]" are testable variants.</li>
+
+<li><strong>Avoid extreme yield claims without mechanism context.</strong> "2 to 3-digit APRs" (17.59%) created credibility friction. If the yield is genuinely high, explain why in the headline: "Arc Pays 40% &mdash; Here's the Mechanism and the Risk."</li>
+
+<li><strong>Target 2,000&ndash;2,500 words.</strong> The Oct 2 issue was too short (1,392) for the Guide format. Readers expect depth &mdash; walkthroughs, risk analysis, and step-by-step instructions.</li>
+
+<li><strong>Re-establish the Friday cadence.</strong> Two consecutive weeks without a Guide weakens the publishing habit. Even a shorter, simpler Guide is better than a gap.</li>
+</ol>
+</section>
+
+<footer class="footer">
+Updated Oct 12, 2026 &middot; Substack metrics from Oct 12 export &middot; No new Friday issue this period
+</footer>
+
+</div>
+</body></html>

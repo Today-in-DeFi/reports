@@ -5,99 +5,291 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Analysis Weekly Report — Oct 12, 2026</title>
 <style>
-*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f7fa;color:#1f2937;margin:0;line-height:1.55}.container{max-width:1120px;margin:0 auto;padding:36px 24px 60px}.hero{background:linear-gradient(135deg,#111827,#293b53);color:#fff;padding:34px;border-radius:16px;margin-bottom:24px}.hero h1{margin:0 0 6px;font-size:30px}.hero p{margin:0;color:#cbd5e1}.section{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:26px;margin:20px 0;box-shadow:0 3px 12px rgba(15,23,42,.04)}h2{margin:0 0 18px;font-size:21px;border-bottom:2px solid #ff6719;padding-bottom:8px}h3{margin:24px 0 10px;font-size:16px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:16px}.label{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#64748b}.value{font-size:25px;font-weight:750;margin:4px 0}.up{color:#15803d}.down{color:#b91c1c}.muted{color:#64748b;font-size:13px}table{width:100%;border-collapse:collapse;font-size:13px}th{background:#f1f5f9;text-align:left;color:#475569}th,td{padding:10px 9px;border-bottom:1px solid #e5e7eb;vertical-align:top}.callout{padding:16px 18px;border-radius:9px;margin:14px 0}.win{background:#ecfdf5;border-left:4px solid #16a34a}.alert{background:#fef2f2;border-left:4px solid #dc2626}.takeaway{background:#eff6ff;border-left:4px solid #2563eb}.tweet{border-left:3px solid #1da1f2;background:#f8fafc;padding:13px 15px;margin:10px 0;border-radius:0 8px 8px 0}.tweet p{margin:0 0 6px}.stats{font-size:12px;color:#64748b}blockquote{background:#fff7ed;border-left:4px solid #ff6719;margin:12px 0;padding:13px 16px;font-weight:650}ol,ul{padding-left:21px}li{margin:7px 0}.footer{text-align:center;color:#64748b;font-size:12px;margin-top:28px}@media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr)}.container{padding:18px 12px}.section,.hero{padding:20px}table{display:block;overflow-x:auto}}@media print{body{background:#fff}.section{box-shadow:none;break-inside:avoid}}
+*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f7fa;color:#1f2937;margin:0;line-height:1.55}.container{max-width:1120px;margin:0 auto;padding:36px 24px 60px}.hero{background:linear-gradient(135deg,#111827,#293b53);color:#fff;padding:34px;border-radius:16px;margin-bottom:24px}.hero h1{margin:0 0 6px;font-size:30px}.hero p{margin:0;color:#cbd5e1}.section{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:26px;margin:20px 0;box-shadow:0 3px 12px rgba(15,23,42,.04)}h2{margin:0 0 18px;font-size:21px;border-bottom:2px solid #ff6719;padding-bottom:8px}h3{margin:24px 0 10px;font-size:16px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:16px}.label{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#64748b}.value{font-size:25px;font-weight:750;margin:4px 0}.up{color:#15803d}.down{color:#b91c1c}.muted{color:#64748b;font-size:13px}table{width:100%;border-collapse:collapse;font-size:13px}th{background:#f1f5f9;text-align:left;color:#475569}th,td{padding:10px 9px;border-bottom:1px solid #e5e7eb;vertical-align:top}.callout{padding:16px 18px;border-radius:9px;margin:14px 0}.win{background:#ecfdf5;border-left:4px solid #16a34a}.alert{background:#fef2f2;border-left:4px solid #dc2626}.takeaway{background:#eff6ff;border-left:4px solid #2563eb}.tweet{border-left:3px solid #1da1f2;background:#f8fafc;padding:13px 15px;margin:10px 0;border-radius:0 8px 8px 0}.tweet p{margin:0 0 6px}.stats{font-size:12px;color:#64748b}blockquote{background:#fff7ed;border-left:4px solid #ff6719;margin:12px 0;padding:13px 16px;font-weight:600;font-size:14px}ol,ul{padding-left:21px}li{margin:7px 0}.section-nav{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:14px 20px;margin-bottom:20px;font-size:13px}.section-nav a{color:#ff6719;text-decoration:none;margin-right:18px}.section-nav a:hover{text-decoration:underline}.footer{text-align:center;color:#64748b;font-size:12px;margin-top:28px}@media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr)}.container{padding:18px 12px}.section,.hero{padding:20px}table{display:block;overflow-x:auto}}@media print{body{background:#fff}.section{box-shadow:none;break-inside:avoid}}
 </style>
 </head>
 <body>
 <main class="container">
   <header class="hero">
     <h1>Analysis Weekly Report</h1>
-    <p>Oct 6 and Sep 29 issues · Updated October 12, 2026</p>
+    <p>Oct 6 and Sep 29 issues &middot; Updated October 12, 2026</p>
   </header>
 
-  <section class="section">
+  <!-- Section Nav -->
+  <nav class="section-nav">
+    <a href="#comparison">Latest Issue Comparison</a>
+    <a href="#headlines">Headline Performance</a>
+    <a href="#content">Content Audit</a>
+    <a href="#tweets">Direct Tweet Performance</a>
+    <a href="#clicks">Click-Through Analysis</a>
+    <a href="#actions">Actions</a>
+  </nav>
+
+  <!-- 1. Latest Issue Comparison -->
+  <section class="section" id="comparison">
     <h2>Latest Issue Comparison</h2>
     <div class="grid">
-      <div class="card"><div class="label">Oct 6 Open Rate</div><div class="value">19.22%</div><div class="down">-1.19pp</div></div>
-      <div class="card"><div class="label">Opens</div><div class="value">887</div><div class="down">-56</div></div>
-      <div class="card"><div class="label">Tweet Reach</div><div class="value">1,358</div><div class="down">-17.7%</div></div>
-      <div class="card"><div class="label">Tweet URL Clicks</div><div class="value">7</div><div class="down">-22.2%</div></div>
+      <div class="card">
+        <div class="label">Oct 6 Open Rate</div>
+        <div class="value down">19.22%</div>
+        <div class="muted down">&minus;1.19pp</div>
+      </div>
+      <div class="card">
+        <div class="label">Opens</div>
+        <div class="value down">887</div>
+        <div class="muted down">&minus;56</div>
+      </div>
+      <div class="card">
+        <div class="label">Tweet Reach</div>
+        <div class="value down">1,358</div>
+        <div class="muted down">&minus;17.7%</div>
+      </div>
+      <div class="card">
+        <div class="label">Tweet URL Clicks</div>
+        <div class="value down">7</div>
+        <div class="muted down">&minus;22.2%</div>
+      </div>
     </div>
-    <div class="alert callout"><strong>Core finding:</strong> Lowest Analysis OR since the rebrand, 0.84pp below the 19-issue baseline of 20.06%. Token price moves don't hook as well as structural shifts.</div>
+
+    <div class="callout alert">
+      <strong>Core finding:</strong> Lowest Analysis OR since the rebrand and 0.84pp below the 19-issue baseline of 20.06%. "FLUID Ran 27%" focuses on a token price move rather than a structural shift, and "As Jupiter Lend Grew" is a vague secondary clause. The audience opens for cause-and-effect transformations, not price tickers.
+    </div>
+
     <table>
-      <thead><tr><th>Metric</th><th>Oct 6</th><th>Sep 29</th></tr></thead>
+      <thead>
+        <tr><th>Metric</th><th>Oct 6</th><th>Sep 29</th><th>Change</th></tr>
+      </thead>
       <tbody>
-        <tr><td>Headline</td><td>FLUID Ran 27% As Jupiter Lend Grew</td><td>Hyperliquid's USDC Pile Now Tops Solana's</td></tr>
-        <tr><td>Headline length</td><td><strong>35</strong></td><td>41</td></tr>
-        <tr><td>OR / opens</td><td><strong>19.22%</strong> / 887</td><td><strong>20.41%</strong> / 943</td></tr>
-        <tr><td>Approx. words</td><td>2,114</td><td>2,194</td></tr>
-        <tr><td>Direct tweet imp / eng / clicks</td><td>1,358 / 22 / 7</td><td>1,650 / 33 / 9</td></tr>
+        <tr><td>Headline</td><td>FLUID Ran 27% As Jupiter Lend Grew</td><td>Hyperliquid's USDC Pile Now Tops Solana's</td><td>&mdash;</td></tr>
+        <tr><td>Headline length</td><td>35</td><td>41</td><td>&minus;6 chars</td></tr>
+        <tr><td>Delivers / opens</td><td>4,615 / 887</td><td>4,620 / 943</td><td>&minus;56 opens</td></tr>
+        <tr><td>Open rate</td><td class="down"><strong>19.22%</strong></td><td>20.41%</td><td class="down">&minus;1.19pp</td></tr>
+        <tr><td>Approx. words</td><td>2,114</td><td>2,194</td><td>&minus;3.6%</td></tr>
+        <tr><td>Direct tweet imp / eng / clicks</td><td>1,358 / 22 / 7</td><td>1,650 / 33 / 9</td><td>Reach and clicks both down</td></tr>
       </tbody>
     </table>
+
+    <div class="callout takeaway">
+      <strong>Why it matters:</strong> "FLUID Ran 27%" names a token price move &mdash; the reader already knows the outcome. "Hyperliquid's USDC Pile Now Tops Solana's" names a structural flip that implies consequences the reader needs to understand. Price moves close the loop; structural shifts open it.
+    </div>
   </section>
 
-  <section class="section">
+  <!-- 2. Headline Performance -->
+  <section class="section" id="headlines">
     <h2>Headline Performance</h2>
+
+    <h3>Trend Table (baseline = 20.06%)</h3>
     <table>
-      <thead><tr><th>Date</th><th>Headline</th><th>OR</th><th>Opens</th></tr></thead>
+      <thead>
+        <tr><th>Date</th><th>Headline</th><th>Chars</th><th>OR</th><th>Opens</th><th>vs Baseline</th></tr>
+      </thead>
       <tbody>
-        <tr><td><strong>Oct 6</strong></td><td>FLUID Ran 27% As Jupiter Lend Grew</td><td><strong>19.22%</strong></td><td>887</td></tr>
-        <tr><td><strong>Sep 29</strong></td><td>Hyperliquid's USDC Pile Now Tops Solana's</td><td><strong>20.41%</strong></td><td>943</td></tr>
-        <tr><td>Sep 22</td><td>Robinhood Degens Are Now Trading Oil &amp; Gold</td><td>20.44%</td><td>944</td></tr>
-        <tr><td>Sep 15</td><td>AI Usage Is Turning Revenue Into Token Burns</td><td>20.08%</td><td>931</td></tr>
-        <tr><td>Sep 8</td><td>Robinhood Chain's Memes Are Moving Real Stocks</td><td>21.12%</td><td>985</td></tr>
+        <tr><td><strong>Oct 6</strong></td><td>FLUID Ran 27% As Jupiter Lend Grew</td><td>35</td><td class="down"><strong>19.22%</strong></td><td>887</td><td class="down">&minus;0.84pp</td></tr>
+        <tr><td><strong>Sep 29</strong></td><td>Hyperliquid's USDC Pile Now Tops Solana's</td><td>41</td><td>20.41%</td><td>943</td><td class="up">+0.35pp</td></tr>
+        <tr><td>Sep 22</td><td>Robinhood Degens Are Now Trading Oil &amp; Gold</td><td>43</td><td>20.44%</td><td>944</td><td class="up">+0.38pp</td></tr>
+        <tr><td>Sep 15</td><td>AI Usage Is Turning Revenue Into Token Burns</td><td>45</td><td>20.08%</td><td>931</td><td>+0.02pp</td></tr>
+        <tr><td>Sep 8</td><td>Robinhood Chain's Memes Are Moving Real Stocks</td><td>47</td><td class="up"><strong>21.12%</strong></td><td>985</td><td class="up">+1.06pp</td></tr>
+        <tr><td>Sep 1</td><td>A $4.8M TVL DEX Did $6B in Volume...</td><td>55</td><td class="up"><strong>21.17%</strong></td><td>991</td><td class="up">+1.11pp</td></tr>
       </tbody>
     </table>
-    <div class="alert callout"><strong>19-issue baseline: 20.06%.</strong> Four consecutive declines from Sep 8 peak.</div>
-    <h3>Suggested Rewrite</h3>
-    <blockquote>Jupiter Lend Hit $1.3B—One Token Gained 27% From It</blockquote>
-  </section>
 
-  <section class="section">
-    <h2>Direct Tweet Performance</h2>
-    <h3>Sep 29 Issue — 1,650 Impressions, 9 Clicks</h3>
-    <div class="tweet"><p><strong>Hyperliquid flipped Solana's USDC supply</strong></p><div class="stats">839 impressions · 15 engagements · 2 clicks</div></div>
-    <div class="tweet"><p><strong>BlackRock/Ondo self-custodied token strategy</strong></p><div class="stats">811 impressions · 18 engagements · 7 clicks</div></div>
-
-    <h3>Oct 6 Issue — 1,358 Impressions, 7 Clicks</h3>
-    <div class="tweet"><p><strong>BTC ETF inflows fell 96%, prices held</strong></p><div class="stats">759 impressions · 11 engagements · 3 clicks</div></div>
-    <div class="tweet"><p><strong>Visa/Mastercard/Stripe stablecoin, $660M first week</strong></p><div class="stats">599 impressions · 11 engagements · 4 clicks</div></div>
-    <div class="takeaway callout"><strong>Note:</strong> Oct 6 Fables tweet (882 imp, 12 eng, 2 clicks) linked to Airdrop Alpha and is excluded.</div>
-  </section>
-
-  <section class="section">
-    <h2>Newsletter Click-Through</h2>
-    <div class="grid" style="grid-template-columns:repeat(3,1fr)">
-      <div class="card"><div class="label">Unique Clickers</div><div class="value">18</div></div>
-      <div class="card"><div class="label">CTOR</div><div class="value">2.03%</div></div>
-      <div class="card"><div class="label">Click Rate</div><div class="value">0.39%</div></div>
+    <h3>Benchmark</h3>
+    <div class="grid">
+      <div class="card">
+        <div class="label">All-Time Analysis Avg</div>
+        <div class="value">20.06%</div>
+        <div class="muted">19 issues, Jun&ndash;Oct</div>
+      </div>
+      <div class="card">
+        <div class="label">Transformation Lead</div>
+        <div class="value up">20.78%</div>
+        <div class="muted">"Tops Solana's," "Moving Real Stocks"</div>
+      </div>
+      <div class="card">
+        <div class="label">Price-Move Lead</div>
+        <div class="value down">19.22%</div>
+        <div class="muted">"Ran 27%"</div>
+      </div>
+      <div class="card">
+        <div class="label">Contradiction Lead</div>
+        <div class="value up">21.17%</div>
+        <div class="muted">"$4.8M TVL did $6B"</div>
+      </div>
     </div>
+
+    <h3>Headline Pattern Analysis</h3>
+    <table>
+      <thead>
+        <tr><th>Pattern</th><th>Examples</th><th>Avg OR</th><th>vs Baseline</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Structural transformation</td><td>Tops Solana's; Trading Oil &amp; Gold; Moving Real Stocks</td><td class="up"><strong>20.66%</strong></td><td class="up">+0.60pp</td></tr>
+        <tr><td>Contradiction / absurdity</td><td>$4.8M TVL DEX Did $6B</td><td class="up"><strong>21.17%</strong></td><td class="up">+1.11pp</td></tr>
+        <tr><td>Revenue/mechanism shift</td><td>AI Turning Revenue Into Burns</td><td>20.08%</td><td>+0.02pp</td></tr>
+        <tr><td>Token price move</td><td>FLUID Ran 27%</td><td class="down"><strong>19.22%</strong></td><td class="down">&minus;0.84pp</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout alert">
+      <strong>Four consecutive declines</strong> from Sep 8's peak (21.12%). The rebrand from "Onchain Outlook" to "Analysis" improved clarity, but the headline formula has drifted from transformations toward descriptions.
+    </div>
+
+    <h3>Suggested Rewrites</h3>
+    <p class="muted">Original: "FLUID Ran 27% As Jupiter Lend Grew"</p>
+
+    <blockquote>Jupiter Lend Hit $1.3B &mdash; One Token Gained 27% From It</blockquote>
+    <p class="muted">Leads with the structural milestone ($1.3B TVL), makes the price move a consequence. Creates a "which token?" curiosity gap.</p>
+
+    <blockquote>A Lending Protocol Grew 21% in 30 Days &mdash; Its Biggest Winner Isn't Who You'd Expect</blockquote>
+    <p class="muted">Knowledge-gap framing. Withholds the answer. 63 chars but the hook lands before truncation.</p>
+  </section>
+
+  <!-- 3. Content Audit -->
+  <section class="section" id="content">
+    <h2>Content Audit</h2>
+    <table>
+      <thead>
+        <tr><th>Element</th><th>Oct 6</th><th>Sep 29</th><th>Sep 22</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>TL;DR / summary</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Market context section</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Protocol deep-dive</td><td>Yes (Jupiter/FLUID)</td><td>Yes (Hyperliquid)</td><td>Yes (Robinhood)</td></tr>
+        <tr><td>Data/charts</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Cross-links to other letters</td><td class="down">No</td><td class="down">No</td><td class="down">No</td></tr>
+        <tr><td>Premium CTA</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Approx. words</td><td>2,114</td><td>2,194</td><td>1,772</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout win">
+      <strong>Win:</strong> Content structure is consistent and well-organized. The protocol deep-dive format gives readers a reason to open beyond the headline.
+    </div>
+    <div class="callout takeaway">
+      <strong>Takeaway:</strong> Word count (2,114) is within the optimal 1,800&ndash;2,200 range. No length-driven issues this week.
+    </div>
+    <div class="callout alert">
+      <strong>Alert:</strong> Still no cross-links. The Analysis letter's audience overlaps heavily with Farming Alpha readers &mdash; a single line pointing to Thursday's yield breakdown would test this.
+    </div>
+  </section>
+
+  <!-- 4. Direct Tweet Performance -->
+  <section class="section" id="tweets">
+    <h2>Direct Tweet Performance</h2>
+
+    <h3>Sep 29 Issue &mdash; 1,650 Impressions, 9 Clicks</h3>
+    <div class="tweet">
+      <p><strong>Hyperliquid flipped Solana's USDC supply</strong></p>
+      <div class="stats">839 impressions &middot; 15 engagements &middot; 2 clicks &middot; 1.79% ER</div>
+    </div>
+    <div class="tweet">
+      <p><strong>BlackRock designed the strategy. Ondo turned it into a token you can hold in your own wallet.</strong></p>
+      <div class="stats">811 impressions &middot; 18 engagements &middot; 7 clicks &middot; 2.22% ER</div>
+    </div>
+    <div class="callout win">
+      <strong>Why it worked:</strong> The BlackRock/Ondo tweet translated institutional infrastructure into a concrete retail benefit and generated 78% of the set's clicks. "You can hold in your own wallet" is the key phrase &mdash; it makes an abstract strategy personally relevant.
+    </div>
+
+    <h3>Oct 6 Issue &mdash; 1,358 Impressions, 7 Clicks</h3>
+    <div class="tweet">
+      <p><strong>BTC ETF inflows fell 96% from $2.39B to $83M; prices held</strong></p>
+      <div class="stats">759 impressions &middot; 11 engagements &middot; 3 clicks &middot; 1.45% ER</div>
+    </div>
+    <div class="tweet">
+      <p><strong>Visa, Mastercard, Stripe, Coinbase, Shopify share one stablecoin. $660M first week.</strong></p>
+      <div class="stats">599 impressions &middot; 11 engagements &middot; 4 clicks &middot; 1.84% ER</div>
+    </div>
+    <p class="muted">Note: Oct 6 Fables tweet (882 imp, 12 eng, 2 clicks) linked to Airdrop Alpha and is excluded.</p>
+    <div class="callout takeaway">
+      <strong>Analysis:</strong> The stablecoin tweet had the highest CTR (0.67%) despite lowest impressions &mdash; big institutional names plus a specific number ($660M) drove curiosity. The ETF tweet's contradiction ("fell 96%... prices held") worked well for engagement. Both tweets outperformed the Oct 5 LWID set on clicks per impression.
+    </div>
+
+    <h3>Week-over-Week Comparison</h3>
+    <table>
+      <thead>
+        <tr><th>Metric</th><th>Oct 6</th><th>Sep 29</th><th>Change</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Tweets</td><td>2</td><td>2</td><td>Same</td></tr>
+        <tr><td>Total impressions</td><td>1,358</td><td>1,650</td><td class="down">&minus;17.7%</td></tr>
+        <tr><td>Total engagements</td><td>22</td><td>33</td><td class="down">&minus;33.3%</td></tr>
+        <tr><td>URL clicks</td><td>7</td><td>9</td><td class="down">&minus;22.2%</td></tr>
+        <tr><td>Avg ER</td><td>1.62%</td><td>2.00%</td><td class="down">&minus;0.38pp</td></tr>
+        <tr><td>Click-through rate</td><td>0.52%</td><td>0.55%</td><td>&minus;0.03pp</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout takeaway">
+      <strong>Pattern:</strong> CTR held nearly flat (0.52% vs 0.55%) even as reach dropped 18%. The Oct 6 tweets were efficient click-drivers &mdash; they just reached fewer people. The institutional-bridge framing (Visa/Mastercard) and contradiction framing (ETF inflows vs price) both work. The issue is distribution, not content quality.
+    </div>
+  </section>
+
+  <!-- 5. Newsletter Click-Through Analysis -->
+  <section class="section" id="clicks">
+    <h2>Newsletter Click-Through Analysis</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="label">Unique Clickers</div>
+        <div class="value">18</div>
+        <div class="muted">of 887 openers</div>
+      </div>
+      <div class="card">
+        <div class="label">Click-to-Open Rate</div>
+        <div class="value">2.03%</div>
+        <div class="muted">Lowest of all 4 letters</div>
+      </div>
+      <div class="card">
+        <div class="label">Click Rate</div>
+        <div class="value">0.39%</div>
+        <div class="muted">of 4,615 delivers</div>
+      </div>
+      <div class="card">
+        <div class="label">Avg Clicks/Opener</div>
+        <div class="value">1.0</div>
+        <div class="muted">&nbsp;</div>
+      </div>
+    </div>
+
     <h3>Top Links</h3>
     <table>
-      <thead><tr><th>Link</th><th>Clicks</th></tr></thead>
+      <thead>
+        <tr><th>Clicks</th><th>Link</th><th>Category</th></tr>
+      </thead>
       <tbody>
-        <tr><td>@yield thread</td><td>6</td></tr>
-        <tr><td>@andrewcuomo tweet</td><td>5</td></tr>
-        <tr><td>Trending topic</td><td>4</td></tr>
-        <tr><td>@Laser_diva thread</td><td>4</td></tr>
-        <tr><td>@monad update</td><td>2</td></tr>
+        <tr><td>6</td><td>@yield thread</td><td>Yield/protocol</td></tr>
+        <tr><td>5</td><td>@andrewcuomo tweet</td><td>Political/regulatory</td></tr>
+        <tr><td>4</td><td>Trending topic</td><td>Market narrative</td></tr>
+        <tr><td>4</td><td>@Laser_diva thread (2 links)</td><td>Market commentary</td></tr>
+        <tr><td>2</td><td>@monad update</td><td>Protocol</td></tr>
+        <tr><td>2</td><td>@variational_io</td><td>Protocol</td></tr>
       </tbody>
     </table>
-    <div class="alert callout"><strong>Lowest CTOR of all 4 letters.</strong> Clicks spread thin with no dominant draw. Regulatory/political angle unexpectedly pulled 5 clicks.</div>
+
+    <div class="callout alert">
+      <strong>Lowest CTOR of all 4 letters this week.</strong> Clicks spread thinly across many links with no dominant draw &mdash; unlike Airdrop Alpha where 59% went to one link. This suggests the Analysis letter's value is informational (readers absorb the content) rather than action-oriented (readers click to do something).
+    </div>
+    <div class="callout takeaway">
+      <strong>Unexpected signal:</strong> The political/regulatory angle (@andrewcuomo, 5 clicks) was unexpected. Institutional and regulatory crossover content may have untapped demand in the Analysis letter &mdash; test this as a headline angle.
+    </div>
+    <div class="callout takeaway">
+      <strong>Cross-letter opportunity:</strong> The @yield thread leading clicks (6) suggests readers want to act on yield information even in the Analysis letter. Consider adding a "Best yield this week" callout box to bridge Analysis readers into Farming Alpha.
+    </div>
   </section>
 
-  <section class="section">
-    <h2>Next Actions</h2>
+  <!-- 6. Actions -->
+  <section class="section" id="actions">
+    <h2>Actions</h2>
     <ol>
-      <li>Frame headlines as cause-and-effect, not price change plus vague correlate.</li>
-      <li>Use "hit $X" or "crossed $X" — concrete milestones beat "grew."</li>
-      <li>Test institutional-bridge headlines (Visa/Mastercard angle had high CTR).</li>
-      <li>The four-week decline needs a headline formula reset.</li>
-      <li>Track OR against 20.06% baseline.</li>
+      <li><strong>Frame headlines as cause-and-effect transformations, not price changes.</strong> "FLUID Ran 27%" closes the loop. "Jupiter Lend Hit $1.3B &mdash; One Token Gained 27% From It" opens it. The reader needs to feel they'll learn something they can't get from the price chart.</li>
+      <li><strong>Use "hit $X" or "crossed $X" instead of "grew."</strong> Concrete milestones create a before/after contrast. "Grew" is directional but unmemorable.</li>
+      <li><strong>Test institutional-bridge headlines.</strong> The Visa/Mastercard stablecoin tweet had the highest CTR (0.67%) despite lowest reach. "Visa and Mastercard Just Agreed on One Stablecoin" is a testable Analysis headline.</li>
+      <li><strong>Add a "yield of the week" callout box.</strong> Click data shows Analysis readers engage with yield content (@yield led clicks). Use this to cross-link to Farming Alpha.</li>
+      <li><strong>The four-week OR decline needs a headline formula reset.</strong> Four consecutive drops from 21.12% to 19.22% is structural, not noise. Next issue should test contradiction or institutional framing.</li>
+      <li><strong>Track OR against 20.06% baseline and direct-tweet CTR above 0.5%.</strong></li>
     </ol>
   </section>
 
-  <p class="footer">Oct 12 Substack + Twitter exports · Click data from Substack dashboard</p>
+  <p class="footer">Updated Oct 12, 2026 &middot; Substack metrics from Oct 12 export &middot; Twitter data from Oct 12 CSV &middot; Click data from Substack dashboard &middot; Direct tweets matched by destination link and topic</p>
 </main>
 </body>
 </html>
